@@ -1,135 +1,79 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>안내서</title>
-    <link rel="stylesheet" href="styles.css">
-	<style>body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #f5f5f5;
-}
-
-.container {
-    display: flex;
-    width: 100%;
-}
-
-.sidebar {
-    width: 240px;
-    background-color: #fff;
-    border-right: 1px solid #ddd;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.sidebar-header {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.sidebar-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-}
-
-.sidebar-menu li {
-    margin-bottom: 5px;
-}
-
-.sidebar-menu a {
-    text-decoration: none;
-    color: #333;
-}
-
-.content {
-    padding: 20px;
-    flex: 1;
-    overflow-y: auto;
-}
-
-h1, h2, h3 {
-    color: #333;
-}
-
-p {
-    line-height: 1.6;
-    color: #555;
-}
-
-.error-box {
-    background-color: #ffefc1;
-    border: 1px solid #ffd700;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.error-box h4 {
-    margin-top: 0;
-}
-
-.error-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.error-box ul li {
-    margin-bottom: 5px;
-}</style>
+    <title>프로젝트 이름</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            min-width: 200px;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+        section {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar-header">다른 메뉴얼 보기</div>
-            <ul class="sidebar-menu">
-                <li><a href="#">조립 시 주의사항</a></li>
-                <li><a href="#">하드웨어</a></li>
-                <li><a href="#">소프트웨어</a></li>
-                <li><a href="#">코딩록</a></li>
-            </ul>
-            <div class="sidebar-header">안내서 100% 활용하기</div>
-            <ul class="sidebar-menu">
-                <li><a href="#">꼭 읽어주세요!</a></li>
-                <li><a href="#">많이 하는 실수/질문 TOP5</a></li>
-            </ul>
-            <div class="sidebar-header">가이드</div>
-            <ul class="sidebar-menu">
-                <li><a href="#">앵글&프레임의 조립 분해 방법</a></li>
-                <li><a href="#">배터리 사용 방법</a></li>
-                <li><a href="#">케이블 연결 방법</a></li>
-                <li><a href="#">mBlock 설치 방법</a></li>
-                <li><a href="#">단계별 동작 예시 프로그램 사용 방법</a></li>
-                <li><a href="#">프로그램 업로드 방법</a></li>
-                <li><a href="#">프로그램 실행 방법</a></li>
-            </ul>
-        </aside>
-        <main class="content">
-            <section>
-                <h1>안내서 100% 활용하기</h1>
-                <p>안녕하세요, 여러분! 이 문서는 XROBO를 여행하는 여러분을 위한 안내서입니다. 여기엔 XROBO 익스트림 로봇을 조립하고 코딩하는 방법이 모두 담겨져 있습니다. XROBO 익스트림 로봇을 만드는 데 매뉴얼이 도움이 될 거예요. 그럼, 이제부터 로봇을 만들어볼까요?</p>
-            </section>
-            <section>
-                <h2>꼭 읽어주세요!</h2>
-                <h3>많이 하는 실수/질문 TOP5</h3>
-                <p>가장 많이 발생한 실수와 질문을 상위 5개를 골랐습니다. 로봇을 조립하고 코딩하기 전 반드시 확인해주세요!</p>
-                <div class="error-box">
-                    <h4>많이 하는 실수/질문 TOP5</h4>
-                    <ul>
-                        <li>앵글을 풀 때 너무 많이 풀지 말아주세요.</li>
-                        <li>배터리를 깔을 때 배터리 방향을 한번 더 확인해주세요.</li>
-                        <li>배터리케이스를 하나만 사용할 때, CPU보드의 12V 전원 커넥터에 점퍼를 꼭 끼워주세요.</li>
-                        <li>X1 단계는 코딩을 하지 않아도 돼요.</li>
-                        <li>리모컨 페어링은 주변에 아이디가 겹치는 다른 로봇이 있을 때만 해주세요.</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-    </div>
+    <nav>
+        <h2>목차</h2>
+        <ul>
+            <li><a href="#overview">개요</a></li>
+            <li><a href="#installation">설치</a></li>
+            <li><a href="#usage">사용법</a></li>
+            <li><a href="#contributing">기여</a></li>
+            <li><a href="#license">라이센스</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>프로젝트 이름</h1>
+        <p>여기에 프로젝트에 대한 간략한 설명을 작성하세요.</p>
+
+        <h2 id="overview">개요</h2>
+        <p>프로젝트의 목적, 주요 기능 및 배경에 대해 설명합니다.</p>
+
+        <h2 id="installation">설치</h2>
+        <h3>요구 사항</h3>
+        <p>프로젝트를 실행하기 위해 필요한 필수 요구 사항을 나열합니다.</p>
+        <h3>설치 단계</h3>
+        <ol>
+            <li>저장소를 클론합니다.
+                <pre><code>git clone https://github.com/yourusername/yourproject.git</code></pre>
+            </li>
+            <li>필요한 패키지를 설치합니다.
+                <pre><code>npm install</code></pre>
+            </li>
+        </ol>
+
+        <h2 id="usage">사용법</h2>
+        <h3>기본 사용법</h3>
+        <pre><code>const example = require('yourproject');
+example.doSomething();</code></pre>
+        <h3>고급 사용법</h3>
+        <p>고급 기능을 사용하는 방법에 대해 설명합니다.</p>
+
+        <h2 id="contributing">기여</h2>
+        <h3>기여 가이드라인</h3>
+        <p>기여할 때 따라야 할 가이드라인을 나열합니다.</p>
+
+        <h2 id="license">라이센스</h2>
+        <p>프로젝트의 라이센스에 대한 정보를 제공하고, 관련된 파일에 대한 링크를 제공합니다.</p>
+    </section>
 </body>
 </html>

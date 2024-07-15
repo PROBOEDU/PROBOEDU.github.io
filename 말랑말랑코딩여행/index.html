@@ -51,8 +51,8 @@
 			left: 0;
 			right: 0;
 			height: 100%;
-			min-width: 200px;
-			max-width: 200px;
+			min-width: 150px;
+			max-width: 150px;
 			/* Ensure padding is included in the width */
 		}
 
@@ -61,7 +61,7 @@
 		}
 
 		section {
-			padding-left:240px;
+			padding-left:190px;
             flex-grow: 1;
             font-family: 'font-name';
             background-image: url('Test2.png');
@@ -73,6 +73,7 @@
 			text-decoration: none;
 			color: #b700ff;
 			font-size: 1.8vmin;
+			white-space: nowrap;
 		}
 
 		a:hover {
@@ -114,14 +115,16 @@
 			font-size: 2vmin;
 			margin: 0px;
 			margin-bottom: 10px;
+			white-space: nowrap;
 		}
 
 		a[href="#MalangBanner"],
 		a[href="#Test2"] {
 			color: #000000;
-			font-size: 1.5vmin;
+			font-size: auto;
 			border-bottom: 4px solid #11c760;
 			font-weight: bold;
+			text-align: left;
 		}
 
 		p {
@@ -132,7 +135,7 @@
 
 		ul li::marker {
 			color: rgba(110, 30, 239, 0.829);
-			font-size: 1.3em;
+			font-size: 1.3vmax;
 		}
 
 		pre {

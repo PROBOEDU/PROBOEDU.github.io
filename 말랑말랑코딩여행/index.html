@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>말랑말랑 코딩여행 E-메뉴얼</title>
 	<style>
-		html {
+		/* html {
 			scroll-behavior: smooth;
-		}
+		} */
+
 		@font-face {
 			font-family: 'font-name';
 			font-style: normal;
@@ -33,7 +34,6 @@
 
 		body {
 			display: flex;
-
 			font-family: 'font-name';
 			/* font-family: Arial, sans-serif; */
 			font-size: auto;
@@ -42,18 +42,17 @@
 		}
 
 		nav {
-			width: auto;
 			/* Fixed width for navigation */
-			margin: 0;
 			padding: 10px;
 			border-right: 2px solid #dcdcdd;
-			position: fixed;
-			left: 0;
-			top: 0;
-			bottom: 0;
 			background-image: url('BG1.png');
 			background-size: cover;
-			box-sizing: border-box;
+			position: fixed;
+			left: 0;
+			right: 0;
+			height: 100%;
+			min-width: 200px;
+			max-width: 200px;
 			/* Ensure padding is included in the width */
 		}
 
@@ -62,18 +61,12 @@
 		}
 
 		section {
-			left: 0px;
-			top: 0px;
-			bottom: 0px;
-			flex-grow: 1;
-			/* Allow section to grow */
-			font-family: 'font-name';
-			margin-left: 180px;
-			padding: 50px;
-			background-image: url('Test2.png');
-			background-size: contain;
-			box-sizing: border-box;
-			/* Ensure padding is included in the width */
+			padding-left:240px;
+            flex-grow: 1;
+            font-family: 'font-name';
+            background-image: url('Test2.png');
+            background-size: contain;
+            box-sizing: border-box;
 		}
 
 		a {
@@ -90,42 +83,43 @@
 		h2,
 		h3,
 		h4 {
-			font-size: 2vmax;
+			font-size: 2vmin;
 		}
 
 		h1 {
+			padding-left: 20px;
 			font-weight: bold;
 			font-size: 3vmax;
-			margin-left: 60px;
 		}
 
 		h2 {
+			margin-left: 30px;
 			border-bottom: 4px solid #000000;
 			width: 10vmax;
 			font-style: italic;
 			font-weight: bold;
 			font-size: 2.5vmax;
-			margin-left: 65px;
 		}
 
 		h3 {
+			margin-left: 40px;
+			margin-right: 60px;
 			font-weight: lighter;
 			color: #000000;
 			font-size: 1.8vmax;
-			padding-left: 70px;
 		}
 
 		h4 {
-			font-size: 25px;
-			margin-right: 10px;
-			text-align: middle;
+			text-align: center;
+			font-size: 2vmin;
+			margin: 0px;
 			margin-bottom: 10px;
 		}
 
 		a[href="#MalangBanner"],
 		a[href="#Test2"] {
 			color: #000000;
-			font-size: 1.9vmin;
+			font-size: 1.5vmin;
 			border-bottom: 4px solid #11c760;
 			font-weight: bold;
 		}
@@ -156,7 +150,8 @@
 
 <body>
 	<nav>
-		<h4>프로보 메뉴얼</h4>
+		<h4>말랑말랑 코딩여행</h4>
+		<h4>E-메뉴얼</h4>
 		<div class="section-divider"></div>
 		<br> <!-- 줄띄우기 -->
 		<a href="#MalangBanner">🔶말랑말랑 코딩여행</a>
@@ -179,9 +174,11 @@
 
 	<section>
 		<h1 id="MalangBanner">말랑말랑 코딩여행🗺️</h1>
+
 		<h2 id="overview">소개</h2>
 		<h3 id="project-purpose">
-			1. MIT 공대에서 제공되는 코딩 프로그램 ‘스크래치’에 프로보 로봇을 구동 할 수 있는 블럭 기능을 추가하여 화면 속 캐릭터는 물론, 학생이 직접 짠 프로그램이 로봇을 어떻게 동작하게 하는지 직접
+			1. MIT 공대에서 제공되는 코딩 프로그램 ‘스크래치’에 프로보 로봇을 구동 할 수 있는 블럭 기능을 추가하여 화면 속 캐릭터는 물론, 학생이 직접 짠 프로그램이 로봇을 어떻게 동작하게 하는지
+			직접
 			보면서(피지컬 컴퓨팅)쉽게 코딩할 수 있습니다.
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
@@ -201,7 +198,8 @@
 			</div>
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
-			3. 디지털 정보를 입력 받는 다양한 장치와 현실로 결과를 보여주는 피지컬 컴퓨팅을 접목하여 딱딱하고 어렵게 느껴질 수 있는 코딩 교육을 직접 좋아하는 로봇을 만들고 제어하면서 흥미와 호기심을 유발
+			3. 디지털 정보를 입력 받는 다양한 장치와 현실로 결과를 보여주는 피지컬 컴퓨팅을 접목하여 딱딱하고 어렵게 느껴질 수 있는 코딩 교육을 직접 좋아하는 로봇을 만들고 제어하면서 흥미와 호기심을
+			유발
 			할 수 있도록 합니다.
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->

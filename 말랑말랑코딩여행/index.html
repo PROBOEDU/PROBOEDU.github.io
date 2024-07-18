@@ -142,8 +142,8 @@
 
 		code {
 			font-family: 'Courier New', Courier, monospace;
-			color: #ff0080;
 			background-color: transparent;
+			color: red;
 		}
 
 		/* 네비게이션 하위 버튼 */
@@ -157,18 +157,14 @@
 
 		/* 이미지 컨테이너 */
 		.flex-container {
-			display: flex;
-			justify-content: center;
-			/* 수평 가운데 정렬 */
-			align-items: center;
-			/* 수직 가운데 정렬 */
+
+			justify-content: space-between;
 			position: relative;
 			color: #04ff00;
 			max-width: 1100px;
 			/* 최대 너비 설정 */
 			/* 전체 화면 높이에 맞추기 위한 예시 값 */
 		}
-
 	</style>
 </head>
 
@@ -220,9 +216,12 @@
 			직접
 			보면서(피지컬 컴퓨팅)쉽게 코딩할 수 있습니다.
 			<br> <!-- 줄띄우기 -->
+
 			<div class="flex-container">
-					<img id="resizable-image" src="./01.소개/Image1.jpg" alt="이미지가 없습니다."style="max-width: 48%; max-height: 48%;">
-					<img id="resizable-image" src="./01.소개/Image2.jpg" alt="이미지가 없습니다."style="max-width: 48%; max-height: 48%;">
+				<img id="resizable-image" src="./01.소개/Image1.jpg" alt="이미지가 없습니다."
+					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
+				<img id="resizable-image" src="./01.소개/Image2.jpg" alt="이미지가 없습니다."
+					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
 			</div>
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
@@ -230,10 +229,10 @@
 			있으며 수업 사이사이 피지컬 컴퓨팅 로봇 조립, 코딩 게임으로 아이들의 흥미를 지속적으로 이끌어냅니다.
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<div class="image-container">
-					<img id="resizable-image" src="./01.소개/Image3.jpg" alt="이미지가 없습니다.">
-				</div>
+			<div class="flex-container" style="justify-content:center">
+				<img id="resizable-image" src="./01.소개/Image3.jpg" alt="이미지가 없습니다."
+					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
+
 			</div>
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
@@ -243,8 +242,10 @@
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
 			<div class="flex-container">
-				<img src="./01.소개/Image5.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
-				<img src="./01.소개/Image6.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
+				<img id="resizable-image" src="./01.소개/Image5.jpg" alt="이미지가 없습니다."
+					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
+				<img id="resizable-image" src="./01.소개/Image6.jpg" alt="이미지가 없습니다."
+					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
 			</div>
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
@@ -253,7 +254,8 @@
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
 			<div class="flex-container">
-				<img src="./01.소개/Image7.png" alt="이미지가 없습니다." style="max-width: 90%; max-height: 90%; margin: auto;">
+				<img id="resizable-image" src="./01.소개/Image7.png" alt="이미지가 없습니다."
+					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
 			</div>
 		</h3>
 		<h2 id="installation">설치</h2>
@@ -296,8 +298,8 @@ for(int i=0;i<10;i++)
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
 			<div class="flex-container">
-				<img src="./01.소개/Image3.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
-				<img src="./01.소개/Image4.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
+				<img src="./01.소개/Image3.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
+				<img src="./01.소개/Image4.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
 			</div>
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
@@ -307,8 +309,8 @@ for(int i=0;i<10;i++)
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
 			<div class="flex-container">
-				<img src="./01.소개/Image5.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
-				<img src="./01.소개/Image6.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
+				<img src="./01.소개/Image5.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
+				<img src="./01.소개/Image6.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
 			</div>
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
@@ -360,8 +362,8 @@ for(int i=0;i<10;i++)
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
 			<div class="flex-container">
-				<img src="./01.소개/Image3.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
-				<img src="./01.소개/Image4.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
+				<img src="./01.소개/Image3.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
+				<img src="./01.소개/Image4.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
 			</div>
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
@@ -371,8 +373,8 @@ for(int i=0;i<10;i++)
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
 			<div class="flex-container">
-				<img src="./01.소개/Image5.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
-				<img src="./01.소개/Image6.jpg" alt="이미지가 없습니다." style="max-width: 48%; max-height: 48%;">
+				<img src="./01.소개/Image5.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
+				<img src="./01.소개/Image6.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
 			</div>
 			<br> <!-- 줄띄우기 -->
 			<br> <!-- 줄띄우기 -->
@@ -409,25 +411,27 @@ for(int i=0;i<10;i++)
 
 <!--자바스크립트-->
 <script>
+	const resizableImages = document.querySelectorAll('#resizable-image');
 
-	const resizableImage = document.getElementById('resizable-image');
-
-	resizableImage.addEventListener('mousedown', initResize, false);
+	resizableImages.forEach(image => {
+		image.addEventListener('mousedown', initResize, false);
+	});
 
 	function initResize(e) {
 		e.preventDefault();
+		const currentImage = e.target;
 		window.addEventListener('mousemove', resize);
 		window.addEventListener('mouseup', stopResize);
-	}
 
-	function resize(e) {
-		resizableImage.style.width = (e.clientX - resizableImage.getBoundingClientRect().left) + 'px';
-		resizableImage.style.height = 'auto'; // 높이를 자동으로 조정하거나 필요에 따라 고정할 수 있습니다.
-	}
+		function resize(e) {
+			currentImage.style.width = (e.clientX - currentImage.getBoundingClientRect().left) + 'px';
+			currentImage.style.height = 'auto'; // 높이를 자동으로 조정하거나 필요에 따라 고정할 수 있습니다.
+		}
 
-	function stopResize() {
-		window.removeEventListener('mousemove', resize);
-		window.removeEventListener('mouseup', stopResize);
+		function stopResize() {
+			window.removeEventListener('mousemove', resize);
+			window.removeEventListener('mouseup', stopResize);
+		}
 	}
 	// //사이즈변경에 사용할 것들
 	// let sizeInfo = {

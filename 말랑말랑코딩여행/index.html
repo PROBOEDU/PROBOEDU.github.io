@@ -6,7 +6,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!------------------------------------- 인터넷 탭에 보이는 글씨 ---------------------------------------------->
 	<title>말랑말랑 코딩여행 E-메뉴얼</title>
+	<!------------------------------------- 인터넷 탭에 보이는 글씨 ---------------------------------------------->
+
 	<style>
 		/* 항목 클릭시 이동하는 애니메이션 */
 		html {
@@ -19,7 +23,7 @@
 			font-family: 'font-name';
 			font-style: normal;
 			font-weight: 400;
-			src: url('./SCDream5.otf') format('opentype');
+			src: url('./99.font/SCDream5.otf') format('opentype');
 		}
 
 		/* 폰트 */
@@ -27,7 +31,7 @@
 			font-family: 'font-name2';
 			font-style: normal;
 			font-weight: 400;
-			src: url('./SCDream4.otf') format('opentype');
+			src: url('./99.font/SCDream4.otf') format('opentype');
 		}
 
 		/* 전체 영역 */
@@ -58,11 +62,11 @@
 			/* background-image: url('BG1.png'); */
 			background-size: cover;
 			background-color: #fbfbfb;
-			position: relative;
+			position: absolute;
 			left: 0;
 			right: 0;
 			width: 12.0vmax;
-			height: 1vamx;
+			height: 100%;
 			font-size: 1.2vmax;
 			/* min-width: 100px;
 			max-width: 180px; */
@@ -71,12 +75,13 @@
 
 		/* 전체 섹션 */
 		section {
-			padding-left: 2.5px;
+			margin-left: 15.0vmax;
 			flex-grow: 1;
 			font-family: 'font-name';
 			/* background-image: url('Test2.png');
 			background-size: contain; */
 			box-sizing: border-box;
+			padding: 20;
 		}
 
 		/* 네비게이션 하위 버튼 */
@@ -196,238 +201,97 @@
 <!--왼쪽 섹션 네비게이션 파트-->
 
 <body>
-	<nav>
-		<h4>말랑말랑 코딩여행</h4>
+	<nav id="nav">
+		<!-------------------------------------제품명--------------------------------------------->
+		<h4>제품 카테고리</h4>
 		<h4>E-메뉴얼</h4>
+		<!-------------------------------------제품명--------------------------------------------->
 
-		<div class="section-divider"></div>
 
-		<br> <!-- 줄띄우기 -->
+		<div class="section-divider"></div><br>
+
+		<!----------------------------------제품 카테고리 상위----------------------------------------->
 		<a href="#MalangBanner">■ 말랑말랑 코딩여행</a>
+		<!----------------------------------제품 카테고리 상위----------------------------------------->
+		
+		<!----------------------------------제품 카테고리 하위----------------------------------------->
 		<ul id="MalangBannerSubMenu" style="display:block; padding-left: 30px;margin: 5px;">
 			<li><a href="#overview">소개</a></li>
 			<li><a href="#installation">설치</a></li>
 			<li><a href="#usage">사용법</a></li>
 			<li><a href="#contributing">기여</a></li>
 			<li><a href="#license">라이센스</a></li>
-		</ul>
+		</ul><br>
+		<!----------------------------------제품 카테고리 하위----------------------------------------->
 
-		<br> <!-- 줄띄우기 -->
-		<a href="#Test2Banner">■ Test 2차</a>
-		<ul id="Test2BannerSubMenu" style="display:none ;margin: 0;">
-			<li><a href="#tt1">t1</a></li>
-			<li><a href="#tt2">t2</a></li>
-			<li><a href="#tt3">t3</a></li>
-			<li><a href="#tt4">t4</a></li>
-			<li><a href="#tt5">t5</a></li>
-		</ul>
 
-		<br> <!-- 줄띄우기 -->
-		<a href="#Test3Banner">■ Test 3차</a>
-		<ul id="Test3BannerSubMenu" style="display:none ;margin: 0;">
-			<li><a href="#tt6">t1</a></li>
-			<li><a href="#tt7">t2</a></li>
-			<li><a href="#tt8">t3</a></li>
-			<li><a href="#tt9">t4</a></li>
-			<li><a href="#tt10">t5</a></li>
-		</ul>
 	</nav>
 
 	<section>
+		<!------------------------------------대제목---------------------------------------------->
 		<h1>말랑말랑 코딩여행🗺️</h1>
-		<h2 id="overview">소개</h2>
-		<h3 id="project-purpose">
-			1. MIT 공대에서 제공되는 코딩 프로그램 ‘스크래치’에 프로보 로봇을 구동 할 수 있는 블럭 기능을 추가하여 화면 속 캐릭터는 물론, 학생이 직접 짠 프로그램이 로봇을 어떻게 동작하게 하는지
-			직접
-			보면서(피지컬 컴퓨팅)쉽게 코딩할 수 있습니다.
-			<br> <!-- 줄띄우기 -->
+		<!------------------------------------대제목---------------------------------------------->
 
+
+		<!------------------------------------중제목---------------------------------------------->
+		<h2 id="overview">소개</h2>
+		<!------------------------------------중제목---------------------------------------------->
+
+
+		<!-------------------------------------내용----------------------------------------------->
+		<h3 id="project-purpose">
+			1. MIT 공대에서 제공되는 코딩 프로그램 ‘스크래치’에 프로보 로봇을 구동 할 수 있는 블럭 기능을 추가하여 화면 속 캐릭터는 물론,
+			학생이 직접 짠 프로그램이 로봇을 어떻게 동작하게 하는지 직접 보면서(피지컬 컴퓨팅)쉽게 코딩할 수 있습니다.<br><br>
+
+			<!-------------------------------------------------------------------------------------이미지-------------------------------------------------------------------------------------->
 			<div class="flex-container">
 				<img id="resizable-image" src="./01.소개/Image1.jpg" alt="이미지가 없습니다."
 					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
 				<img id="resizable-image" src="./01.소개/Image2.jpg" alt="이미지가 없습니다."
 					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
+			</div><br><br>
+			<!-------------------------------------------------------------------------------------이미지-------------------------------------------------------------------------------------->
+
+			<!-------------------------------------내용----------------------------------------------->
 			2. 아이들이 좋아하는 만화책을 읽어 내려가듯이 친근하고 흥미로운 스토리텔링 방식으로 구성된 교재는 캐릭터들과 함께 보물을 찾아 떠나는 이야기로 시작되어 아이들이 직접 내용을 진행하도록 유도하고
-			있으며 수업 사이사이 피지컬 컴퓨팅 로봇 조립, 코딩 게임으로 아이들의 흥미를 지속적으로 이끌어냅니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
+			있으며 수업 사이사이 피지컬 컴퓨팅 로봇 조립, 코딩 게임으로 아이들의 흥미를 지속적으로 이끌어냅니다.<br><br>
+
 			<div class="flex-container" style="justify-content:center">
 				<img id="resizable-image" src="./01.소개/Image3.jpg" alt="이미지가 없습니다."
 					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
+			</div><br><br>
 
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
 			3. 디지털 정보를 입력 받는 다양한 장치와 현실로 결과를 보여주는 피지컬 컴퓨팅을 접목하여 딱딱하고 어렵게 느껴질 수 있는 코딩 교육을 직접 좋아하는 로봇을 만들고 제어하면서 흥미와 호기심을
-			유발
-			할 수 있도록 합니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
+			유발 할 수 있도록 합니다.<br><br>
 			<div class="flex-container">
 				<img id="resizable-image" src="./01.소개/Image5.jpg" alt="이미지가 없습니다."
 					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
 				<img id="resizable-image" src="./01.소개/Image6.jpg" alt="이미지가 없습니다."
 					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
+			</div><br><br>
+
 			4. “말랑말랑 코딩 여행 / 메이커”는 체계적인 챕터와 스테이지로 구성된 튜토리얼 방식을 통해 제공됩니다. 이러한 구조 덕분에 학생들은 어려운 코딩 개념을 단계별로 쉽게 이해하고 습득할 수
-			있습니다. 각 단계는 점진적으로 난이도가 증가하여, 학생들이 자연스럽게 논리적 사고와 코딩 실력을 향상시키고 자신감을 키울 수 있도록 돕습니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
+			있습니다. 각 단계는 점진적으로 난이도가 증가하여, 학생들이 자연스럽게 논리적 사고와 코딩 실력을 향상시키고 자신감을 키울 수 있도록 돕습니다.<br><br>
 			<div class="flex-container">
 				<img id="resizable-image" src="./01.소개/Image7.png" alt="이미지가 없습니다."
 					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
 			</div>
 		</h3>
+
 		<h2 id="installation">설치</h2>
 		<h3>설치 단계</h3>
+
 		<h2 id="usage">사용법</h2>
 		<h3>코드 리뷰</h3>
-		<pre><code>
-Hello, World!
-101100011101010010
-for(int i=0;i<10;i++)
-{
-	Debug.Log("으아아아아!");
-}
 
-</code></pre>
 		<h2 id="contributing">기여</h2>
 		<h3>기여 가이드라인</h3>
+
 		<h2 id="license">라이센스</h2>
 		<h3>라이센스 가이드라인</h3>
+
 		<br><br><br>
-		<!--===========================================================================================================================================================================================================-->
-
-		<h1>Test2🗺️</h1>
-		<h2 id="tt1">소개</h2>
-		<h3 id="project-purpose">
-			1. MIT 공대에서 제공되는 코딩 프로그램 ‘스크래치’에 프로보 로봇을 구동 할 수 있는 블럭 기능을 추가하여 화면 속 캐릭터는 물론, 학생이 직접 짠 프로그램이 로봇을 어떻게 동작하게 하는지
-			직접
-			보면서(피지컬 컴퓨팅)쉽게 코딩할 수 있습니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<img src="./01.소개/Image1.jpg" alt="이미지가 없습니다." style="max-width: 45%; max-height: 45%;">
-				<img src="./01.소개/Image2.jpg" alt="이미지가 없습니다." style="max-width: 45%; max-height: 45%;">
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			2. 아이들이 좋아하는 만화책을 읽어 내려가듯이 친근하고 흥미로운 스토리텔링 방식으로 구성된 교재는 캐릭터들과 함께 보물을 찾아 떠나는 이야기로 시작되어 아이들이 직접 내용을 진행하도록 유도하고
-			있으며 수업 사이사이 피지컬 컴퓨팅 로봇 조립, 코딩 게임으로 아이들의 흥미를 지속적으로 이끌어냅니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<img src="./01.소개/Image3.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
-				<img src="./01.소개/Image4.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			3. 디지털 정보를 입력 받는 다양한 장치와 현실로 결과를 보여주는 피지컬 컴퓨팅을 접목하여 딱딱하고 어렵게 느껴질 수 있는 코딩 교육을 직접 좋아하는 로봇을 만들고 제어하면서 흥미와 호기심을
-			유발
-			할 수 있도록 합니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<img src="./01.소개/Image5.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
-				<img src="./01.소개/Image6.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			4. “말랑말랑 코딩 여행 / 메이커”는 체계적인 챕터와 스테이지로 구성된 튜토리얼 방식을 통해 제공됩니다. 이러한 구조 덕분에 학생들은 어려운 코딩 개념을 단계별로 쉽게 이해하고 습득할 수
-			있습니다. 각 단계는 점진적으로 난이도가 증가하여, 학생들이 자연스럽게 논리적 사고와 코딩 실력을 향상시키고 자신감을 키울 수 있도록 돕습니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<img src="./01.소개/Image7.png" alt="이미지가 없습니다." style="max-width: 90%; max-height: 90%; margin: auto;">
-			</div>
-		</h3>
-		<h2 id="tt2">설치</h2>
-		<h3>설치 단계</h3>
-		<h2 id="tt3">사용법</h2>
-		<h3>코드 리뷰</h3>
-		<pre><code>
-Hello, World!
-101100011101010010
-for(int i=0;i<10;i++)
-{
-	Debug.Log("으아아아아!");
-}
-
-</code></pre>
-		<h2 id="tt4">기여</h2>
-		<h3>기여 가이드라인</h3>
-		<h2 id="tt5">라이센스</h2>
-		<h3>라이센스 가이드라인</h3>
-		<br><br><br>
-		<!--===========================================================================================================================================================================================================-->
-
-		<h1>Test3🗺️</h1>
-		<h2 id="tt6">소개</h2>
-		<h3 id="project-purpose">
-			1. MIT 공대에서 제공되는 코딩 프로그램 ‘스크래치’에 프로보 로봇을 구동 할 수 있는 블럭 기능을 추가하여 화면 속 캐릭터는 물론, 학생이 직접 짠 프로그램이 로봇을 어떻게 동작하게 하는지
-			직접
-			보면서(피지컬 컴퓨팅)쉽게 코딩할 수 있습니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<img src="./01.소개/Image1.jpg" alt="이미지가 없습니다." style="max-width: 45%; max-height: 45%;">
-				<img src="./01.소개/Image2.jpg" alt="이미지가 없습니다." style="max-width: 45%; max-height: 45%;">
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			2. 아이들이 좋아하는 만화책을 읽어 내려가듯이 친근하고 흥미로운 스토리텔링 방식으로 구성된 교재는 캐릭터들과 함께 보물을 찾아 떠나는 이야기로 시작되어 아이들이 직접 내용을 진행하도록 유도하고
-			있으며 수업 사이사이 피지컬 컴퓨팅 로봇 조립, 코딩 게임으로 아이들의 흥미를 지속적으로 이끌어냅니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<img src="./01.소개/Image3.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
-				<img src="./01.소개/Image4.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			3. 디지털 정보를 입력 받는 다양한 장치와 현실로 결과를 보여주는 피지컬 컴퓨팅을 접목하여 딱딱하고 어렵게 느껴질 수 있는 코딩 교육을 직접 좋아하는 로봇을 만들고 제어하면서 흥미와 호기심을
-			유발
-			할 수 있도록 합니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<img src="./01.소개/Image5.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
-				<img src="./01.소개/Image6.jpg" alt="이미지가 없습니다." style="max-width: 100%; max-height: 100%;">
-			</div>
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			4. “말랑말랑 코딩 여행 / 메이커”는 체계적인 챕터와 스테이지로 구성된 튜토리얼 방식을 통해 제공됩니다. 이러한 구조 덕분에 학생들은 어려운 코딩 개념을 단계별로 쉽게 이해하고 습득할 수
-			있습니다. 각 단계는 점진적으로 난이도가 증가하여, 학생들이 자연스럽게 논리적 사고와 코딩 실력을 향상시키고 자신감을 키울 수 있도록 돕습니다.
-			<br> <!-- 줄띄우기 -->
-			<br> <!-- 줄띄우기 -->
-			<div class="flex-container">
-				<img src="./01.소개/Image7.png" alt="이미지가 없습니다." style="max-width: 90%; max-height: 90%; margin: auto;">
-			</div>
-		</h3>
-		<h2 id="tt7">설치</h2>
-		<h3>설치 단계</h3>
-		<h2 id="tt8">사용법</h2>
-		<h3>코드 리뷰</h3>
-		<pre><code>
-Hello, World!
-101100011101010010
-for(int i=0;i<10;i++)
-{
-	Debug.Log("으아아아아!");
-}
-
-</code></pre>
-		<h2 id="tt9">기여</h2>
-		<h3>기여 가이드라인</h3>
-		<h2 id="tt10">라이센스</h2>
-		<h3>라이센스 가이드라인</h3>
-		<br><br><br>
-		<!--===========================================================================================================================================================================================================-->
+		<!--===================================================================================================================================================================-->
 	</section>
 </body>
 
@@ -474,40 +338,6 @@ for(int i=0;i<10;i++)
 			}
 		}
 	}
-	// //사이즈변경에 사용할 것들
-	// let sizeInfo = {
-	// 	x: 0,
-	// 	y: 0,
-	// 	width: 0,
-	// 	height: 0,
-	// }
-	// //사이즈가 변경될 메모
-	// const memoObj = document.querySelector(".Image");
-	// //메모의 스타일
-	// const styles = window.getComputedStyle(memoObj);
-
-	// function mouseDownHandler(e) {
-	// 	sizeInfo.x = e.clientX;
-	// 	sizeInfo.y = e.clientY;
-	// 	sizeInfo.width = parseInt(styles.width);
-	// 	sizeInfo.height = parseInt(styles.height);
-	// 	document.addEventListener('mousemove', mouseMoveHandler);
-	// 	document.addEventListener('mouseup', mouseUpHandler);
-	// }
-
-	// function mouseMoveHandler(e) {
-	// 	let dx = e.clientX - sizeInfo.x;
-	// 	let dy = e.clientY - sizeInfo.y;
-	// 	memoObj.style.width = `${sizeInfo.width + dx}px`;
-	// 	memoObj.style.height = `${sizeInfo.height + dy}px`;
-	// }
-
-	// function mouseUpHandler(e) {
-	// 	document.removeEventListener('mousemove', mouseMoveHandler);
-	// 	document.removeEventListener('mouseup', mouseUpHandler);
-	// }
-	// document.querySelector(".sizeBtn").addEventListener("mousedown", mouseDownHandler);
-
 
 	document.addEventListener("DOMContentLoaded", function () {
 		const links = document.querySelectorAll('nav a[href^="#"]');
@@ -581,6 +411,14 @@ for(int i=0;i<10;i++)
 			}
 		});
 	});
+	// 스크롤 이벤트 핸들러
+	window.addEventListener('scroll', function() {
+            var nav = document.getElementById('nav');
+            var scrollTop = window.scrollY; // 현재 스크롤 위치
+            
+            // 스크롤 위치에 따라 요소 위치 업데이트
+            nav.style.top = scrollTop + 'px';
+        });
 </script>
 
 </html>

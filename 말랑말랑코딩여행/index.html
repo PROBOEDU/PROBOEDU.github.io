@@ -62,7 +62,7 @@
 			left: 0;
 			right: 0;
 			width: 12.0vmax;
-			height: 1920px; 
+			height: 1vamx;
 			font-size: 1.2vmax;
 			/* min-width: 100px;
 			max-width: 180px; */
@@ -71,7 +71,7 @@
 
 		/* 전체 섹션 */
 		section {
-			padding-left: 220px;
+			padding-left: 2.5px;
 			flex-grow: 1;
 			font-family: 'font-name';
 			/* background-image: url('Test2.png');
@@ -437,22 +437,41 @@ for(int i=0;i<10;i++)
 
 	resizableImages.forEach(image => {
 		image.addEventListener('mousedown', initResize, false);
+		image.addEventListener('touchstart', initResize, false); // 모바일 터치 시작 이벤트 추가
 	});
 
 	function initResize(e) {
 		e.preventDefault();
 		const currentImage = e.target;
-		window.addEventListener('mousemove', resize);
-		window.addEventListener('mouseup', stopResize);
+
+		// 마우스 이벤트와 터치 이벤트 구분
+		if (e.type === 'mousedown') {
+			window.addEventListener('mousemove', resize);
+			window.addEventListener('mouseup', stopResize);
+		} else if (e.type === 'touchstart') {
+			window.addEventListener('touchmove', resize);
+			window.addEventListener('touchend', stopResize);
+		}
 
 		function resize(e) {
+			// 터치 이벤트일 경우 터치 위치 가져오기
+			if (e.type === 'touchmove') {
+				e = e.touches[0];
+			}
+
 			currentImage.style.width = (e.clientX - currentImage.getBoundingClientRect().left) + 'px';
 			currentImage.style.height = 'auto'; // 높이를 자동으로 조정하거나 필요에 따라 고정할 수 있습니다.
 		}
 
-		function stopResize() {
-			window.removeEventListener('mousemove', resize);
-			window.removeEventListener('mouseup', stopResize);
+		function stopResize(e) {
+			// 터치 이벤트일 경우
+			if (e.type === 'touchend') {
+				window.removeEventListener('touchmove', resize);
+				window.removeEventListener('touchend', stopResize);
+			} else {
+				window.removeEventListener('mousemove', resize);
+				window.removeEventListener('mouseup', stopResize);
+			}
 		}
 	}
 	// //사이즈변경에 사용할 것들

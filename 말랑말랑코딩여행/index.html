@@ -56,9 +56,9 @@
 		/* 왼쪽 네비게이션 영역 */
 		nav {
 			/* Fixed width for navigation */
-			padding: 15px;
+			padding-top: 5px;
 			padding-right: 20px;
-			border-right: 2px solid #f1f1f1;
+			border-right: 3px solid #f1f1f1;
 			/* background-image: url('BG1.png'); */
 			background-size: cover;
 			background-color: #fbfbfb;
@@ -96,9 +96,7 @@
 		}
 
 		/* 네비게이션 상위 버튼 */
-		a[href="#MalangBanner"],
-		a[href="#Test2Banner"],
-		a[href="#Test3Banner"] {
+		a[href="#Banner"] {
 			color: #000000;
 			font-weight: bold;
 			text-align: left;
@@ -130,6 +128,7 @@
 			margin-right: 60px;
 			font-weight: lighter;
 			color: #000000;
+			max-width: 1050px;
 			font-size: 1.2vmax;
 		}
 
@@ -187,11 +186,11 @@
 
 		/* 이미지 컨테이너 */
 		.flex-container {
-
 			justify-content: space-between;
 			position: relative;
 			color: #04ff00;
-			max-width: 1100px;
+			max-width: 900px;
+			margin-left: 30px;
 			/* 최대 너비 설정 */
 			/* 전체 화면 높이에 맞추기 위한 예시 값 */
 		}
@@ -203,7 +202,7 @@
 <body>
 	<nav id="nav">
 		<!-------------------------------------제품명--------------------------------------------->
-		<h4>제품 카테고리</h4>
+		<h4>말랑말랑 코딩여행</h4>
 		<h4>E-메뉴얼</h4>
 		<!-------------------------------------제품명--------------------------------------------->
 
@@ -211,16 +210,13 @@
 		<div class="section-divider"></div><br>
 
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
-		<a href="#MalangBanner">■ 말랑말랑 코딩여행</a>
+		<a href="#Banner">■ 말랑말랑 코딩여행</a>
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
-		
+
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="MalangBannerSubMenu" style="display:block; padding-left: 30px;margin: 5px;">
-			<li><a href="#overview">소개</a></li>
-			<li><a href="#installation">설치</a></li>
-			<li><a href="#usage">사용법</a></li>
-			<li><a href="#contributing">기여</a></li>
-			<li><a href="#license">라이센스</a></li>
+		<ul id="BannerSubMenu" style="display:block; padding-left: 30px;margin: 5px;">
+			<li><a href="#A1">소개</a></li>
+			<li><a href="#A2">설치</a></li>
 		</ul><br>
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
 
@@ -229,69 +225,93 @@
 
 	<section>
 		<!------------------------------------대제목---------------------------------------------->
-		<h1>말랑말랑 코딩여행🗺️</h1>
+		<h1>말랑말랑 코딩여행이란?</h1>
 		<!------------------------------------대제목---------------------------------------------->
 
-
 		<!------------------------------------중제목---------------------------------------------->
-		<h2 id="overview">소개</h2>
-		<!------------------------------------중제목---------------------------------------------->
-
-
-		<!-------------------------------------내용----------------------------------------------->
+		<h2 id="A1">소개</h2>
 		<h3 id="project-purpose">
-			1. MIT 공대에서 제공되는 코딩 프로그램 ‘스크래치’에 프로보 로봇을 구동 할 수 있는 블럭 기능을 추가하여 화면 속 캐릭터는 물론,
-			학생이 직접 짠 프로그램이 로봇을 어떻게 동작하게 하는지 직접 보면서(피지컬 컴퓨팅)쉽게 코딩할 수 있습니다.<br><br>
-
-			<!-------------------------------------------------------------------------------------이미지-------------------------------------------------------------------------------------->
+			1. MIT의 ‘스크래치’ 프로그램에 프로보 로봇을 제어할 수 있는 블록 기능을 추가하여, 학생들이 화면 속 캐릭터뿐만 아니라 자신이 작성한 프로그램으로 실제 로봇의 동작을 시각적으로 확인하며
+			쉽게 코딩을 배울 수 있습니다.<br><br>
 			<div class="flex-container">
 				<img id="resizable-image" src="./01.소개/Image1.jpg" alt="이미지가 없습니다."
-					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
+					style="width: 48%; height: 48%; max-width: 105%;max-height: 105%; min-width: 5%;min-height: 5%;">
 				<img id="resizable-image" src="./01.소개/Image2.jpg" alt="이미지가 없습니다."
-					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
-			</div><br><br>
-			<!-------------------------------------------------------------------------------------이미지-------------------------------------------------------------------------------------->
-
-			<!-------------------------------------내용----------------------------------------------->
-			2. 아이들이 좋아하는 만화책을 읽어 내려가듯이 친근하고 흥미로운 스토리텔링 방식으로 구성된 교재는 캐릭터들과 함께 보물을 찾아 떠나는 이야기로 시작되어 아이들이 직접 내용을 진행하도록 유도하고
-			있으며 수업 사이사이 피지컬 컴퓨팅 로봇 조립, 코딩 게임으로 아이들의 흥미를 지속적으로 이끌어냅니다.<br><br>
-
-			<div class="flex-container" style="justify-content:center">
+					style="width: 48%; height: 48%; max-width: 105%;max-height: 105%; min-width: 5%;min-height: 5%;">
+			</div><br>
+			</div>
+		</h3>
+		<h3 id="project-purpose">
+			2. 아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어, 아이들이 직접 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
+			유지합니다.<br><br>
+			<div class="flex-container">
 				<img id="resizable-image" src="./01.소개/Image3.jpg" alt="이미지가 없습니다."
-					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
-			</div><br><br>
-
+					style="width: 48%; height: 48%; max-width: 105%;max-height: 105%; min-width: 5%;min-height: 5%;">
+				<img id="resizable-image" src="./01.소개/Image4.jpg" alt="이미지가 없습니다."
+					style="width: 48%; height: 48%; max-width: 105%;max-height: 105%; min-width: 5%;min-height: 5%;">
+			</div><br>
+			</div>
+		</h3>
+		<h3 id="project-purpose">
 			3. 디지털 정보를 입력 받는 다양한 장치와 현실로 결과를 보여주는 피지컬 컴퓨팅을 접목하여 딱딱하고 어렵게 느껴질 수 있는 코딩 교육을 직접 좋아하는 로봇을 만들고 제어하면서 흥미와 호기심을
 			유발 할 수 있도록 합니다.<br><br>
 			<div class="flex-container">
 				<img id="resizable-image" src="./01.소개/Image5.jpg" alt="이미지가 없습니다."
-					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
+					style="width: 48%; height: 48%; max-width: 105%;max-height: 105%; min-width: 5%;min-height: 5%;">
 				<img id="resizable-image" src="./01.소개/Image6.jpg" alt="이미지가 없습니다."
-					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
-			</div><br><br>
-
-			4. “말랑말랑 코딩 여행 / 메이커”는 체계적인 챕터와 스테이지로 구성된 튜토리얼 방식을 통해 제공됩니다. 이러한 구조 덕분에 학생들은 어려운 코딩 개념을 단계별로 쉽게 이해하고 습득할 수
-			있습니다. 각 단계는 점진적으로 난이도가 증가하여, 학생들이 자연스럽게 논리적 사고와 코딩 실력을 향상시키고 자신감을 키울 수 있도록 돕습니다.<br><br>
-			<div class="flex-container">
-				<img id="resizable-image" src="./01.소개/Image7.png" alt="이미지가 없습니다."
-					style="width: 40%; height: 40%; max-width: 100%;max-height: 100%; min-width: 10%;min-height: 10%;">
+					style="width: 48%; height: 48%; max-width: 105%;max-height: 105%; min-width: 5%;min-height: 5%;">
+			</div><br>
 			</div>
 		</h3>
 
-		<h2 id="installation">설치</h2>
-		<h3>설치 단계</h3>
+		<!------------------------------------동영상 1개 일때 margin-left: 300px---------------------------------------------->
+		<h2 id="A2">설치</h2>
+		<a href="https://www.probo.kr/shop/board/list.php?id=download"
+			style="margin-left: 40px;font-family: font-name;font-size: 20px;color:#8a50b6">
+			<스크래치 다운로드 홈페이지로 이동>
+		</a>
+		<h3 id="project-purpose">
+			1. 설치 파일 다운로드<br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image1.png" alt="이미지가 없습니다."
+					style="width: 45%; height: 45%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+				<img id="resizable-image" src="./02.설치/Image2.png" alt="이미지가 없습니다."
+					style="width: 45%; height: 45%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div>
+		</h3>
+		<h3 id="project-purpose">
+			2. 다운받은 프로그램 실행!<br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image3.png" alt="이미지가 없습니다."
+					style="width: 25%; height: 25%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div>
+		</h3>
+		<h3 id="project-purpose">
+			4. 프로그램 설치!<br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image4.png" alt="이미지가 없습니다."
+					style="width: 30%; height: 30%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+				<img id="resizable-image" src="./02.설치/Image5.png" alt="이미지가 없습니다."
+					style="width: 30%; height: 30%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+				<img id="resizable-image" src="./02.설치/Image6.png" alt="이미지가 없습니다."
+					style="width: 30%; height: 30%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div>
+		</h3>
+		
+		<h3 id="project-purpose">
+			5. 스크래치 실행<br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image8.png" alt="이미지가 없습니다."
+					style="width: 50%; height: 50%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div>
+		</h3>
+		
 
-		<h2 id="usage">사용법</h2>
-		<h3>코드 리뷰</h3>
 
-		<h2 id="contributing">기여</h2>
-		<h3>기여 가이드라인</h3>
 
-		<h2 id="license">라이센스</h2>
-		<h3>라이센스 가이드라인</h3>
-
-		<br><br><br>
 		<!--===================================================================================================================================================================-->
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</section>
 </body>
 
@@ -412,13 +432,13 @@
 		});
 	});
 	// 스크롤 이벤트 핸들러
-	window.addEventListener('scroll', function() {
-            var nav = document.getElementById('nav');
-            var scrollTop = window.scrollY; // 현재 스크롤 위치
-            
-            // 스크롤 위치에 따라 요소 위치 업데이트
-            nav.style.top = scrollTop + 'px';
-        });
+	window.addEventListener('scroll', function () {
+		var nav = document.getElementById('nav');
+		var scrollTop = window.scrollY; // 현재 스크롤 위치
+
+		// 스크롤 위치에 따라 요소 위치 업데이트
+		nav.style.top = scrollTop + 'px';
+	});
 </script>
 
 </html>

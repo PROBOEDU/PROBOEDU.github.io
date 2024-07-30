@@ -1,38 +1,13 @@
-# 프로젝트 이름
+# Alux E-Manual Project
 
-여기에 프로젝트에 대한 간략한 설명을 작성하세요.
+에이럭스 상품군의 E-메뉴얼 종합 리포지토리
 
-## 목차
-- [개요](#개요)
-- [설치](#설치)
-- [사용법](#사용법)
-- [기여](#기여)
-- [라이센스](#라이센스)
+## [말랑말랑 코딩여행 / 메이커](https://proboedu.github.io/말랑말랑코딩여행/index.html)
 
-## 개요
-프로젝트의 목적, 주요 기능 및 배경에 대해 설명합니다.
+## [커넥트](https://proboedu.github.io/커넥트/index.html)
 
-## 설치
-프로젝트를 설치하는 방법에 대해 설명합니다.
+## [테크닉](https://proboedu.github.io/테크닉/index.html)
 
-### 요구 사항
-프로젝트를 실행하기 위해 필요한 필수 요구 사항을 나열합니다.
+## [비누](https://proboedu.github.io/비누/index.html)
 
-### 설치 단계
-1. 저장소를 클론합니다.
-    ```bash
-    git clone https://github.com/yourusername/yourproject.git
-    ```
-2. 필요한 패키지를 설치합니다.
-    ```bash
-    npm install
-    ```
-
-## 사용법
-프로젝트를 사용하는 방법에 대해 설명합니다.
-
-### 기본 사용법
-기본적인 사용법을 설명하는 코드 예제를 제공합니다.
-```javascript
-const example = require('yourproject');
-example.doSomething();
+## [네모](https://proboedu.github.io/네모/index.html)

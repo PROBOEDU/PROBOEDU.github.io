@@ -2,8 +2,8 @@
 
 에이럭스 상품군의 E-메뉴얼 종합 리포지토리
 
-## 말랑말랑_코딩여행/메이커
-https://proboedu.github.io/말랑말랑코딩여행/index.html
+## [말랑말랑_코딩여행/메이커](https://proboedu.github.io/말랑말랑코딩여행/index.html)
+
 
 ## 커넥트
 https://proboedu.github.io/커넥트/index.html

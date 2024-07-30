@@ -57,7 +57,8 @@
 		nav {
 			/* Fixed width for navigation */
 			padding-top: 5px;
-			padding-right: 20px;
+			padding: 5px;
+			padding-right: 30px;
 			border-right: 3px solid #f1f1f1;
 			/* background-image: url('BG1.png'); */
 			background-size: cover;
@@ -96,7 +97,8 @@
 		}
 
 		/* 네비게이션 상위 버튼 */
-		a[href="#Banner"] {
+		a[href="#Banner1"],
+		[href="#Banner2"] {
 			color: #000000;
 			font-weight: bold;
 			text-align: left;
@@ -115,8 +117,8 @@
 		h2 {
 
 			margin-left: 30px;
-			border-bottom: 4px solid #000000;
-			width: 10vmax;
+			border-bottom: 5px solid #000000;
+			width: 70vmax;
 			font-style: italic;
 			font-weight: bold;
 			font-size: 1.5vmax;
@@ -140,6 +142,16 @@
 			text-decoration: none;
 			white-space: nowrap;
 			font-size: 1.6vmax;
+		}
+
+		iframe {
+
+			width: 48%;
+			height: 48%;
+		}
+
+		.ratio-16x9 {
+			aspect-ratio: 16/9;
 		}
 
 		/* 네비게이션 제목 밑에 라인 */
@@ -210,22 +222,40 @@
 		<div class="section-divider"></div><br>
 
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
-		<a href="#Banner">■ 말랑말랑 코딩여행</a>
+		<a href="#Banner1">■ 말랑말랑 코딩여행</a>
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
 
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="BannerSubMenu" style="display:block; padding-left: 30px;margin: 5px;">
+		<ul id="Banner1SubMenu" style="display:block; padding-left: 30px;margin: 5px;">
 			<li><a href="#A1">소개</a></li>
-			<li><a href="#A2">설치</a></li>
+			<li><a href="#A2">프로보 스크래치 설치</a></li>
+			<li><a href="#A3">USB 다운로더 연결</a></li>
 		</ul><br>
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
 
+		<!----------------------------------제품 카테고리 상위----------------------------------------->
+		<a href="#Banner2">■ 하드웨어</a>
+		<!----------------------------------제품 카테고리 상위----------------------------------------->
+
+		<!----------------------------------제품 카테고리 하위----------------------------------------->
+		<ul id="Banner2SubMenu" style="display:block; padding-left: 30px;margin: 5px;">
+			<li><a href="#A5">CPU</a></li>
+			<li><a href="#A6">배터리</a></li>
+			<li><a href="#A7">센서</a></li>
+			<li><a href="#A8">프레임</a></li>
+			<li><a href="#A9">핀</a></li>
+			<li><a href="#A10">케이블</a></li>
+			<li><a href="#A11">폼보드</a></li>
+			<li><a href="#A12">블루투스</a></li>
+			<li><a href="#A13">기타</a></li>
+		</ul><br>
+		<!----------------------------------제품 카테고리 하위----------------------------------------->
 
 	</nav>
 
 	<section>
 		<!------------------------------------대제목---------------------------------------------->
-		<h1>말랑말랑 코딩여행이란?</h1>
+		<h1>말랑말랑 코딩여행</h1>
 		<!------------------------------------대제목---------------------------------------------->
 
 		<!------------------------------------중제목---------------------------------------------->
@@ -263,15 +293,32 @@
 			</div><br>
 			</div>
 		</h3>
+		<h3 id="project-purpose">
+			4. 관련 영상<br><br>
+			<div class="flex-container">
+
+				<div class="ratio-16x9">
+					<iframe src="https://www.youtube.com/embed/CfTJTAhiJp8?si=AulQzaOu_-xiL-Zc"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+					<iframe src="https://www.youtube.com/embed/whoFNynPNJ8?si=q3o_152fbXCUGz6x"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+		</h3>
 
 		<!------------------------------------동영상 1개 일때 margin-left: 300px---------------------------------------------->
-		<h2 id="A2">설치</h2>
+		<h2 id="A2">프로보 스크래치 설치</h2>
 		<a href="https://www.probo.kr/shop/board/list.php?id=download"
 			style="margin-left: 40px;font-family: font-name;font-size: 20px;color:#8a50b6">
 			<스크래치 다운로드 홈페이지로 이동>
 		</a>
 		<h3 id="project-purpose">
-			1. 설치 파일 다운로드<br><br>
+			1. 프로보 홈페이지에 접속항여 커뮤니티의 자료실 탭을 누릅니다.<br><br>
 			<div class="flex-container">
 				<img id="resizable-image" src="./02.설치/Image1.png" alt="이미지가 없습니다."
 					style="width: 45%; height: 45%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
@@ -280,14 +327,14 @@
 			</div>
 		</h3>
 		<h3 id="project-purpose">
-			2. 다운받은 프로그램 실행!<br><br>
+			2. 첨부 파일을 클릭하여 ProboScratchSetup.exe 파일을 받습니다.<br><br>
 			<div class="flex-container">
 				<img id="resizable-image" src="./02.설치/Image3.png" alt="이미지가 없습니다."
 					style="width: 25%; height: 25%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
 			</div>
 		</h3>
 		<h3 id="project-purpose">
-			4. 프로그램 설치!<br><br>
+			3. ProboScratchSetup.exe 파일을 실행 후 다음 순서대로 프로보 스크래치를 설치해 주세요.<br><br>
 			<div class="flex-container">
 				<img id="resizable-image" src="./02.설치/Image4.png" alt="이미지가 없습니다."
 					style="width: 30%; height: 30%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
@@ -297,26 +344,115 @@
 					style="width: 30%; height: 30%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
 			</div>
 		</h3>
-		
+
 		<h3 id="project-purpose">
-			5. 스크래치 실행<br><br>
+			4. 설치 완료 후 자동으로 프로그램이 실행됩니다.<br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image8.png" alt="이미지가 없습니다."
+					style="width: 50%; height: 50%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div>
+		</h3><br><br><br><br><br><br><br><br>
+		<h2 id="A3">USB 다운로더 연결</h2>
+		<h3 id="project-purpose">
+			1. CPU블럭과 USB다운로드 케이블을 연결 후 컴퓨터에 USB를 꽂아 주세요.<br><br>
 			<div class="flex-container">
 				<img id="resizable-image" src="./02.설치/Image8.png" alt="이미지가 없습니다."
 					style="width: 50%; height: 50%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
 			</div>
 		</h3>
+		<h3 id="project-purpose">
+			2_1. USB드라이버에서 USB 드라이버 설치 프로그램 실행을 클릭해주세요<br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image8.png" alt="이미지가 없습니다."
+					style="width: 50%; height: 50%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div><br>
+			2_2. 하얀색, 검은색 USB중 맞는 USB를 선택 하여 설치 해 주세요.<br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image8.png" alt="이미지가 없습니다."
+					style="width: 50%; height: 50%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div>
+		</h3>
+		<h3 id="project-purpose">
+			3. 설치 완료 후 잠시 후에 CPU블럭에서 삐~이익~ 소리가 나며 자동 연결됩니다.<br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image8.png" alt="이미지가 없습니다."
+					style="width: 50%; height: 50%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div>
+		</h3>
+		<h3 id="project-purpose">
+			4. 모드에서 코딩여행 레벨을 선택해 주세요. 코딩여행 모드 선택시 코딩여행 전용 스토리와 블럭이 나타납니다. <br><br>
+			<div class="flex-container">
+				<img id="resizable-image" src="./02.설치/Image8.png" alt="이미지가 없습니다."
+					style="width: 50%; height: 50%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+			</div>
+		</h3><br><br><br><br><br><br><br><br>
 		
-
-
-
+		</h3><br><br><br><br><br><br><br><br>
 		<!--===================================================================================================================================================================-->
-
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<h2 id="A5">CPU</h2>
+		<h2 id="A5">배터리</h2>
+		<h2 id="A5">센서</h2>
+		<h2 id="A5">프레임</h2>
+		<h2 id="A5">핀</h2>
+		<h2 id="A5">케이블</h2>
+		<h2 id="A5">폼보드</h2>
+		<h2 id="A5">블루투스</h2>
+		<h2 id="A5">기타</h2>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</section>
 </body>
 
 <!--자바스크립트-->
 <script>
+	//크기조절(놓으면 원위치)
+	// const resizableImages = document.querySelectorAll('#resizable-image');
+
+	// resizableImages.forEach(image => {
+	// 	image.addEventListener('mousedown', initResize, false);
+	// 	image.addEventListener('touchstart', initResize, false); // 모바일 터치 시작 이벤트 추가
+	// });
+
+	// function initResize(e) {
+	// 	e.preventDefault();
+	// 	const currentImage = e.target;
+	// 	const initialWidth = currentImage.offsetWidth;
+	// 	const initialHeight = currentImage.offsetHeight;
+
+	// 	// 마우스 이벤트와 터치 이벤트 구분
+	// 	if (e.type === 'mousedown') {
+	// 		window.addEventListener('mousemove', resize);
+	// 		window.addEventListener('mouseup', stopResize);
+	// 	} else if (e.type === 'touchstart') {
+	// 		window.addEventListener('touchmove', resize);
+	// 		window.addEventListener('touchend', stopResize);
+	// 	}
+
+	// 	function resize(e) {
+	// 		// 터치 이벤트일 경우 터치 위치 가져오기
+	// 		if (e.type === 'touchmove') {
+	// 			e = e.touches[0];
+	// 		}
+
+	// 		currentImage.style.width = (e.clientX - currentImage.getBoundingClientRect().left) + 'px';
+	// 		currentImage.style.height = 'auto'; // 높이를 자동으로 조정하거나 필요에 따라 고정할 수 있습니다.
+	// 	}
+
+	// 	function stopResize(e) {
+	// 		// 터치 이벤트일 경우
+	// 		if (e.type === 'touchend') {
+	// 			window.removeEventListener('touchmove', resize);
+	// 			window.removeEventListener('touchend', stopResize);
+	// 		} else {
+	// 			window.removeEventListener('mousemove', resize);
+	// 			window.removeEventListener('mouseup', stopResize);
+	// 		}
+
+	// 		// 처음 크기로 다시 설정
+	// 		currentImage.style.width = initialWidth + 'px';
+	// 		currentImage.style.height = initialHeight + 'px';
+	// 	}
+	// }
+	//크기조절
 	const resizableImages = document.querySelectorAll('#resizable-image');
 
 	resizableImages.forEach(image => {
@@ -419,7 +555,9 @@
 		window.addEventListener("scroll", activateSectionByScroll);
 
 		// 각 서브메뉴에 대해 토글 기능 추가
-		subMenus.forEach(subMenu => {
+		const subMenuss = document.querySelectorAll('ul[id^="Banner"][id$="SubMenu"]');
+
+		subMenuss.forEach(subMenu => {
 			const linkId = subMenu.id.replace('SubMenu', '');
 			const link = document.querySelector(`a[href="#${linkId}"]`);
 

@@ -57,18 +57,16 @@
 		nav {
 			/* Fixed width for navigation */
 			padding-top: 5px;
-			padding: 5px;
-			padding-right: 30px;
+			padding-left: 10px;
+			padding-right: 60px;
 			border-right: 3px solid #f1f1f1;
 			/* background-image: url('BG1.jpg'); */
 			background-size: cover;
 			background-color: #fbfbfb;
 			position: absolute;
-			left: 0;
-			right: 0;
-			width: 12.0vmax;
+			width: 12vmax;
 			height: 100%;
-			font-size: 1.2vmax;
+			font-size: 1.5vmax;
 			/* min-width: 100px;
 			max-width: 180px; */
 			/* Ensure padding is included in the width */
@@ -83,13 +81,15 @@
 			background-size: contain; */
 			box-sizing: border-box;
 			padding: 20px;
+			padding-left: 50px;
 		}
 
 		/* 네비게이션 하위 버튼 */
 		a {
 			text-decoration: none;
 			color: #707070;
-			font-size: 1.0vmax;
+			font-size: 1.5vmax;
+			padding-top: 0px;
 			font-weight: lighter;
 			font-family: 'font-name2';
 			white-space: nowrap;
@@ -101,8 +101,8 @@
 		[href="#Banner2"] {
 			color: #000000;
 			font-weight: bold;
-			text-align: left;
-			font-size: 1.4vmax;
+			text-align: center;
+			font-size: 1.6vmax;
 			font-family: "font-name";
 		}
 
@@ -136,11 +136,11 @@
 		/* 네비게이션 제목 (말랑말랑 코딩여행 E-메뉴얼) */
 		h4 {
 			text-align: center;
-			margin: 0px;
-			margin-bottom: 8px;
-			text-decoration: none;
-			white-space: nowrap;
-			font-size: 1.6vmax;
+			margin-top: 0px;
+			padding-left: 50px;
+			padding-top: 10px;
+			font-size: 2vmax;
+			margin-bottom: 20px;
 		}
 
 		h5 {
@@ -250,7 +250,6 @@
 <body>
 	<nav id="nav">
 		<!-------------------------------------제품명--------------------------------------------->
-		<h4>말랑말랑 코딩여행</h4>
 		<h4>E-메뉴얼</h4>
 		<!-------------------------------------제품명--------------------------------------------->
 
@@ -262,7 +261,7 @@
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
 
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="Banner1SubMenu" style="display:block; padding-left: 30px;margin: 5px;">
+		<ul id="Banner1SubMenu" style="display:block; padding-left: 25px;margin-top: 6px;">
 			<li><a href="#A1">소개</a></li>
 			<li><a href="#A2">프로보 스크래치 설치</a></li>
 			<li><a href="#A3">USB 다운로더 연결</a></li>
@@ -276,7 +275,7 @@
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
 
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="Banner2SubMenu" style="display:block; padding-left: 30px;margin: 5px;">
+		<ul id="Banner2SubMenu" style="display:block; padding-left: 25px;margin-top: 6px;">
 			<li><a href="#A6">CPU 블럭</a></li>
 			<li><a href="#A7">배터리 블럭</a></li>
 			<li><a href="#A8">입력 센서 블럭</a></li>
@@ -289,8 +288,10 @@
 			<li><a href="#A15">기타</a></li>
 		</ul><br>
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-
 	</nav>
+
+
+
 
 	<section>
 		<!------------------------------------대제목---------------------------------------------->
@@ -425,14 +426,13 @@
 		</h3>
 		<h5 style="text-align: left;">로봇의 머리에 해당하는 부분으로써, 코딩 내용을 기억하고 다른 부품들을 제어하는 역할을 해요.
 			‘코딩여행’의 진행을 위해서는 CPU블럭이 꼭 필요하답니다. 꽂혀있는 배터리점퍼 는 빼지 않아요.</h5>
-		<br><br>
 		<div class="flex-container" style="display: flex;">
 			<img id="resizable-image" src="./02.하드웨어/Image1.jpg" alt="이미지가 없습니다."
-				style="width: 65%; height: 65%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+				style="width: 70%; height: 70%; max-width: 90%;max-height: 90%; min-width: 5%;min-height: 5%;">
 		</div><br>
 		<div class="flex-container" style="display: flex;">
 			<img id="resizable-image" src="./02.하드웨어/Image3.jpg" alt="이미지가 없습니다."
-				style="width: 120%; height: 120%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+				style="width: 90%; height: 90%; max-width: 100%;max-height: 100%; min-width: 80%;min-height: 80%;">
 		</div><br><br><br><br>
 
 		<h2 id="A7">배터리 블럭</h2>
@@ -448,7 +448,8 @@
 		</div>
 		<h6 style="text-align: center;">
 			<font color="#ff0000">※ 배터리가 부족할 때</font> CPU에서“삐비빅! 삐비빅!”경고음이
-			발생합니다. 이 때 CPU의 R(리셋)버튼을 눌러보고, 그래도 계속 경고음이 발생하면 새 배터리로 교체해주세요.
+			발생합니다. <br>
+			이 때 CPU의 R(리셋)버튼을 눌러보고, 그래도 계속 경고음이 발생하면 새 배터리로 교체해주세요.
 		</h6><br><br><br><br>
 
 

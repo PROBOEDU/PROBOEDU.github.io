@@ -55,21 +55,13 @@
 
 		/* 왼쪽 네비게이션 영역 */
 		nav {
-			/* Fixed width for navigation */
-			padding-top: 5px;
-			padding-left: 10px;
-			padding-right: 60px;
 			border-right: 3px solid #f1f1f1;
-			/* background-image: url('BG1.jpg'); */
 			background-size: cover;
 			background-color: #fbfbfb;
 			position: absolute;
-			width: 12vmax;
 			height: 100%;
 			font-size: 1.5vmax;
-			/* min-width: 100px;
-			max-width: 180px; */
-			/* Ensure padding is included in the width */
+			padding-right: 10px;
 		}
 
 		/* 전체 섹션 */
@@ -89,11 +81,12 @@
 			text-decoration: none;
 			color: #707070;
 			font-size: 1.5vmax;
-			padding-top: 0px;
 			font-weight: lighter;
 			font-family: 'font-name2';
 			white-space: nowrap;
 			text-align: left;
+			margin: 0;
+			padding: 0;
 		}
 
 		/* 네비게이션 상위 버튼 */
@@ -104,6 +97,7 @@
 			text-align: center;
 			font-size: 1.6vmax;
 			font-family: "font-name";
+			padding-left: 5px;
 		}
 
 		/* 섹션 대제목 */
@@ -116,8 +110,8 @@
 		/* 섹션 중제목 */
 		h2 {
 			margin-left: 30px;
-			border-bottom: 5px solid #000000;
-			width: 60vmax;
+			border-bottom: 4px solid #000000;
+			width: 62vmax;
 			font-style: italic;
 			font-weight: bold;
 			font-size: 2vmax;
@@ -135,12 +129,10 @@
 
 		/* 네비게이션 제목 (말랑말랑 코딩여행 E-메뉴얼) */
 		h4 {
-			text-align: center;
-			margin-top: 0px;
-			padding-left: 50px;
-			padding-top: 10px;
-			font-size: 2vmax;
+			margin-top: 20px;
 			margin-bottom: 20px;
+			text-align: center;
+			font-size: 2vmax;
 		}
 
 		h5 {
@@ -221,26 +213,26 @@
 			color: red;
 		}
 
+		ul {
+			margin: 0;
+			padding-left: 40px;
+			padding-right: 20px;
+		}
+
 		/* 네비게이션 하위 버튼 */
 		nav a.active {
 			font-weight: bold;
-			/* 예시: 활성 링크 강조 */
 			color: #ff0000;
 			text-align: left;
-			/* 예시: 활성 링크 색상 설정 */
-
 		}
 
 		/* 이미지 컨테이너 */
 		.flex-container {
-			/* justify-content: space-between; */
 			justify-content: center;
 			position: relative;
 			color: #000000;
-			max-width: 900px;
-
-			/* 최대 너비 설정 */
-			/* 전체 화면 높이에 맞추기 위한 예시 값 */
+			padding-left: 40px;
+			width: 60vmax;
 		}
 	</style>
 </head>
@@ -261,7 +253,7 @@
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
 
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="Banner1SubMenu" style="display:block; padding-left: 25px;margin-top: 6px;">
+		<ul id="Banner1SubMenu" style="display:block;">
 			<li><a href="#A1">소개</a></li>
 			<li><a href="#A2">프로보 스크래치 설치</a></li>
 			<li><a href="#A3">USB 다운로더 연결</a></li>
@@ -275,7 +267,7 @@
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
 
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="Banner2SubMenu" style="display:block; padding-left: 25px;margin-top: 6px;">
+		<ul id="Banner2SubMenu" style="display:block;">
 			<li><a href="#A6">CPU 블럭</a></li>
 			<li><a href="#A7">배터리 블럭</a></li>
 			<li><a href="#A8">입력 센서 블럭</a></li>

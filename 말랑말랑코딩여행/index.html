@@ -58,7 +58,7 @@
 			border-right: 3px solid #f1f1f1;
 			background-size: cover;
 			background-color: #fbfbfb;
-			position: absolute;
+			position: fixed;
 			height: 1000%;
 			font-size: 1.5vmax;
 			padding-right: 10px;
@@ -889,10 +889,22 @@
 		<h3 class="toggle-header">
 			Chapter 1. 탐험준비
 			<div class="flex-container1 toggle-content hidden">
-				<h6>사용블럭</h6>
-				<img src="./02.하드웨어/기타/L2.jpg" alt="이미지가 없습니다." class="resizable-image"
-					style="margin-left: 15px;margin-top: 15px;  width: 20%;height: 20%;max-width: 20%;min-width: 20%; ">
-			</div><br>
+				<h6>사용블럭</h6><br>
+				<div class="flex-container1 toggle-content">
+					<img src="./03.레벨1/Start.png" alt="이미지가 없습니다." class="resizable-image"
+						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+					<img src="./03.레벨1/Up.png" alt="이미지가 없습니다." class="resizable-image"
+						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+					<img src="./03.레벨1/Down.png" alt="이미지가 없습니다." class="resizable-image"
+						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+					<img src="./03.레벨1/left.png" alt="이미지가 없습니다." class="resizable-image"
+						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+					<img src="./03.레벨1/Right.png" alt="이미지가 없습니다." class="resizable-image"
+						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+				</div>
+			</div>
+
+
 		</h3>
 		<h3 class="toggle-header">
 			Chapter 2. 탐험도구 모으기
@@ -1126,7 +1138,7 @@
 		var scrollTop = window.scrollY; // 현재 스크롤 위치
 
 		// 스크롤 위치에 따라 요소 위치 업데이트
-		nav.style.top = (scrollTop * 0.99) + 'px';
+		nav.style.top = (scrollTop * -0.009) + 'px';
 	});
 </script>
 

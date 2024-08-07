@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
 	<!------------------------------------- 인터넷 탭에 보이는 글씨 ---------------------------------------------->
 	<title>말랑말랑 코딩여행 E-메뉴얼</title>
@@ -59,21 +59,17 @@
 			background-size: cover;
 			background-color: #fbfbfb;
 			position: fixed;
+			width: 10vamx;
 			height: 1000%;
-			font-size: 1.5vmax;
-			padding-right: 10px;
+			font-size: 1.2vmax;
 		}
 
 		/* 전체 섹션 */
 		section {
-			margin-left: 15.0vmax;
-			flex-grow: 1;
+			margin-left: 22vmax;
 			font-family: 'font-name';
 			/* background-image: url('Test2.jpg');
 			background-size: contain; */
-			box-sizing: border-box;
-			padding: 20px;
-			padding-left: 50px;
 		}
 
 		/* 네비게이션 하위 버튼 */
@@ -85,6 +81,7 @@
 			font-family: 'font-name2';
 			white-space: nowrap;
 			text-align: left;
+			width: 60vamx;
 			margin: 0;
 			padding: 0;
 		}
@@ -98,19 +95,18 @@
 			text-align: center;
 			font-size: 1.6vmax;
 			font-family: "font-name";
-			padding-left: 5px;
+			width: 60vamx;
 		}
 
 		/* 섹션 대제목 */
 		h1 {
-			padding-left: 20px;
+			width: 60vmax;
 			font-weight: bold;
 			font-size: 3vmax;
 		}
 
 		/* 섹션 중제목 */
 		h2 {
-			margin-left: 30px;
 			border-bottom: 4px solid #000000;
 			width: 60vmax;
 			font-style: italic;
@@ -120,11 +116,9 @@
 
 		/* 섹션 본문 내용 */
 		h3 {
-			margin-left: 40px;
-			margin-right: 50px;
 			font-weight: lighter;
 			color: #000000;
-			max-width: 1050px;
+			width: 60vmax;
 			font-size: 1.6vmax;
 		}
 
@@ -137,19 +131,15 @@
 		}
 
 		h5 {
-			margin-left: 40px;
-			margin-right: 50px;
+			width: 60vmax;
 			font-weight: lighter;
 			color: #000000;
-			max-width: 1050px;
 			font-size: 1.3vmax;
 		}
 
 
 		h6 {
-			margin-left: 40px;
-			margin-right: 50px;
-			max-width: 1050px;
+			width: 60vmax;
 			font-weight: lighter;
 			color: #000000;
 			font-size: 1.1vmax;
@@ -233,9 +223,8 @@
 			justify-content: center;
 			position: relative;
 			color: #000000;
-			margin-left: 50px;
-			margin-right: 50px;
-			max-width: 1500px;
+			width: 60vmax;
+			margin-left: 0;
 		}
 	</style>
 </head>
@@ -445,7 +434,7 @@
 		<h5 style="text-align: left;">배터리 블럭은 건전지를 안전하게 보호해주고
 			모터처럼 전류를 많이 사용하는 부품을 동작시킬 때 직접 전원을 공급해주는 전원 공급 장치입니다.</h5>
 		<br><br>
-		<div class="flex-container" style="display: flex;">
+		<div class="flex-container" style="display: flex;justify-content: center;">
 			<img id="resizable-image" src="./02.하드웨어/Image4.jpg" alt="이미지가 없습니다."
 				style="width: 40%; height: 40%; max-width: 40%;max-height: 40%; min-width: 40%;min-height: 40%;">
 		</div>
@@ -719,7 +708,7 @@
 			</div><br>
 		</h3>
 		<h3 class="toggle-header">
-			4. L 1X3 / L 2X2 / L 2X4 / L 6X9 / 엣지블럭 블럭
+			4. L1X3 / L2X2 / L2X4 / L6X9 / 엣지블럭 블럭
 			<div class="flex-container1 toggle-content hidden">
 				<img src="./02.하드웨어/프레임/L1X3블럭.jpg" alt="이미지가 없습니다." class="resizable-image"
 					style="margin-left: 15px;margin-top: 15px;  width: 12%;height: 12%;max-width: 12%;min-width: 12%; ">
@@ -755,9 +744,9 @@
 
 		<h3 class="toggle-header">
 			<h5 style="text-align: left;">말랑말랑 코딩여행에 사용되는 핀 목록</h5>
-			<div class="flex-container" style="display: flex;">
+			<div class="flex-container" style="display: flex;justify-content: center;">
 				<img id="resizable-image" src="./02.하드웨어/핀/핀툴.JPG" alt="이미지가 없습니다."
-					style="width: 90%; height: 90%; max-width: 120%;max-height: 120%; min-width: 5%;min-height: 5%;">
+					style="width: 65%; height: 65%; max-width: 80%;max-height: 80%; min-width: 40%;min-height: 40%;">
 			</div>
 			<h6 style="text-align: center;">
 				핀을 조립 할 때 사용하는 핀툴
@@ -891,30 +880,28 @@
 
 		<h3 class="toggle-header">
 			Chapter 1. 탐험준비
-			<div class="flex-container1 toggle-content hidden;"style="justify-content: center;">
-				
+			<div class="flex-container1 toggle-content hidden;" style="justify-content: center;">
 				<div class="flex-container">
 					<h5 style="margin-top: 20px;margin-left: 0;margin-bottom: 10px;">학습 블럭</h5>
 					<img src="./03.레벨1/Start.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 10px;  width: 15%;height: 15%;max-width: 15%;min-width:15%; ">
+						style="margin-left: 10px;  width: 12%;height: 12%;max-width: 12%;min-width:12%; ">
 					<img src="./03.레벨1/Up.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;width: 12%;height: 12%;max-width: 12%;min-width: 12%; ">
 					<img src="./03.레벨1/Down.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;width: 12%;height: 12%;max-width: 12%;min-width: 12%; ">
 					<img src="./03.레벨1/left.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;width: 12%;height: 12%;max-width: 12%;min-width: 12%; ">
 					<img src="./03.레벨1/Right.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;width: 12%;height: 12%;max-width: 12%;min-width: 12%; ">
 					<img src="./03.레벨1/Roof.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
-
-					<div class="flex-container" display="flex">
-						<img id="resizable-image" src="./03.레벨1/Main.jpg" alt="이미지가 없습니다."
-							style="width: 90%; height: 90%; max-width: 105%;max-height: 105%; min-width: 5%;min-height: 5%;">
-					</div>
+						style="margin-left: 10px;width: 12%;height: 12%;max-width: 12%;min-width: 12%; ">
+					<img id="resizable-image" src="./02.하드웨어/Image4.jpg" alt="이미지가 없습니다."
+						style="width: 40%; height: 40%; max-width: 40%;max-height: 40%; min-width: 40%;min-height: 40%;">
 				</div>
+
 			</div>
 		</h3>
+
 		<h3 class="toggle-header">
 			Chapter 2. 탐험도구 모으기
 			<div class="flex-container1 toggle-content hidden">

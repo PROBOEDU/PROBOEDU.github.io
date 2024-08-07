@@ -39,7 +39,6 @@
 			display: flex;
 			font-family: 'font-name';
 			/* font-family: Arial, sans-serif; */
-			font-size: auto;
 			margin: 0;
 			/* Remove default body margin */
 		}
@@ -58,26 +57,30 @@
 			background-size: cover;
 			background-color: #fbfbfb;
 			position: fixed;
-			height: 100%;
-			font-size: 1.2vmax;
-			/* 네비게이션 영역의 기본 폰트 크기 설정 */
-			display: flex;
-			flex-direction: column;
+			width: 13vmax;
+			/* 뷰포트에서 가장 큰 값을 기준으로 너비를 설정 */
+			height: 100vh;
+			/* 뷰포트 높이의 100% */
+			font-size: 1vmax;
+			/* 뷰포트에서 가장 큰 값을 기준으로 폰트 크기를 설정 */
 		}
 
 		/* 전체 섹션 */
 		section {
 			background-color: #c7c5c5;
-			margin-left: 22vmax;
+			margin-left: 15vmax;
+			/* 네비게이션 너비와 동일하게 설정 */
 			font-family: 'font-name';
-			/* background-image: url('Test2.jpg');
-			background-size: contain; */
+			width: calc(100vw - 10vmax);
+			/* 뷰포트 너비에서 네비게이션 너비를 뺀 값 */
+			height: 100%;
+			/* 뷰포트 높이의 100% */
 		}
 
 		a {
 			text-decoration: none;
 			color: #707070;
-			font-size: 1.2vmax;
+			font-size: 1vmax;
 			/* 네비게이션 폰트 크기의 75% */
 			font-weight: lighter;
 			font-family: 'font-name2';
@@ -94,7 +97,7 @@
 		a[href="#Banner3"] {
 			color: #000000;
 			font-weight: bold;
-			text-align:left;
+			text-align: left;
 			font-size: 1.2vmax;
 			/* 네비게이션 폰트 크기의 80% */
 			font-family: "font-name";
@@ -207,9 +210,13 @@
 		}
 
 		ul {
-			margin: 0;
-			padding-left: 40px;
-			padding-right: 20px;
+			margin-left: 26px;
+			margin-top: 3px;
+			padding: 0;
+			width: 100%;
+			/* 네비게이션의 너비에 맞춤 */
+			height: auto;
+			/* 필요한 경우 높이를 조정 */
 		}
 
 		/* 네비게이션 하위 버튼 */
@@ -247,7 +254,7 @@
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
 
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="Banner1SubMenu" style="display:block;">
+		<ul id="Banner1SubMenu">
 			<li><a href="#A1">소개</a></li>
 			<li><a href="#A2">프로보 스크래치 설치</a></li>
 			<li><a href="#A3">USB 다운로더 연결</a></li>
@@ -261,7 +268,7 @@
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
 
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="Banner2SubMenu" style="display:block;">
+		<ul id="Banner2SubMenu">
 			<li><a href="#A6">CPU 블럭</a></li>
 			<li><a href="#A7">배터리 블럭</a></li>
 			<li><a href="#A8">입력 센서 블럭</a></li>
@@ -278,7 +285,7 @@
 		<!----------------------------------제품 카테고리 상위----------------------------------------->
 
 		<!----------------------------------제품 카테고리 하위----------------------------------------->
-		<ul id="Banner3SubMenu" style="display:block;">
+		<ul id="Banner3SubMenu">
 			<li><a href="#A14">레벨 1</a></li>
 			<li><a href="#A15">레벨 2</a></li>
 			<li><a href="#A16">레벨 3</a></li>
@@ -1003,6 +1010,7 @@
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</section>
 </body>
+
 
 <!--자바스크립트-->
 <script>

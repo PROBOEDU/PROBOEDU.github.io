@@ -112,7 +112,7 @@
 		h2 {
 			margin-left: 30px;
 			border-bottom: 4px solid #000000;
-			width: 62vmax;
+			width: 60vmax;
 			font-style: italic;
 			font-weight: bold;
 			font-size: 2vmax;
@@ -149,14 +149,15 @@
 		h6 {
 			margin-left: 40px;
 			margin-right: 50px;
+			max-width: 1050px;
 			font-weight: lighter;
 			color: #000000;
-			max-width: 1050px;
 			font-size: 1.1vmax;
 		}
 
 		.flex-container1 {
 			display: flex;
+			justify-content: left;
 			align-items: center;
 		}
 
@@ -228,11 +229,13 @@
 
 		/* 이미지 컨테이너 */
 		.flex-container {
+			display: flow-root;
 			justify-content: center;
 			position: relative;
 			color: #000000;
-			padding-left: 50px;
-			width: 60vmax;
+			margin-left: 50px;
+			margin-right: 50px;
+			max-width: 1500px;
 		}
 	</style>
 </head>
@@ -444,7 +447,7 @@
 		<br><br>
 		<div class="flex-container" style="display: flex;">
 			<img id="resizable-image" src="./02.하드웨어/Image4.jpg" alt="이미지가 없습니다."
-				style="width: 65%; height: 65%; max-width: 70%;max-height: 70%; min-width: 50%;min-height: 50%;">
+				style="width: 40%; height: 40%; max-width: 40%;max-height: 40%; min-width: 40%;min-height: 40%;">
 		</div>
 		<h6 style="text-align: center;">
 			<font color="#ff0000">※ 배터리가 부족할 때</font> CPU에서“삐비빅! 삐비빅!”경고음이
@@ -888,23 +891,29 @@
 
 		<h3 class="toggle-header">
 			Chapter 1. 탐험준비
-			<div class="flex-container1 toggle-content hidden">
-				<h6>사용블럭</h6><br>
-				<div class="flex-container1 toggle-content">
+			<div class="flex-container1 toggle-content hidden;"style="justify-content: center;">
+				
+				<div class="flex-container">
+					<h5 style="margin-top: 20px;margin-left: 0;margin-bottom: 10px;">학습 블럭</h5>
 					<img src="./03.레벨1/Start.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;  width: 15%;height: 15%;max-width: 15%;min-width:15%; ">
 					<img src="./03.레벨1/Up.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
 					<img src="./03.레벨1/Down.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
 					<img src="./03.레벨1/left.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
 					<img src="./03.레벨1/Right.png" alt="이미지가 없습니다." class="resizable-image"
-						style="margin-left: 15px;margin-top: 15px;  width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+					<img src="./03.레벨1/Roof.png" alt="이미지가 없습니다." class="resizable-image"
+						style="margin-left: 10px;width: 15%;height: 15%;max-width: 15%;min-width: 15%; ">
+
+					<div class="flex-container" display="flex">
+						<img id="resizable-image" src="./03.레벨1/Main.jpg" alt="이미지가 없습니다."
+							style="width: 90%; height: 90%; max-width: 105%;max-height: 105%; min-width: 5%;min-height: 5%;">
+					</div>
 				</div>
 			</div>
-
-
 		</h3>
 		<h3 class="toggle-header">
 			Chapter 2. 탐험도구 모으기

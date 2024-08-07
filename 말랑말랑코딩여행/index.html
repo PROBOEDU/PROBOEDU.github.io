@@ -53,49 +53,53 @@
 			background-color: #f0f0f0;
 		}
 
-		/* 왼쪽 네비게이션 영역 */
 		nav {
 			border-right: 3px solid #f1f1f1;
 			background-size: cover;
 			background-color: #fbfbfb;
 			position: fixed;
-			width: 10vamx;
-			height: 1000%;
+			height: 100%;
 			font-size: 1.2vmax;
+			/* 네비게이션 영역의 기본 폰트 크기 설정 */
+			display: flex;
+			flex-direction: column;
 		}
 
 		/* 전체 섹션 */
 		section {
+			background-color: #c7c5c5;
 			margin-left: 22vmax;
 			font-family: 'font-name';
 			/* background-image: url('Test2.jpg');
 			background-size: contain; */
 		}
 
-		/* 네비게이션 하위 버튼 */
 		a {
 			text-decoration: none;
 			color: #707070;
-			font-size: 1.5vmax;
+			font-size: 1.2vmax;
+			/* 네비게이션 폰트 크기의 75% */
 			font-weight: lighter;
 			font-family: 'font-name2';
 			white-space: nowrap;
 			text-align: left;
-			width: 60vamx;
+			width: 100%;
+			/* 부모 요소(nav)의 너비 기준 */
 			margin: 0;
-			padding: 0;
 		}
 
 		/* 네비게이션 상위 버튼 */
 		a[href="#Banner1"],
-		[href="#Banner2"],
-		[href="#Banner3"] {
+		a[href="#Banner2"],
+		a[href="#Banner3"] {
 			color: #000000;
 			font-weight: bold;
-			text-align: center;
-			font-size: 1.6vmax;
+			text-align:left;
+			font-size: 1.2vmax;
+			/* 네비게이션 폰트 크기의 80% */
 			font-family: "font-name";
-			width: 60vamx;
+			width: 60%;
+			/* 부모 요소(nav)의 너비 기준 */
 		}
 
 		/* 섹션 대제목 */
@@ -124,10 +128,8 @@
 
 		/* 네비게이션 제목 (말랑말랑 코딩여행 E-메뉴얼) */
 		h4 {
-			margin-top: 20px;
-			margin-bottom: 20px;
 			text-align: center;
-			font-size: 2vmax;
+			font-size: 1.2vmax;
 		}
 
 		h5 {

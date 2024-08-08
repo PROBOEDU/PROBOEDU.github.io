@@ -43,6 +43,7 @@
 		/* 버튼의 절반을 화면 왼쪽에 숨깁니다 */
 		width: 60px;
 		height: 60px;
+		padding: 10px;
 		/* 반구 모양으로 설정 */
 		border-radius: 45px 45px 45px 45px;
 		background-color: #81818181;
@@ -50,11 +51,17 @@
 		border: none;
 		cursor: pointer;
 		z-index: 10;
-		outline: none;
 		display: flex;
 		justify-content: right;
 		align-items: center;
 		font-size: 40px;
+	}
+
+	#menuButton.hidden {
+		opacity: 0;
+		/* 버튼 숨기기 */
+		pointer-events: none;
+		/* 버튼 클릭 불가능 */
 	}
 
 	h2 {
@@ -133,18 +140,36 @@
 </html>
 
 <script>
-	//버튼 클릭시 행동---------------------------------------------------------------------------------
-	document.getElementById('menuButton').addEventListener('click', function () {
-		var sideNav = document.getElementById('sideNav');
-		var button = document.getElementById('menuButton');
+	var menuButton = document.getElementById('menuButton');
+	var sideNav = document.getElementById('sideNav');
+
+	menuButton.addEventListener('click', function (event) {
 		// 사이드 네비게이션의 active 클래스를 토글
 		sideNav.classList.toggle('active');
-		// 버튼의 텍스트를 바꾸기
+
+		// 사이드 네비게이션이 열려 있으면 버튼을 숨기고, 닫혀 있으면 버튼을 표시
 		if (sideNav.classList.contains('active')) {
-			button.textContent = '<'; // 사이드 네비게이션이 활성화된 경우
+			menuButton.classList.add('hidden');
 		} else {
-			button.textContent = '>'; // 사이드 네비게이션이 비활성화된 경우
+			menuButton.classList.remove('hidden');
+		}
+
+		// 클릭된 이벤트 전파 방지
+		event.stopPropagation();
+	});
+
+	document.addEventListener('click', function (event) {
+		if (sideNav.classList.contains('active') &&
+			!sideNav.contains(event.target) &&
+			event.target !== menuButton) {
+			// 사이드 네비게이션이 열려 있고, 클릭된 대상이 사이드 네비게이션과 버튼이 아닐 경우
+			sideNav.classList.remove('active');
+			menuButton.classList.remove('hidden');
 		}
 	});
-	//버튼 클릭시 행동---------------------------------------------------------------------------------
+
+	sideNav.addEventListener('click', function (event) {
+		// 사이드 네비게이션 내 클릭 이벤트 전파 방지
+		event.stopPropagation();
+	});
 </script>

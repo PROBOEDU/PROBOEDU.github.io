@@ -9,6 +9,23 @@
 		align-items: center;
 	}
 
+	/* 폰트1 */
+	@font-face {
+		font-family: 'font-name';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./99.font/SCDream5.otf') format('opentype');
+	}
+
+	/* 폰트2 */
+	@font-face {
+		font-family: 'font-name2';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./99.font/SCDream4.otf') format('opentype');
+	}
+
+	/* 섹션 */
 	.centered-section {
 		background-color: #f0f0f0;
 		padding: 20px;
@@ -18,47 +35,68 @@
 		width: 150%;
 	}
 
+	/* 메뉴버튼 */
 	#menuButton {
 		position: fixed;
 		top: 50%;
+		left: -30px;
 		/* 버튼의 절반을 화면 왼쪽에 숨깁니다 */
-		width: 50px;
-		height: 50px;
-		border-radius: 25px 0 0 25px;
+		width: 60px;
+		height: 60px;
 		/* 반구 모양으로 설정 */
-		background-color: #333;
+		border-radius: 45px 45px 45px 45px;
+		background-color: #81818181;
 		color: white;
 		border: none;
 		cursor: pointer;
 		z-index: 10;
 		outline: none;
 		display: flex;
-		justify-content: center;
+		justify-content: right;
 		align-items: center;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		font-size: 40px;
 	}
 
+	h2 {
+		font-size: 20px;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 20px;
+		color: #f0f0f0;
+		text-align: center;
+		font-family: 'font-name1';
+		border-bottom: 2px solid #f4f4f4;
+	}
+
+	/* 네비게이션 */
 	.sidenav {
 		height: 100%;
-		width: 250px;
+		width: 200px;
 		position: fixed;
 		top: 0;
 		left: -250px;
 		background-color: #000000;
 		overflow-x: hidden;
 		transition: 0.3s;
-		padding-top: 60px;
+		padding-top: 20px;
 	}
 
+	/* 네비게이션안에 버튼 */
 	.sidenav a {
-		padding: 8px 8px 8px 32px;
+		font-family: 'font-name2';
 		text-decoration: none;
-		font-size: 25px;
+		font-size: 20px;
+		padding-top: 20px;
+		padding-left: 5px;
 		color: #818181;
 		display: block;
 		transition: 0.3s;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
 	}
 
+	/* 네비게이션 마우스 오버 */
 	.sidenav a:hover {
 		color: #f1f1f1;
 	}
@@ -76,54 +114,37 @@
 
 <body>
 	<!-- 네비게이션 View 버튼 -->
-	<button id="menuButton">☰</button>
+	<button id="menuButton" style="color: rgb(255, 255, 255);">></button>
 
 	<!-- 네비게이션 -->
 	<nav id="sideNav" class="sidenav">
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Services</a>
+		<h2>말랑말랑 코딩여행<br>E-메뉴얼</h2>
+		<a href="#">■시작하기</a>
+		<a href="#">하드웨어</a>
+		<a href="#">말랑말랑 코딩여행</a>
 		<a href="#">Contact</a>
 	</nav>
 	<div class="centered-section">
 		<h1>Centered Section</h1>
 		<p>This section is always centered1</p><br>
-		<p>This section is always centered2</p><br>
-		<p>This section is always centered3</p><br>
-		<p>This section is always centered4</p><br>
-		<p>This section is always centered5</p><br>
-		<p>This section is always centered6</p><br>
-		<p>This section is always centered7</p><br>
-		<p>This section is always centered8</p><br>
-		<p>This section is always centered9</p><br>
-		<p>This section is always centered10</p><br>
-		<p>This section is always centered12</p><br>
-		<p>This section is always centered13</p><br>
-		<p>This section is always centered14</p><br>
-		<p>This section is always centered15</p><br>
-		<p>This section is always centered16</p><br>
-		<p>This section is always centered17</p><br>
-		<p>This section is always centered18</p><br>
-		<p>This section is always centered19</p><br>
-		<p>This section is always centered20</p><br>
-		<p>This section is always centered21</p><br>
-		<p>This section is always centered22</p><br>
-		<p>This section is always centered23</p><br>
-		<p>This section is always centered24</p><br>
-		<p>This section is always centered25</p><br>
-		<p>This section is always centered26</p><br>
-		<p>This section is always centered27</p><br>
-		<p>This section is always centered28</p><br>
-		<p>This section is always centered29</p><br>
-		<p>This section is always centered30</p><br>
 	</div>
 </body>
 
 </html>
 
 <script>
+	//버튼 클릭시 행동---------------------------------------------------------------------------------
 	document.getElementById('menuButton').addEventListener('click', function () {
 		var sideNav = document.getElementById('sideNav');
+		var button = document.getElementById('menuButton');
+		// 사이드 네비게이션의 active 클래스를 토글
 		sideNav.classList.toggle('active');
+		// 버튼의 텍스트를 바꾸기
+		if (sideNav.classList.contains('active')) {
+			button.textContent = '<'; // 사이드 네비게이션이 활성화된 경우
+		} else {
+			button.textContent = '>'; // 사이드 네비게이션이 비활성화된 경우
+		}
 	});
+	//버튼 클릭시 행동---------------------------------------------------------------------------------
 </script>

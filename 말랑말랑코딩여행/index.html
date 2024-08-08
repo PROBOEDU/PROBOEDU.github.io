@@ -3,7 +3,6 @@
 <style>
 	body,
 	html {
-		height: 100%;
 		margin: 0;
 		display: flex;
 		justify-content: center;
@@ -14,27 +13,29 @@
 		background-color: #f0f0f0;
 		padding: 20px;
 		border: 1px solid #ccc;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 10px rgba(29, 36, 225, 0.1);
 		text-align: center;
-		width: 1080px;
-		/* Adjust the width as needed */
-		height: 100%;
-		/* Make sure the section takes up full height */
-		overflow-y: auto;
-		/* Enable vertical scrolling */
-		box-sizing: border-box;
-		/* Ensure padding and border are included in the width and height */
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		/* Align content to the top */
+		width: 150%;
 	}
 
 	#menuButton {
-		position: absolute;
-		top: 20px;
-		left: 20px;
-		z-index: 1;
+		position: fixed;
+		top: 50%;
+		/* 버튼의 절반을 화면 왼쪽에 숨깁니다 */
+		width: 50px;
+		height: 50px;
+		border-radius: 25px 0 0 25px;
+		/* 반구 모양으로 설정 */
+		background-color: #333;
+		color: white;
+		border: none;
+		cursor: pointer;
+		z-index: 10;
+		outline: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	}
 
 	.sidenav {
@@ -43,7 +44,7 @@
 		position: fixed;
 		top: 0;
 		left: -250px;
-		background-color: #111;
+		background-color: #000000;
 		overflow-x: hidden;
 		transition: 0.3s;
 		padding-top: 60px;
@@ -75,7 +76,7 @@
 
 <body>
 	<!-- 네비게이션 View 버튼 -->
-	<button id="menuButton">Toggle Menu</button>
+	<button id="menuButton">☰</button>
 
 	<!-- 네비게이션 -->
 	<nav id="sideNav" class="sidenav">
@@ -84,54 +85,37 @@
 		<a href="#">Services</a>
 		<a href="#">Contact</a>
 	</nav>
-
 	<div class="centered-section">
 		<h1>Centered Section</h1>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
-		<p>This section is always centered.</p><br>
+		<p>This section is always centered1</p><br>
+		<p>This section is always centered2</p><br>
+		<p>This section is always centered3</p><br>
+		<p>This section is always centered4</p><br>
+		<p>This section is always centered5</p><br>
+		<p>This section is always centered6</p><br>
+		<p>This section is always centered7</p><br>
+		<p>This section is always centered8</p><br>
+		<p>This section is always centered9</p><br>
+		<p>This section is always centered10</p><br>
+		<p>This section is always centered12</p><br>
+		<p>This section is always centered13</p><br>
+		<p>This section is always centered14</p><br>
+		<p>This section is always centered15</p><br>
+		<p>This section is always centered16</p><br>
+		<p>This section is always centered17</p><br>
+		<p>This section is always centered18</p><br>
+		<p>This section is always centered19</p><br>
+		<p>This section is always centered20</p><br>
+		<p>This section is always centered21</p><br>
+		<p>This section is always centered22</p><br>
+		<p>This section is always centered23</p><br>
+		<p>This section is always centered24</p><br>
+		<p>This section is always centered25</p><br>
+		<p>This section is always centered26</p><br>
+		<p>This section is always centered27</p><br>
+		<p>This section is always centered28</p><br>
+		<p>This section is always centered29</p><br>
+		<p>This section is always centered30</p><br>
 	</div>
 </body>
 

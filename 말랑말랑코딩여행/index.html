@@ -43,7 +43,7 @@
 	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 768px) {
 		.centered-section {
-			width: 650px;
+			width: 750px;
 			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
@@ -51,7 +51,7 @@
 	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.centered-section {
-			width: 650px;
+			width: 850px;
 			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
@@ -86,7 +86,8 @@
 
 	h1 {
 		color: #000000;
-		text-align: center;
+		padding-left: 22px;
+		text-align: left;
 		font-family: 'font-name';
 		font-size: 2.1vmax;
 	}
@@ -110,12 +111,12 @@
 
 	h3 {
 		color: #000000;
-		margin-top: 0px;
-		padding: 30px;
+		margin: 0px;
+		padding-bottom: 10px;
 		text-align: center;
 		border-bottom: 5px solid #000000;
 		font-family: 'font-name';
-		font-size: 3vmax;
+		font-size: 4vmax;
 	}
 
 	h4 {
@@ -123,6 +124,19 @@
 		text-align: center;
 		font-family: 'font-name';
 		font-size: 1.2vmax;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	h5 {
+		color: #000000;
+		padding-top: 35px;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		text-align: left;
+		font-family: 'font-name';
+		padding-left: 22px;
+		font-size: 3.5vmax;
 	}
 
 	/* 네비게이션 */
@@ -155,7 +169,7 @@
 
 	.sidenav a.active {
 		font-weight: bold;
-		color: #ff0000;
+		color: #ffffff;
 		text-align: left;
 	}
 
@@ -173,7 +187,7 @@
 	a[href="#Banner2"],
 	a[href="#Banner3"],
 	a[href="#Banner4"] {
-		color: #878787;
+		color: #ffffff;
 		font-weight: bold;
 		font-family: "font-name";
 		font-size: 20px;
@@ -214,7 +228,7 @@
 		position: fixed;
 		z-index: 1;
 		/* 모달창을 제일 앞에 두기 */
-		padding-top: 70px;
+		padding-top: 250px;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -225,6 +239,23 @@
 		/* 마우스 손가락모양 */
 		background-color: rgba(0, 0, 0, 0.8);
 	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 768px) {
+		.modal {
+			padding-top: 70px;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 큰 PC 화면 */
+	@media (min-width: 1024px) {
+		.modal {
+			padding-top: 70px;
+			/* 큰 PC 화면에서는 너비를 800px로 설정 */
+		}
+	}
+
 
 	/* 모달창 이미지 */
 	.modal_content {
@@ -281,7 +312,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 95%;
+		width: 85%;
 		height: auto;
 		z-index: 1;
 		height: auto;
@@ -359,52 +390,52 @@
 		<h2>말랑말랑 코딩여행<br>E-메뉴얼</h2>
 
 		<a href="#Banner1" class="toggle-submenu" data-target="Banner1SubMenu">■ 시작하기</a>
-
 		<div id="Banner1SubMenu" class="sub-menu">
 			<a href="#A1">ㆍ소개</a>
-			<a href="#A2">ㆍ프로보 스크래치 설치</a>
+			<a href="#A2">ㆍ프로그램 설치</a>
 			<a href="#A3">ㆍUSB 다운로더 연결</a>
-			<a href="#A4">ㆍHEX 파일 다운로드</a>
-			<a href="#A5">ㆍ코딩여행 들어가기</a>
+			<a href="#A4">ㆍ주의사항</a>
 		</div><br>
 
 		<a href="#Banner2" class="toggle-submenu" data-target="Banner2SubMenu">■ 하드웨어</a>
-
 		<div id="Banner2SubMenu" class="sub-menu">
-			<a href="#A6">ㆍ소개</a>
-			<a href="#A7">ㆍ프로보 스크래치 설치</a>
-			<a href="#A8">ㆍUSB 다운로더 연결</a>
-			<a href="#A9">ㆍHEX 파일 다운로드</a>
-			<a href="#A10">ㆍ코딩여행 들어가기</a>
+			<a href="#B1">ㆍCPU</a>
+			<a href="#B2">ㆍ배터리</a>
+			<a href="#B3">ㆍ입력 센서</a>
+			<a href="#B4">ㆍ출력 센서</a>
+			<a href="#B5">ㆍ프레임</a>
 		</div><br>
 
 
 		<a href="#Banner3" class="toggle-submenu" data-target="Banner3SubMenu">■ 말랑말랑 코딩여행</a>
-
 		<div id="Banner3SubMenu" class="sub-menu">
-			<a href="#A11">ㆍ소개</a>
-			<a href="#A12">ㆍ프로보 스크래치 설치</a>
-			<a href="#A13">ㆍUSB 다운로더 연결</a>
-			<a href="#A14">ㆍHEX 파일 다운로드</a>
-			<a href="#A15">ㆍ코딩여행 들어가기</a>
+			<a href="#C1">ㆍ레벨 1</a>
+			<a href="#C2">ㆍ레벨 2</a>
+			<a href="#C3">ㆍ레벨 3</a>
+			<a href="#C4">ㆍ레벨 4</a>
+			<a href="#C5">ㆍ레벨 5</a>
+			<a href="#C6">ㆍ레벨 6</a>
+			<a href="#C7">ㆍ리뉴얼 레벨 1</a>
 		</div><br>
 
 	</nav>
 
 	<div class="centered-section">
 		<h3>말랑말랑 코딩여행</h3>
-		<h1 id="A1">1. 소개</h1>
+		<h5>시작하기</h5>
+		<h1 id="A1">1. 소개 </h1>
+
 		<div class="container">
 			<div class="carousel">
 				<div class="slider">
 					<div class="slide">
-						<img src="./01.말랑말랑 코딩여행/Image1.jpg" class="img" alt="이미지가 없습니다.">
+						<img src="./01.시작하기/01.소개/Image1.jpg" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./01.말랑말랑 코딩여행/Image2.jpg" class="img" alt="이미지가 없습니다.">
+						<img src="./01.시작하기/01.소개/Image2.jpg" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./01.말랑말랑 코딩여행/Image3.jpg" class="img" alt="이미지가 없습니다.">
+						<img src="./01.시작하기/01.소개/Image3.jpg" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="modal" style="overflow: hidden;">
 						<span class="close">&times;</span>
@@ -419,15 +450,19 @@
 				</div>
 			</div>
 		</div>
-		<h4>쑤알라쑤라쑤쑤라쑤라쑤알라라라라아아아아</h4>
-		<br><br><br><br>
+
+		<h4>MIT의 ‘스크래치’ 프로그램에 프로보 로봇을 제어할 수 있는 블록 기능을 추가하여,
+			학생들이 화면 속 캐릭터뿐만 아니라 자신이 작성한 프로그램으로 실제 로봇의 동작을 시각적으로 확인하며
+			쉽게 코딩을 배울 수 있습니다.</h4>
+		<h4>아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어,
+			아이들이 직접 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
+			유지합니다.</h4>
+		<br>
 
 
-		<h1 id="A2">2. 프로보 스크래치 설치</h1>
-		<h1 id="A3">소개</h1>
-		<h1 id="A4">소개</h1>
-		<h1 id="A5">소개</h1>
-		<h1 id="A6">소개</h1>
+		<h1 id="A2">2. 프로그램 설치</h1>
+		<h1 id="A3">3. USB 다운로더 연결</h1>
+		<h1 id="A4">4. 주의사항</h1>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 </body>

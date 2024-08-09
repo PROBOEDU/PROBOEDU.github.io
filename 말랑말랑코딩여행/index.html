@@ -112,11 +112,12 @@
 	h3 {
 		color: #000000;
 		margin: 0px;
+		padding: 12px;
 		padding-bottom: 10px;
 		text-align: center;
 		border-bottom: 5px solid #000000;
 		font-family: 'font-name';
-		font-size: 4vmax;
+		font-size: 3vmax;
 	}
 
 	h4 {
@@ -126,6 +127,7 @@
 		font-size: 1.2vmax;
 		padding-left: 32px;
 		padding-right: 32px;
+		margin: 20px;
 	}
 
 	h5 {
@@ -136,7 +138,15 @@
 		text-align: left;
 		font-family: 'font-name';
 		padding-left: 22px;
-		font-size: 3.5vmax;
+		font-size: 2.6vmax;
+	}
+
+	h6 {
+		color: #000000;
+		text-align: left;
+		font-family: 'font-name';
+		padding-left: 42px;
+		font-size: 1.8vmax;
 	}
 
 	/* 네비게이션 */
@@ -215,7 +225,7 @@
 	}
 
 	.img {
-		width: 99%;
+		width: 100%;
 		height: auto;
 		border-radius: 10px;
 		cursor: pointer;
@@ -233,6 +243,8 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
+		z-index: 1000;
+		/* 충분히 높은 값으로 설정 */
 		overflow: auto;
 		/* 스크롤 허용 auto */
 		cursor: pointer;
@@ -243,7 +255,7 @@
 	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 768px) {
 		.modal {
-			padding-top: 70px;
+			padding-top: 220px;
 			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
@@ -251,7 +263,14 @@
 	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.modal {
-			padding-top: 70px;
+			padding-top: 25px;
+			/* 큰 PC 화면에서는 너비를 800px로 설정 */
+		}
+	}
+
+	@media (min-width: 1700px) {
+		.modal {
+			padding-top: 5px;
 			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
@@ -261,13 +280,48 @@
 	.modal_content {
 		margin: auto;
 		display: block;
-		width: 100%;
-		height: auto;
-		max-width: 1000px;
+		/* 충분히 높은 값으로 설정 */
 		border-radius: 10px;
 		animation-name: zoom;
 		animation-duration: 0.5s;
 	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 300px) {
+		.modal_content {
+			width: 100%;
+			height: auto;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 500px) {
+		.modal_content {
+			width: 90%;
+			height: auto;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 768px) {
+		.modal_content {
+			width: 90%;
+			height: auto;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 큰 PC 화면 */
+	@media (min-width: 1024px) {
+		.modal_content {
+			width: 85%;
+			height: auto;
+			/* 큰 PC 화면에서는 너비를 800px로 설정 */
+		}
+	}
+
 
 	/* 모달창 애니메이션 추가 */
 	@keyframes zoom {
@@ -305,6 +359,7 @@
 		justify-content: center;
 		justify-items: center;
 		overflow: hidden;
+		/* 충분히 높은 값으로 설정 */
 		border-radius: 15px;
 	}
 
@@ -312,17 +367,50 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 85%;
-		height: auto;
-		z-index: 1;
-		height: auto;
 		position: relative;
 		overflow: hidden;
 		/* 모달을 중앙에 배치할 때 필요 */
 		margin: 0 auto;
-		border: 3px solid rgba(55, 55, 55, 0.177);
+		border: 2px solid rgba(55, 55, 55, 0.177);
 		border-radius: 15px;
 		/* 중앙 정렬을 위해 마진 설정 */
+		background-color: #e6e6e6;
+	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 300px) {
+		.container {
+			width: 304px;
+			height: 171px;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 500px) {
+		.container {
+			width: 320px;
+			height: 180px;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 768px) {
+		.container {
+			width: 640px;
+			height: 360px;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 큰 PC 화면 */
+	@media (min-width: 1024px) {
+		.container {
+			width: 752px;
+			height: 423px;
+			/* 큰 PC 화면에서는 너비를 800px로 설정 */
+		}
 	}
 
 	.slider {
@@ -335,13 +423,15 @@
 	}
 
 	.slide {
-		padding-top: 3px;
-		float: left;
+		/* float: left; */
 		width: 100%;
 		position: relative;
+		padding: 0;
 		margin: 0 auto;
 		justify-content: center;
 		justify-items: center;
+		text-align: center;
+
 	}
 
 	.prev,
@@ -353,11 +443,12 @@
 		padding: 16px;
 		margin-top: -22px;
 		color: white;
-		background-color: rgba(0, 0, 0, 0.308);
+		background-color: rgba(0, 0, 0, 0.300);
 		border: none;
 		border-radius: 5px;
 		font-weight: bold;
-		font-size: 15px;
+		font-size: 10px;
+		text-align: center;
 		transition: background-color 0.3s ease;
 	}
 
@@ -372,6 +463,30 @@
 	.prev:hover,
 	.next:hover {
 		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.slide-number {
+		position: absolute;
+		font-family: "font-name";
+		/* 슬라이드 번호를 절대 위치로 설정 */
+		top: 10px;
+		/* 상단 여백 */
+		right: 10px;
+		z-index: 1;
+		/* 충분히 높은 값으로 설정 */
+		/* 우측 여백 */
+		background-color: rgba(0, 0, 0, 0.3);
+		/* 반투명한 배경색 */
+		color: #fff;
+		/* 글자 색상 */
+		padding: 5px 10px;
+		/* 패딩 추가 */
+		border-radius: 5px;
+		/* 모서리 둥글게 */
+		font-size: 12px;
+		/* 글자 크기 */
+		z-index: 10;
+		/* 다른 요소 위에 표시되도록 설정 */
 	}
 </style>
 
@@ -404,6 +519,7 @@
 			<a href="#B3">ㆍ입력 센서</a>
 			<a href="#B4">ㆍ출력 센서</a>
 			<a href="#B5">ㆍ프레임</a>
+			<a href="#B6">ㆍ기타</a>
 		</div><br>
 
 
@@ -423,133 +539,281 @@
 	<div class="centered-section">
 		<h3>말랑말랑 코딩여행</h3>
 		<h5>시작하기</h5>
-		<h1 id="A1">1. 소개 </h1>
 
+
+		<!-- 첫 번째 슬라이더 -->
+		<h1 id="A1">1. 소개</h1>
 		<div class="container">
 			<div class="carousel">
 				<div class="slider">
-					<div class="slide">
-						<img src="./01.시작하기/01.소개/Image1.jpg" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./01.시작하기/01.소개/Image2.jpg" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./01.시작하기/01.소개/Image3.jpg" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="modal" style="overflow: hidden;">
-						<span class="close">&times;</span>
-						<img class="modal_content" id="img">
-					</div>
-					<button class="prev" onclick="prevSlide()">&#10094;</button>
-					<button class="next" onclick="nextSlide()">&#10095;</button>
-					<div class="modal">
-						<span class="close">&times;</span>
-						<img class="modal_content" id="img">
-					</div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image1.jpg" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image2.jpg" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image3.jpg" class="img" alt="이미지가 없습니다."></div>
 				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>1. MIT의 ‘스크래치’ 프로그램에 프로보 로봇을 제어할 수 있는 블록 기능을 추가하여, 학생들이 화면 속 캐릭터뿐만 아니라 자신이 작성한 프로그램으로 실제 로봇의 동작을 시각적으로 확인하며
+			쉽게 코딩을 배울 수 있습니다.</h4>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/01.소개/Image1.jpg" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image2.jpg" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image3.jpg" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>2. 아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어, 아이들이 직접 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
+			유지합니다.</h4>
+
+			<br><br>
+		<!-- 두 번째 슬라이더 -->
+		<h1 id="A2">2. 프로그램 설치</h1>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/01.소개/Image4.jpg" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image5.jpg" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image6.jpg" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
 			</div>
 		</div>
 
-		<h4>MIT의 ‘스크래치’ 프로그램에 프로보 로봇을 제어할 수 있는 블록 기능을 추가하여,
-			학생들이 화면 속 캐릭터뿐만 아니라 자신이 작성한 프로그램으로 실제 로봇의 동작을 시각적으로 확인하며
-			쉽게 코딩을 배울 수 있습니다.</h4>
-		<h4>아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어,
-			아이들이 직접 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
-			유지합니다.</h4>
-		<br>
 
-
-		<h1 id="A2">2. 프로그램 설치</h1>
+		<!-- 세 번째 슬라이더 -->
 		<h1 id="A3">3. USB 다운로더 연결</h1>
+		<div class="container" style="height:100%">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/01.소개/Sensor1.png" class="img" alt="이미지가 없습니다."
+							style="width: 100%;"></div>
+				</div>
+				<button class="prev" style="display: none;">&#10094;</button>
+				<button class="next" style="display: none;">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span>
+				</div>
+			</div>
+			<h4 style="width: 500%;">이것은 자석 센서! 센서! 센서!</h4>
+		</div>
+
+
 		<h1 id="A4">4. 주의사항</h1>
+
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 </body>
 
 
 <script>
-	var menuButton = document.getElementById('menuButton');
-	var sideNav = document.getElementById('sideNav');
-	var toggleSubmenus = document.querySelectorAll('.toggle-submenu');
 
-	menuButton.addEventListener('click', function (event) {
-		// 사이드 네비게이션의 active 클래스를 토글
-		sideNav.classList.toggle('active');
+	document.addEventListener("DOMContentLoaded", () => {
+		// 사이드 네비게이션 토글
+		const menuButton = document.getElementById('menuButton');
+		const sideNav = document.getElementById('sideNav');
 
-		// 사이드 네비게이션이 열려 있으면 버튼을 숨기고, 닫혀 있으면 버튼을 표시
-		if (sideNav.classList.contains('active')) {
-			menuButton.classList.add('hidden');
-		} else {
-			menuButton.classList.remove('hidden');
-		}
-
-		// 클릭된 이벤트 전파 방지
-		event.stopPropagation();
-	});
-
-	document.addEventListener('click', function (event) {
-		if (sideNav.classList.contains('active') &&
-			!sideNav.contains(event.target) &&
-			event.target !== menuButton) {
-			// 사이드 네비게이션이 열려 있고, 클릭된 대상이 사이드 네비게이션과 버튼이 아닐 경우
-			sideNav.classList.remove('active');
-			menuButton.classList.remove('hidden');
-		}
-	});
-
-	sideNav.addEventListener('click', function (event) {
-		// 사이드 네비게이션 내 클릭 이벤트 전파 방지
-		event.stopPropagation();
-	});
-
-	toggleSubmenus.forEach(function (link) {
-		link.addEventListener('click', function (event) {
-			event.preventDefault(); // 링크 클릭 시 페이지 이동 방지
-			var targetId = this.getAttribute('data-target');
-			var targetSubMenu = document.getElementById(targetId);
-			targetSubMenu.classList.toggle('active');
+		menuButton.addEventListener('click', (event) => {
+			sideNav.classList.toggle('active');
+			menuButton.classList.toggle('hidden', sideNav.classList.contains('active'));
+			event.stopPropagation();
 		});
-	});
 
-	// 부드러운 스크롤을 위한 JavaScript
-	document.querySelectorAll('.sidenav a').forEach(anchor => {
-		anchor.addEventListener('click', function (e) {
-			e.preventDefault();
-
-			// 클릭된 링크의 href 속성값을 가져옵니다.
-			const targetId = this.getAttribute('href').substring(1);
-			const targetElement = document.getElementById(targetId);
-
-			// 스크롤 애니메이션을 적용합니다.
-			targetElement.scrollIntoView({ behavior: 'smooth' });
-		});
-	});
-	// IntersectionObserver로 스크롤에 따라 네비게이션 링크 활성화
-	const sections = document.querySelectorAll('.centered-section');
-	const navLinks = document.querySelectorAll('.sidenav a');
-
-	const observer = new IntersectionObserver(entries => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				const id = entry.target.getAttribute('id');
-				navLinks.forEach(link => {
-					link.classList.toggle('active', link.getAttribute('href').substring(1) === id);
-				});
+		document.addEventListener('click', (event) => {
+			if (sideNav.classList.contains('active') &&
+				!sideNav.contains(event.target) &&
+				event.target !== menuButton) {
+				sideNav.classList.remove('active');
+				menuButton.classList.remove('hidden');
 			}
 		});
-	}, {
-		threshold: 0.7 // 섹션의 70%가 화면에 보일 때 활성화
+
+		sideNav.addEventListener('click', (event) => {
+			event.stopPropagation();
+		});
+
+		// 서브메뉴 토글
+		const toggleSubmenus = document.querySelectorAll('.toggle-submenu');
+		toggleSubmenus.forEach(link => {
+			link.addEventListener('click', (event) => {
+				event.preventDefault();
+				const targetId = link.getAttribute('data-target');
+				const targetSubMenu = document.getElementById(targetId);
+				targetSubMenu.classList.toggle('active');
+			});
+		});
+
+		// 부드러운 스크롤과 섹션 활성화
+		const links = document.querySelectorAll('nav a[href^="#"]');
+		const sections = document.querySelectorAll('.centered-section');
+
+		links.forEach(link => {
+			link.addEventListener('click', (event) => {
+				event.preventDefault();
+				const targetId = link.getAttribute('href').substring(1);
+				const targetElement = document.getElementById(targetId);
+				if (targetElement) {
+					window.scrollTo({ top: targetElement.offsetTop, behavior: 'smooth' });
+				}
+			});
+		});
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const id = entry.target.getAttribute('id');
+					links.forEach(link => {
+						link.classList.toggle('active', link.getAttribute('href').substring(1) === id);
+					});
+				}
+			});
+		}, { threshold: 0.7 });
+
+		sections.forEach(section => {
+			observer.observe(section);
+		});
+
+		// 슬라이더 (캐러셀)
+		const carousels = document.querySelectorAll('.carousel');
+		carousels.forEach((carousel, carouselIndex) => {
+			const slides = carousel.querySelectorAll('.slide img');
+			const totalSlides = slides.length;
+			let currentSlide = 0;
+
+			const showSlide = (n) => {
+				slides.forEach(slide => slide.style.display = 'none');
+				slides[n].style.display = 'block';
+				updateSlideNumber(n + 1);
+			};
+
+			const updateSlideNumber = (current) => {
+				carousel.querySelector('.current-slide-number').textContent = current;
+				carousel.querySelector('.total-slide-number').textContent = totalSlides;
+			};
+
+			const nextSlide = () => {
+				currentSlide = (currentSlide + 1) % totalSlides;
+				showSlide(currentSlide);
+			};
+
+			const prevSlide = () => {
+				currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+				showSlide(currentSlide);
+			};
+
+			carousel.querySelector('.next').addEventListener('click', nextSlide);
+			carousel.querySelector('.prev').addEventListener('click', prevSlide);
+
+			showSlide(currentSlide); // 초기 슬라이드 설정
+		});
+
+		// 모달 이미지
+		const slides = document.querySelectorAll('.slide img');
+		const modals = document.querySelectorAll('.modal');
+		const modalImgs = document.querySelectorAll('.modal_content');
+		const closeBtns = document.querySelectorAll('.close');
+
+		slides.forEach((slide) => {
+			slide.addEventListener('click', () => {
+				const carousel = slide.closest('.carousel');
+				const modalIndex = [...carousel.parentElement.querySelectorAll('.carousel')].indexOf(carousel);
+				const modal = modals[modalIndex];
+				const modalImg = modalImgs[modalIndex];
+				modal.style.display = 'block';
+				modalImg.src = slide.src;
+			});
+		});
+
+		closeBtns.forEach((btn, index) => {
+			btn.addEventListener('click', () => {
+				modals[index].style.display = 'none';
+			});
+		});
+
+		modals.forEach((modal, index) => {
+			modal.addEventListener('click', (event) => {
+				if (event.target === modal) {
+					modal.style.display = 'none';
+				}
+			});
+		});
+	});
+	document.addEventListener('click', function (event) {
+		if (event.target.closest('.toggle-header')) {
+			var content = event.target.closest('.toggle-header').querySelector('.toggle-content');
+			if (content) {
+				content.classList.toggle('hidden');
+			}
+		}
+	});
+	const resizableImages = document.querySelectorAll('#resizable-image');
+
+	resizableImages.forEach(image => {
+		image.addEventListener('mousedown', initResize, false);
+		image.addEventListener('touchstart', initResize, false); // 모바일 터치 시작 이벤트 추가
 	});
 
-	sections.forEach(section => {
-		observer.observe(section);
-	});
+	function initResize(e) {
+		e.preventDefault();
+		const currentImage = e.target;
 
+		// 마우스 이벤트와 터치 이벤트 구분
+		if (e.type === 'mousedown') {
+			window.addEventListener('mousemove', resize);
+			window.addEventListener('mouseup', stopResize);
+		} else if (e.type === 'touchstart') {
+			window.addEventListener('touchmove', resize);
+			window.addEventListener('touchend', stopResize);
+		}
 
+		function resize(e) {
+			// 터치 이벤트일 경우 터치 위치 가져오기
+			if (e.type === 'touchmove') {
+				e = e.touches[0];
+			}
 
+			currentImage.style.width = (e.clientX - currentImage.getBoundingClientRect().left) + 'px';
+			currentImage.style.height = 'auto'; // 높이를 자동으로 조정하거나 필요에 따라 고정할 수 있습니다.
+		}
 
-
+		function stopResize(e) {
+			// 터치 이벤트일 경우
+			if (e.type === 'touchend') {
+				window.removeEventListener('touchmove', resize);
+				window.removeEventListener('touchend', stopResize);
+			} else {
+				window.removeEventListener('mousemove', resize);
+				window.removeEventListener('mouseup', stopResize);
+			}
+		}
+	}
 
 	document.addEventListener("DOMContentLoaded", function () {
 		const links = document.querySelectorAll('nav a[href^="#"]');
@@ -606,66 +870,32 @@
 				}
 			});
 		});
+
 		// 스크롤 이벤트 시 현재 섹션 활성화 함수 실행
 		window.addEventListener("scroll", activateSectionByScroll);
-	});
 
+		// 각 서브메뉴에 대해 토글 기능 추가
+		const subMenuss = document.querySelectorAll('ul[id^="Banner"][id$="SubMenu"]');
 
+		subMenuss.forEach(subMenu => {
+			const linkId = subMenu.id.replace('SubMenu', '');
+			const link = document.querySelector(`a[href="#${linkId}"]`);
 
-	const modal = document.querySelector(".modal");
-	const images = document.querySelectorAll(".img");
-	const modal_img = document.querySelector(".modal_content");
-	const span = document.querySelector(".close");
-
-	images.forEach(img => {
-		img.addEventListener('click', () => {
-			modalDisplay("block");
-			modal_img.src = img.src;
+			if (link) {  // 링크가 존재하는지 확인
+				link.addEventListener("click", function (e) {
+					e.preventDefault();
+					subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+				});
+			}
 		});
 	});
+	// 스크롤 이벤트 핸들러
+	window.addEventListener('scroll', function () {
+		var nav = document.getElementById('nav');
+		var scrollTop = window.scrollY; // 현재 스크롤 위치
 
-	span.addEventListener('click', () => {
-		modalDisplay("none");
-	});
-
-	modal.addEventListener('click', () => {
-		modalDisplay("none");
-	});
-
-	function modalDisplay(text) {
-		modal.style.display = text;
-	}
-
-
-
-
-
-
-
-
-
-	let currentSlide = 0;
-	const slides = document.querySelectorAll('.slide');
-	const slideCount = slides.length;
-
-	function showSlide(n) {
-		slides.forEach(slide => slide.style.display = 'none');
-		slides[n].style.display = 'block';
-	}
-
-	function nextSlide() {
-		currentSlide = (currentSlide + 1) % slideCount;
-		showSlide(currentSlide);
-	}
-
-	function prevSlide() {
-		currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-		showSlide(currentSlide);
-	}
-
-	document.addEventListener('DOMContentLoaded', () => {
-		showSlide(currentSlide);
-		// setInterval(nextSlide, 8000); // 8초마다 자동 슬라이드                
+		// 스크롤 위치에 따라 요소 위치 업데이트
+		nav.style.top = (scrollTop * -0.009) + 'px';
 	});
 </script>
 

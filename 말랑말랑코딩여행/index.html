@@ -488,6 +488,46 @@
 		z-index: 10;
 		/* 다른 요소 위에 표시되도록 설정 */
 	}
+
+	iframe {
+		width: 100%;
+	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 300px) {
+		iframe {
+			width: 304px;
+			height: 171px;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 500px) {
+		iframe {
+			width: 320px;
+			height: 180px;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 768px) {
+		iframe {
+			width: 640px;
+			height: 360px;
+			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		}
+	}
+
+	/* 큰 PC 화면 */
+	@media (min-width: 1024px) {
+		iframe {
+			width: 752px;
+			height: 423px;
+			/* 큰 PC 화면에서는 너비를 800px로 설정 */
+		}
+	}
 </style>
 
 <head>
@@ -546,9 +586,8 @@
 		<div class="container">
 			<div class="carousel">
 				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/01.소개/Image1.jpg" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image2.jpg" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image3.jpg" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image1.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image2.png" class="img" alt="이미지가 없습니다."></div>
 				</div>
 				<button class="prev">&#10094;</button>
 				<button class="next">&#10095;</button>
@@ -565,9 +604,9 @@
 		<div class="container">
 			<div class="carousel">
 				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/01.소개/Image1.jpg" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image2.jpg" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image3.jpg" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image3.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image4.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/01.소개/Image5.png" class="img" alt="이미지가 없습니다."></div>
 				</div>
 				<button class="prev">&#10094;</button>
 				<button class="next">&#10095;</button>
@@ -582,30 +621,19 @@
 		<h4>2. 아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어, 아이들이 직접 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
 			유지합니다.</h4>
 
-			<br><br>
+		<div class="container"><iframe src="https://www.youtube.com/embed/Ll731sKKGAg?si=0iHOLBF3rI8P_aDe"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
+		
 		<!-- 두 번째 슬라이더 -->
-		<h1 id="A2">2. 프로그램 설치</h1>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/01.소개/Image4.jpg" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image5.jpg" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image6.jpg" class="img" alt="이미지가 없습니다."></div>
-				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-
-
+		<br><br><h1 id="A2">2. 프로그램 설치</h1>
+		
 		<!-- 세 번째 슬라이더 -->
-		<h1 id="A3">3. USB 다운로더 연결</h1>
+		<br><br><h1 id="A3">3. USB 다운로더 연결</h1>
 		<div class="container" style="height:100%">
 			<div class="carousel">
 				<div class="slider">
@@ -626,7 +654,7 @@
 		</div>
 
 
-		<h1 id="A4">4. 주의사항</h1>
+		<br><br><h1 id="A4">4. 주의사항</h1>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>

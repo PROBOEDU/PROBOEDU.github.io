@@ -115,9 +115,8 @@
 		padding: 12px;
 		padding-bottom: 10px;
 		text-align: center;
-		border-bottom: 5px solid #000000;
 		font-family: 'font-name';
-		font-size: 3vmax;
+		font-size: 3.2vmax;
 	}
 
 	h4 {
@@ -152,7 +151,7 @@
 	/* 네비게이션 */
 	.sidenav {
 		height: 100%;
-		width: 200px;
+		width: 220px;
 		position: fixed;
 		top: 0;
 		left: -250px;
@@ -190,6 +189,14 @@
 
 	.sidenav.active {
 		left: 0;
+	}
+
+	a {
+		font-family: "font-name";
+		color: #000000;
+		font-style: bold;
+		font-size: 1.5vmax;
+		text-align: left;
 	}
 
 	/* 네비게이션 상위 버튼 */
@@ -528,6 +535,15 @@
 			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
+
+	hr {
+		border: 0;
+		height: 1px;
+		background-color: #333;
+		border: inset 6px rgb(13, 13, 13);
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 </style>
 
 <head>
@@ -548,7 +564,7 @@
 		<div id="Banner1SubMenu" class="sub-menu">
 			<a href="#A1">ㆍ소개</a>
 			<a href="#A2">ㆍ프로그램 설치</a>
-			<a href="#A3">ㆍUSB 다운로더 연결</a>
+			<a href="#A3">ㆍUSB 다운로더 연결과 실행</a>
 			<a href="#A4">ㆍ주의사항</a>
 		</div><br>
 
@@ -578,6 +594,7 @@
 
 	<div class="centered-section">
 		<h3>말랑말랑 코딩여행</h3>
+		<hr style="margin-top: 0px;">
 		<h5>시작하기</h5>
 
 
@@ -600,7 +617,7 @@
 			</div>
 		</div>
 		<h4>1. MIT의 ‘스크래치’ 프로그램에 프로보 로봇을 제어할 수 있는 블록 기능을 추가하여, 학생들이 화면 속 캐릭터뿐만 아니라 자신이 작성한 프로그램으로 실제 로봇의 동작을 시각적으로 확인하며
-			쉽게 코딩을 배울 수 있습니다.</h4>
+			쉽게 코딩을 배울 수 있습니다.</h4><br>
 		<div class="container">
 			<div class="carousel">
 				<div class="slider">
@@ -619,7 +636,7 @@
 			</div>
 		</div>
 		<h4>2. 아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어, 아이들이 직접 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
-			유지합니다.</h4>
+			유지합니다.</h4><br>
 
 		<div class="container"><iframe src="https://www.youtube.com/embed/Ll731sKKGAg?si=0iHOLBF3rI8P_aDe"
 				title="YouTube video player" frameborder="0"
@@ -628,13 +645,169 @@
 
 
 
-		
+
 		<!-- 두 번째 슬라이더 -->
-		<br><br><h1 id="A2">2. 프로그램 설치</h1>
-		
+		<br><br>
+		<h1 id="A2">2. 프로그램 설치</h1>
+		<a style="font-size: 3vmax;color: #4b1db7;"
+			href="https://imssam.imweb.me/37/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Mjt9&bmode=view&idx=20377410&t=board"
+			target="_blank" rel="noopener noreferrer">
+			<프로보 스크래치 설치>
+		</a>
+
+		<h4>1. 위 글씨를 클릭하여 내일은 쌤 자료실에 접속합니다.</h4><br>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image1.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image2.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>2. 첨부파일 다운로드를 클릭하여 설치 파일을 다운로드 받습니다.</h4><br>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image3.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image4.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image5.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image6.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image7.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>3. 사진의 순서대로 설치를 진행합니다.</h4><br>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image8.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image9.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>4. 프로그램을 실행합니다.</h4><br>
 		<!-- 세 번째 슬라이더 -->
-		<br><br><h1 id="A3">3. USB 다운로더 연결</h1>
-		<div class="container" style="height:100%">
+		<br><br>
+		<h1 id="A3">3. USB 다운로더 연결과 실행</h1>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image10.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev" style="display: none;">&#10094;</button>
+				<button class="next" style="display: none;">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+
+		<h4>1. USB 다운로더를 PC와 CPU에 연결합니다.</h4><br>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image11.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image12.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image13.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image14.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image15.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>2. USB 드라이버를 설치합니다.</h4><br>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image16.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image17.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image18.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>3. 프로보 스크래치의 다운로드에서 커넥트용 HEX파일을 다운로드 받습니다.<br>(다운로드 시 '띠리리리' 소리가 나며, HEX파일 다운로드는 최초 1회만 실행합니다.)</h4>
+		<br>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image19.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev" style="display: none;">&#10094;</button>
+				<button class="next" style="display: none;">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>4. 설치 완료 후 잠시 후에 CPU 블럭에서 '삐~이익~'소리가 나며 통신이 자동 연결돼요.</h4>
+		<br>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image20.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image21.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image22.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<h4>5. 모드에서 코딩 여행 레벨을 선택해요. 코딩 여행 모드 선택 시 코딩 여행 전용 스토리와 블럭이 나타나요.</h4>
+		<br>
+
+
+		<!-- <div class="container" style="height:100%">
 			<div class="carousel">
 				<div class="slider">
 					<div class="slide"><img src="./01.시작하기/01.소개/Sensor1.png" class="img" alt="이미지가 없습니다."
@@ -650,12 +823,43 @@
 						class="total-slide-number">3</span>
 				</div>
 			</div>
-			<h4 style="width: 500%;">이것은 자석 센서! 센서! 센서!</h4>
+			<h4 style="width: 500%;">이것은 자석 센서! 센서! 센서!</h4><br>
+		</div> -->
+
+
+		<br><br>
+		<h1 id="A4">4. 주의 사항</h1>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="modal">
+					<span class="close">&times;</span>
+					<img class="modal_content" id="img1">
+				</div>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
 		</div>
+		<h4>1. 주의 사항들을 꼭 확인해 주세요!</h4>
 
-
-		<br><br><h1 id="A4">4. 주의사항</h1>
-
+		
+		<br><br><br><br><br>
+		<hr style="margin-top: 0px;">
+		<h5>하드웨어</h5>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 </body>

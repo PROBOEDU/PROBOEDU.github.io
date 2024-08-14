@@ -36,25 +36,21 @@
 		box-shadow: 0 0 10px rgba(29, 36, 225, 0.1);
 		text-align: center;
 		box-sizing: border-box;
-		width: 380px;
+		/* width: 50vmax; */
+		width: 90vmin;
 		overflow: hidden;
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
-	@media (min-width: 768px) {
+	/* @media (min-width: 768px) {
 		.centered-section {
 			width: 750px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
-
-	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.centered-section {
 			width: 850px;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
-	}
+	} */
 
 	/* 메뉴버튼 */
 	#menuButton {
@@ -123,10 +119,11 @@
 		color: #5d5d5d;
 		text-align: center;
 		font-family: 'font-name';
-		font-size: 1.2vmax;
-		padding-left: 32px;
-		padding-right: 32px;
-		margin: 20px;
+		font-size: 1.5vmax;
+		padding-left: 12px;
+		padding-right: 12px;
+		margin: 10px;
+		padding-top: 10px;
 	}
 
 	h5 {
@@ -241,44 +238,33 @@
 
 	.modal {
 		display: none;
-		/* 모달창 숨겨 놓기 */
 		position: fixed;
 		z-index: 1;
-		/* 모달창을 제일 앞에 두기 */
 		padding-top: 250px;
 		left: 0;
 		top: 0;
 		width: 100%;
 		height: 100%;
 		z-index: 1000;
-		/* 충분히 높은 값으로 설정 */
 		overflow: auto;
-		/* 스크롤 허용 auto */
 		cursor: pointer;
-		/* 마우스 손가락모양 */
 		background-color: rgba(0, 0, 0, 0.8);
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 768px) {
 		.modal {
 			padding-top: 220px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
-
-	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.modal {
 			padding-top: 25px;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
 
 	@media (min-width: 1700px) {
 		.modal {
 			padding-top: 5px;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
 
@@ -291,41 +277,34 @@
 		border-radius: 10px;
 		animation-name: zoom;
 		animation-duration: 0.5s;
+		height: auto;
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 300px) {
 		.modal_content {
 			width: 100%;
 			height: auto;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 500px) {
 		.modal_content {
 			width: 90%;
 			height: auto;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 768px) {
 		.modal_content {
 			width: 90%;
 			height: auto;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.modal_content {
 			width: 85%;
 			height: auto;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
 
@@ -379,46 +358,39 @@
 		/* 모달을 중앙에 배치할 때 필요 */
 		margin: 0 auto;
 		border: 2px solid rgba(55, 55, 55, 0.177);
-		border-radius: 15px;
+		border-radius: 20px;
 		/* 중앙 정렬을 위해 마진 설정 */
 		background-color: #e6e6e6;
+		width: 91%;
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
-	@media (min-width: 300px) {
+	/* @media (min-width: 300px) {
 		.container {
 			width: 304px;
 			height: 171px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 500px) {
 		.container {
 			width: 320px;
 			height: 180px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 768px) {
 		.container {
 			width: 640px;
 			height: 360px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.container {
-			width: 752px;
-			height: 423px;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
+			width: 700px;
+			height: 390px;
 		}
-	}
+	} */
 
 	.slider {
 		width: 100%;
@@ -964,13 +936,47 @@
 		<h1 id="C5">레벨5</h1>
 		<h1 id="C6">레벨6</h1>
 		<h1 id="C7">리뉴얼 레벨1</h1>
+
+
+
+
+
+		<!-- <input type="text" id="myInput" placeholder="여기에 적으세요." autofocus>
+		<button id="myButton">글씨 넣기</button>
+		<input type="text" class="myInput" placeholder="여기에 적으세요." autofocus>
+		<button class="myButton">글씨 넣기</button> -->
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 </body>
 
 
 <script>
-
+	// document.addEventListener("keydown", function (event) {
+	// 	if (event.key === "F12" ||
+	// 		(event.ctrlKey && event.shiftKey && event.key === "I") ||
+	// 		(event.ctrlKey && event.shiftKey && event.key === "C")) {
+	// 		event.preventDefault();
+	// 		alert("개발자 도구 사용이 제한되었습니다.");
+	// 	}
+	// });
+	// document.getElementById("myButton").addEventListener("click", function () {
+	// 	var inputField = document.getElementById("myInput");
+	// 	if (inputField.value == "아이디1") {
+	// 		inputField.value = "아이디2";
+	// 	}
+	// 	else {
+	// 		inputField.value = "아이디1";
+	// 	}
+	// });
+	// document.querySelector(".myButton").addEventListener("click", function () {
+	// 	var inputField = document.querySelector(".myInput");
+	// 	if (inputField.value == "클래스1") {
+	// 		inputField.value = "클래스2";
+	// 	}
+	// 	else {
+	// 		inputField.value = "클래스1";
+	// 	}
+	// });
 	document.addEventListener("DOMContentLoaded", () => {
 		// 사이드 네비게이션 토글
 		const menuButton = document.getElementById('menuButton');

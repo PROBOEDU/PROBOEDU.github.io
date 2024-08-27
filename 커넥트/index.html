@@ -31,30 +31,25 @@
 
 	.centered-section {
 		margin-top: 35px;
-		background-color: #67676710;
-		border: 1px solid #ccc;
+		background-color: #67676700;
+		border: 1px solid #cccccc24;
 		box-shadow: 0 0 10px rgba(29, 36, 225, 0.1);
 		text-align: center;
 		box-sizing: border-box;
-		width: 380px;
-		overflow: hidden;
+		/* width: 50vmax; */
+		width: 90vmin;
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
-	@media (min-width: 768px) {
+	/* @media (min-width: 768px) {
 		.centered-section {
 			width: 750px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
-
-	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.centered-section {
 			width: 850px;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
-	}
+	} */
 
 	/* 메뉴버튼 */
 	#menuButton {
@@ -90,6 +85,9 @@
 		text-align: left;
 		font-family: 'font-name';
 		font-size: 2.1vmax;
+
+		text-decoration: none;
+		cursor: pointer;
 	}
 
 	h2 {
@@ -123,17 +121,18 @@
 		color: #5d5d5d;
 		text-align: center;
 		font-family: 'font-name';
-		font-size: 1.2vmax;
-		padding-left: 32px;
-		padding-right: 32px;
-		margin: 20px;
+		font-size: 1.5vmax;
+		padding-left: 12px;
+		padding-right: 12px;
+		margin: 10px;
+		padding-top: 10px;
 	}
 
 	h5 {
 		color: #000000;
 		padding-top: 35px;
 		margin-top: 0px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		text-align: left;
 		font-family: 'font-name';
 		padding-left: 22px;
@@ -237,48 +236,39 @@
 		border-radius: 10px;
 		cursor: pointer;
 		transition: 0.3s;
+		transition: transform 0.3s ease, cursor 0.3s ease;
 	}
 
 	.modal {
 		display: none;
-		/* 모달창 숨겨 놓기 */
 		position: fixed;
-		z-index: 1;
-		/* 모달창을 제일 앞에 두기 */
+		z-index: 1000;
 		padding-top: 250px;
 		left: 0;
 		top: 0;
 		width: 100%;
 		height: 100%;
 		z-index: 1000;
-		/* 충분히 높은 값으로 설정 */
 		overflow: auto;
-		/* 스크롤 허용 auto */
 		cursor: pointer;
-		/* 마우스 손가락모양 */
 		background-color: rgba(0, 0, 0, 0.8);
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 768px) {
 		.modal {
 			padding-top: 220px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.modal {
 			padding-top: 25px;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
 
 	@media (min-width: 1700px) {
 		.modal {
 			padding-top: 5px;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
 
@@ -291,41 +281,34 @@
 		border-radius: 10px;
 		animation-name: zoom;
 		animation-duration: 0.5s;
+		height: auto;
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 300px) {
 		.modal_content {
 			width: 100%;
 			height: auto;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 500px) {
 		.modal_content {
 			width: 90%;
 			height: auto;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 768px) {
 		.modal_content {
 			width: 90%;
 			height: auto;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.modal_content {
 			width: 85%;
 			height: auto;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
 		}
 	}
 
@@ -379,46 +362,95 @@
 		/* 모달을 중앙에 배치할 때 필요 */
 		margin: 0 auto;
 		border: 2px solid rgba(55, 55, 55, 0.177);
-		border-radius: 15px;
+		border-radius: 20px;
 		/* 중앙 정렬을 위해 마진 설정 */
 		background-color: #e6e6e6;
+		width: 91%;
+		transform: scale(1.0);
+		/* 이미지 확대 */
+		transition: transform .5s;
+		/* 시간 설정 */
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
+	.container.expanded {
+		transform: scale(1.2);
+		/* 이미지 확대 */
+		transition: transform .5s;
+		/* 시간 설정 */
+		z-index: 1000;
+	}
+
 	@media (min-width: 300px) {
-		.container {
-			width: 304px;
-			height: 171px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
+		.container.expanded {
+			transform: scale(1.2);
+			/* 이미지 확대 */
+			transition: transform .5s;
+			/* 시간 설정 */
 		}
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
+	@media (min-width: 500px) {
+		.container:hover {
+			/* 이미지 확대 */
+			transition: transform .5s;
+			/* 시간 설정 */
+		}
+	}
+
+	@media (min-width: 768px) {
+		.container.expanded {
+			transform: scale(1.2);
+			/* 이미지 확대 */
+			transition: transform .5s;
+			/* 시간 설정 */
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.container.expanded {
+			transform: scale(1.4);
+			/* 이미지 확대 */
+			transition: transform .5s;
+			/* 시간 설정 */
+		}
+	}
+
+	@media (min-width: 1500px) {
+		.container.expanded {
+			transform: scale(1.7);
+			/* 이미지 확대 */
+			transition: transform .5s;
+			/* 시간 설정 */
+		}
+	}
+
+	/* @media (min-width: 300px) {
+		.container {
+			width: 304px;
+			height: 171px;
+		}
+	}
+
 	@media (min-width: 500px) {
 		.container {
 			width: 320px;
 			height: 180px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 태블릿 및 작은 PC 화면 */
 	@media (min-width: 768px) {
 		.container {
 			width: 640px;
 			height: 360px;
-			/* 태블릿 및 작은 PC 화면에서는 너비를 600px로 설정 */
 		}
 	}
 
-	/* 큰 PC 화면 */
 	@media (min-width: 1024px) {
 		.container {
-			width: 752px;
-			height: 423px;
-			/* 큰 PC 화면에서는 너비를 800px로 설정 */
+			width: 700px;
+			height: 390px;
 		}
-	}
+	} */
 
 	.slider {
 		width: 100%;
@@ -447,14 +479,14 @@
 		position: absolute;
 		top: 50%;
 		width: auto;
-		padding: 16px;
-		margin-top: -22px;
+		padding: 12px;
+		margin-top: -18px;
 		color: white;
 		background-color: rgba(0, 0, 0, 0.300);
 		border: none;
 		border-radius: 5px;
 		font-weight: bold;
-		font-size: 10px;
+		font-size: 8px;
 		text-align: center;
 		transition: background-color 0.3s ease;
 	}
@@ -476,9 +508,9 @@
 		position: absolute;
 		font-family: "font-name";
 		/* 슬라이드 번호를 절대 위치로 설정 */
-		top: 10px;
+		top: 5px;
 		/* 상단 여백 */
-		right: 10px;
+		right: 5px;
 		z-index: 1;
 		/* 충분히 높은 값으로 설정 */
 		/* 우측 여백 */
@@ -490,7 +522,7 @@
 		/* 패딩 추가 */
 		border-radius: 5px;
 		/* 모서리 둥글게 */
-		font-size: 12px;
+		font-size: 8px;
 		/* 글자 크기 */
 		z-index: 10;
 		/* 다른 요소 위에 표시되도록 설정 */
@@ -544,12 +576,83 @@
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+
+	.content {
+		max-height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+	}
+
+	.content.show {
+		max-height: 100%;
+		/* 필요한 만큼의 큰 값으로 설정 */
+		opacity: 1;
+	}
+
+	details {
+		padding-bottom: 20px;
+	}
+
+	details>summary {
+		background: #444;
+		color: #fff;
+		padding: 10px;
+		outline: 0;
+		border-radius: 10px;
+		cursor: pointer;
+		transition: background 0.5s;
+		text-align: left;
+		box-shadow: 1px 1px 2px gray;
+	}
+
+	details>summary::-webkit-details-marker {
+		background: #444;
+		color: #fff;
+		background-size: contain;
+		transform: rotate3d(0, 0, 1, 90deg);
+		transition: transform 0.25s;
+	}
+
+	details[open]>summary::-webkit-details-marker {
+		transform: rotate3d(0, 0, 1, 180deg);
+	}
+
+	details[open]>summary {
+		background: #444;
+	}
+
+	details[open]>summary~* {
+		animation: reveal 0.5s;
+	}
+
+	.tpt {
+		background: #444;
+		color: #fff;
+		margin: 5px 0 10px;
+		padding: 5px 10px;
+		line-height: 25px;
+		border-radius: 5px;
+		box-shadow: 1px 1px 2px gray;
+	}
+
+	@keyframes reveal {
+		from {
+			opacity: 0;
+			transform: translate3d(0, -30px, 0);
+		}
+
+		to {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
 </style>
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>말랑말랑 코딩여행</title>
+	<title>커넥트</title>
 </head>
 
 <body>
@@ -558,14 +661,15 @@
 
 	<!-- 네비게이션 -->
 	<nav id="sideNav" class="sidenav">
-		<h2>말랑말랑 코딩여행<br>E-메뉴얼</h2>
+		<h2>커넥트<br>E-메뉴얼</h2>
 
 		<a href="#Banner1" class="toggle-submenu" data-target="Banner1SubMenu">■ 시작하기</a>
 		<div id="Banner1SubMenu" class="sub-menu">
 			<a href="#A1">ㆍ소개</a>
 			<a href="#A2">ㆍ프로그램 설치</a>
 			<a href="#A3">ㆍUSB 다운로더 연결과 실행</a>
-			<a href="#A4">ㆍ주의사항</a>
+			<a href="#A4">ㆍ핀툴 사용법</a>
+			<a href="#A5">ㆍ주의사항</a>
 		</div><br>
 
 		<a href="#Banner2" class="toggle-submenu" data-target="Banner2SubMenu">■ 하드웨어</a>
@@ -576,12 +680,12 @@
 			<a href="#B4">ㆍ출력 센서</a>
 			<a href="#B5">ㆍ핀</a>
 			<a href="#B6">ㆍ케이블</a>
-			<a href="#B7">ㆍ블루투스</a>
+			<a href="#B7">ㆍRF</a>
 			<a href="#B8">ㆍ기타</a>
 		</div><br>
 
 
-		<a href="#Banner3" class="toggle-submenu" data-target="Banner3SubMenu">■ 말랑말랑 코딩여행</a>
+		<a href="#Banner3" class="toggle-submenu" data-target="Banner3SubMenu">■ 커넥트</a>
 		<div id="Banner3SubMenu" class="sub-menu">
 			<a href="#C1">ㆍ레벨 1</a>
 			<a href="#C2">ㆍ레벨 2</a>
@@ -594,333 +698,631 @@
 
 	</nav>
 
+
+
 	<div class="centered-section">
-		<h3>말랑말랑 코딩여행</h3>
+		<h3>커넥트</h3>
 		<hr style="margin-top: 0px;">
 		<h5>시작하기</h5>
-
-
 		<!-- 첫 번째 슬라이더 -->
-		<h1 id="A1">1. 소개</h1>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/01.소개/Image1.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image2.png" class="img" alt="이미지가 없습니다."></div>
+		<details id="A1">
+			<summary style="margin: 21px;margin-top: 0px;">1. 소개</summary>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/01.소개/Image1.png" class="img" alt="이미지가 없습니다."></div>
+						<div class="slide"><img src="./01.시작하기/01.소개/Image2.png" class="img" alt="이미지가 없습니다."></div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
 			</div>
-		</div>
-		<h4>1. MIT의 ‘스크래치’ 프로그램에 프로보 로봇을 제어할 수 있는 블록 기능을 추가하여, 학생들이 화면 속 캐릭터뿐만 아니라 자신이 작성한 프로그램으로 실제 로봇의 동작을 시각적으로 확인하며
-			쉽게 코딩을 배울 수 있습니다.</h4><br>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/01.소개/Image3.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image4.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/01.소개/Image5.png" class="img" alt="이미지가 없습니다."></div>
+			<h4>1. MIT의 ‘스크래치’ 프로그램에 프로보 로봇을 제어할 수 있는 블록 기능을 추가하여, 학생들이 화면 속 캐릭터뿐만 아니라 자신이 작성한 프로그램으로 실제 로봇의 동작을 시각적으로
+				확인하며
+				쉽게 코딩을 배울 수 있습니다.</h4><br>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/01.소개/Image3.png" class="img" alt="이미지가 없습니다."></div>
+						<div class="slide"><img src="./01.시작하기/01.소개/Image4.png" class="img" alt="이미지가 없습니다."></div>
+						<div class="slide"><img src="./01.시작하기/01.소개/Image5.png" class="img" alt="이미지가 없습니다."></div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
 			</div>
-		</div>
-		<h4>2. 아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어, 아이들이 직접 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
-			유지합니다.</h4><br>
-
-		<div class="container"><iframe src="https://www.youtube.com/embed/Ll731sKKGAg?si=0iHOLBF3rI8P_aDe"
-				title="YouTube video player" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+			<h4>2. 아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어, 아이들이 직접 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
+				유지합니다.</h4><br>
+			<div class="container" id="expandable"><iframe
+					src="https://www.youtube.com/embed/Ll731sKKGAg?si=0iHOLBF3rI8P_aDe" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</details>
 
 
 
 		<!-- 두 번째 슬라이더 -->
-		<br><br>
-		<h1 id="A2">2. 프로그램 설치</h1>
-		<a style="font-size: 3vmax;color: #4b1db7;"
-			href="https://imssam.imweb.me/37/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Mjt9&bmode=view&idx=20377410&t=board"
-			target="_blank" rel="noopener noreferrer">
-			<프로보 스크래치 설치>
-		</a>
+		<details id="A2">
+			<summary style="margin: 21px;margin-top: 0px;">2. 프로그램 설치</summary>
 
-		<h4>1. 위 글씨를 클릭하여 내일은 쌤 자료실에 접속합니다.</h4><br>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image1.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image2.png" class="img" alt="이미지가 없습니다."></div>
+			<a style="font-size: 3vmax;color: #4b1db7;"
+				href="https://imssam.imweb.me/37/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Mjt9&bmode=view&idx=20377410&t=board"
+				target="_blank" rel="noopener noreferrer">
+				<프로보 스크래치 설치>
+			</a>
+
+			<h4>1. 위 글씨를 클릭하여 내일은 쌤 자료실에 접속합니다.</h4><br>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev" style="display:none;">&#10094;</button>
+					<button class="next" style="display:none;">&#10095;</button>
+					<div class="slide-number" style="display:none;"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
 			</div>
-		</div>
-		<h4>2. 첨부파일 다운로드를 클릭하여 설치 파일을 다운로드 받습니다.</h4><br>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image3.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image4.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image5.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image6.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image7.png" class="img" alt="이미지가 없습니다."></div>
+			<h4>2. 첨부파일 다운로드를 클릭하여 설치 파일을 다운로드 받습니다.</h4><br>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image2.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image3.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image4.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image5.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image6.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image7.png" class="img" alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
 			</div>
-		</div>
-		<h4>3. 사진의 순서대로 설치를 진행합니다.</h4><br>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image8.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image9.png" class="img" alt="이미지가 없습니다."></div>
+			<h4>3. 사진의 순서대로 설치를 진행합니다.</h4><br>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image8.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image9.png" class="img" alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
 			</div>
-		</div>
-		<h4>4. 프로그램을 실행합니다.</h4><br>
+			<h4>4. 프로그램을 실행합니다.</h4><br>
+		</details>
 		<!-- 세 번째 슬라이더 -->
-		<br><br>
-		<h1 id="A3">3. USB 다운로더 연결과 실행</h1>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image1.png" class="img" alt="이미지가 없습니다."></div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
+		<details id="A3">
+			<summary style="margin: 21px;margin-top: 0px;">3. USB 다운로더 설치와 연결</summary>
 
-		<h4>1. USB 다운로더를 PC와 CPU에 연결합니다.</h4><br>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image2.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image3.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image4.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image5.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image6.png" class="img" alt="이미지가 없습니다."></div>
-				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-		<h4>2. USB 드라이버를 설치합니다.</h4><br>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image7.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image8.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image9.png" class="img" alt="이미지가 없습니다."></div>
-				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-		<h4>3. 프로보 스크래치의 다운로드에서 커넥트용 HEX파일을 다운로드 받습니다.<br>(다운로드 시 '띠리리리' 소리가 나며, HEX파일 다운로드는 최초 1회만 실행합니다.)</h4>
-		<br>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image10.png" class="img" alt="이미지가 없습니다."></div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-		<h4>4. 설치 완료 후 잠시 후에 CPU 블럭에서 '삐~이익~'소리가 나며 통신이 자동 연결돼요.</h4>
-		<br>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image11.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image12.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image13.png" class="img" alt="이미지가 없습니다."></div>
-				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-		<h4>5. 모드에서 코딩 여행 레벨을 선택해요. 코딩 여행 모드 선택 시 코딩 여행 전용 스토리와 블럭이 나타나요.</h4>
-		<br>
-
-
-		<!-- <div class="container" style="height:100%">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/01.소개/Sensor1.png" class="img" alt="이미지가 없습니다."
-							style="width: 100%;"></div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev" style="display: none;">&#10094;</button>
+					<button class="next" style="display: none;">&#10095;</button>
+					<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
 				</div>
 			</div>
-			<h4 style="width: 500%;">이것은 자석 센서! 센서! 센서!</h4><br>
-		</div> -->
 
-
-		<br><br>
-		<h1 id="A4">4. 주의 사항</h1>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/04.주의사항/Test.png" class="img" alt="이미지가 없습니다."></div>
+			<h4>1. USB 다운로더를 PC와 CPU에 연결합니다.</h4><br>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image2.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image3.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image4.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image5.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image6.png" class="img" alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
-				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
 			</div>
-		</div>
-		<h4>1. 주의 사항들을 꼭 확인해 주세요!</h4>
+			<h4>2. USB 드라이버를 설치합니다.</h4><br>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image7.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image8.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image9.png" class="img" alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
+				</div>
+			</div>
+			<h4>3. 프로보 스크래치의 다운로드에서 커넥트용 HEX파일을 다운로드 받습니다.<br>(다운로드 시 '띠리리리' 소리가 나며, HEX파일 다운로드는 최초 1회만 실행합니다.)</h4>
+			<br>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image10.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev" style="display: none;">&#10094;</button>
+					<button class="next" style="display: none;">&#10095;</button>
+					<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
+				</div>
+			</div>
+			<h4>4. 설치 완료 후 잠시 후에 CPU 블럭에서 '삐~이익~'소리가 나며 통신이 자동 연결돼요.</h4>
+			<br>
+			<div class="container" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image11.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image12.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image13.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
+				</div>
+			</div>
+			<h4>5. 모드에서 코딩 여행 레벨을 선택해요. 코딩 여행 모드 선택 시 코딩 여행 전용 스토리와 블럭이 나타나요.</h4>
+		</details>
+
+		<details id="A4">
+			<summary style="margin: 21px;margin-top: 0px;">4. 핀툴 사용법</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image2.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image3.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image4.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image5.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image6.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image7.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image8.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image9.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image10.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image11.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image12.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image13.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
+				</div>
+			</div>
+		</details>
 
 
-		<br><br><br><br><br>
+		<details id="A5">
+			<summary style="margin: 21px;margin-top: 0px;">5. 주의 사항</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image11.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image12.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image13.png" class="img"
+								alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
+				</div>
+			</div>
+			<h4>1. 주의 사항을 꼭 읽고 시작해요!</h4>
+		</details>
+
+
+
+		<!--하드웨어============================================================================================================================================-->
 		<hr style="margin-top: 0px;">
 		<h5>하드웨어</h5>
-		<h1 id="B1">1. 전자 부품</h1>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+		<details id="B1">
+			<summary style="margin: 21px;margin-top: 0px;">1. 전자 부품</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/01.전자부품/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
+		</details>
+		<details id="B2">
+			<summary style="margin: 21px;margin-top: 0px;">2. 프레임</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/02.프레임/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/02.프레임/Image2.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/02.프레임/Image3.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<div class="slide"><img src="./02.하드웨어/02.프레임/Image4.png" class="img" alt="이미지가 없습니다.">
+						</div>
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span> / <span
+							class="total-slide-number">3</span></div>
 				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
 			</div>
-		</div>
-		<h4>CPU</h4>
-		<h1 id="B2">2. 프레임</h1>
-		<div class="container">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
-					<div class="slide"><img src="./01.시작하기/Test.png" class="img" alt="이미지가 없습니다."></div>
+		</details>
+		<details id="B3">
+			<summary style="margin: 21px;margin-top: 0px;">3. 입력 센서</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/03.입력센서/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="modal">
-					<span class="close">&times;</span>
-					<img class="modal_content" id="img1">
+		</details>
+		<details id="B4">
+			<summary style="margin: 21px;margin-top: 0px;">4. 출력 센서</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/04.출력센서/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
 				</div>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
+		</details>
+		<details id="B5">
+			<summary style="margin: 21px;margin-top: 0px;">5. 핀</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/05.핀/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+		</details>
+		<details id="B6">
+			<summary style="margin: 21px;margin-top: 0px;">6. 케이블</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/06.케이블/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+		</details>
+		<details id="B7">
+			<summary style="margin: 21px;margin-top: 0px;">7. RF</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+		</details>
+		<details id="B8">
+			<summary style="margin: 21px;margin-top: 0px;">8. 기타</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/08.기타/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+		</details>
+
+
+		<!--커넥트============================================================================================================================================-->
+		<hr style="margin-top: 0px;">
+		<h5>커넥트</h5>
+		<details id="C1">
+			<summary style="margin: 21px;margin-top: 0px;">레벨1</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<h1 id="B3">3. 입력 센서</h1>
-		<h1 id="B4">4. 출력 센서</h1>
-		<h1 id="B5">5. 핀</h1>
-		<h1 id="B6">6. 케이블</h1>
-		<h1 id="B7">7. 블루투스</h1>
-		<h1 id="B8">8. 기타</h1>
-		<br><br><br><br><br>
-		<h5>말랑말랑 코딩여행</h5>
-		<h1 id="C1">레벨1</h1>
-		<h1 id="C2">레벨2</h1>
-		<h1 id="C3">레벨3</h1>
-		<h1 id="C4">레벨4</h1>
-		<h1 id="C5">레벨5</h1>
-		<h1 id="C6">레벨6</h1>
-		<h1 id="C7">리뉴얼 레벨1</h1>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h4 style="padding-bottom: 50px;">1. 차례</h4>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>2. 레벨1 부품 수량 체크</h4>
+		</details>
+
+
+		<details id="C2">
+			<summary style="margin: 21px;margin-top: 0px;">레벨2</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4 style="padding-bottom: 50px;">1. 차례</h4>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>2. 레벨2 부품 수량 체크</h4>
+		</details>
+		<details id="C3">
+			<summary style="margin: 21px;margin-top: 0px;">레벨3</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4 style="padding-bottom: 50px;">1. 차례</h4>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>2. 레벨3 부품 수량 체크</h4>
+		</details>
+		<details id="C4">
+			<summary style="margin: 21px;margin-top: 0px;">레벨4</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4 style="padding-bottom: 50px;">1. 차례</h4>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>2. 레벨4 부품 수량 체크</h4>
+		</details>
+		<details id="C5">
+			<summary style="margin: 21px;margin-top: 0px;">레벨5</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4 style="padding-bottom: 50px;">1. 차례</h4>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>2. 레벨5 부품 수량 체크</h4>
+		</details>
+		<details id="C6">
+			<summary style="margin: 21px;margin-top: 0px;">레벨6</summary>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4 style="padding-bottom: 50px;">1. 차례</h4>
+			<div class="container" id="expandable" id="expandable">
+				<div class="carousel">
+					<div class="slider">
+						<div class="slide"><img src="./02.하드웨어/07.블루투스/Image1.png" class="img" alt="이미지가 없습니다.">
+						</div>
+						<button class="prev" style="display: none">&#10094;</button>
+						<button class="next" style="display: none">&#10095;</button>
+						<div class="slide-number" style="display: none"><span class="current-slide-number">1</span> /
+							<span class="total-slide-number">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>2. 레벨6 부품 수량 체크</h4>
+		</details>
+
+
+
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 </body>
 
 
 <script>
+	// 모든 .container 요소들을 선택합니다.
+	const containers = document.querySelectorAll('.container');
 
+	// 각 .container에 클릭 이벤트 리스너를 추가합니다.
+	containers.forEach(container => {
+		container.addEventListener('click', function () {
+			this.classList.toggle('expanded');
+		});
+	});
+	//=================================================================================================
 	document.addEventListener("DOMContentLoaded", () => {
 		// 사이드 네비게이션 토글
 		const menuButton = document.getElementById('menuButton');
@@ -1013,52 +1415,103 @@
 				currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
 				showSlide(currentSlide);
 			};
-
-			carousel.querySelector('.next').addEventListener('click', nextSlide);
-			carousel.querySelector('.prev').addEventListener('click', prevSlide);
+			// prev와 next 버튼이 클릭될 때, 이벤트 전파를 막습니다.
+			const buttons = document.querySelectorAll('.prev, .next');
+			buttons.forEach(button => {
+				button.addEventListener('click', function (event) {
+					event.stopPropagation(); // 클릭 이벤트 전파를 막음
+					// 여기에서 슬라이드 전환 로직을 추가합니다.
+					carousel.querySelector('.next').addEventListener('click', nextSlide);
+					carousel.querySelector('.prev').addEventListener('click', prevSlide);
+				});
+			});
 
 			showSlide(currentSlide); // 초기 슬라이드 설정
 		});
-
-		// 모달 이미지
-		const slides = document.querySelectorAll('.slide img');
-		const modals = document.querySelectorAll('.modal');
-		const modalImgs = document.querySelectorAll('.modal_content');
-		const closeBtns = document.querySelectorAll('.close');
-
-		slides.forEach((slide) => {
-			slide.addEventListener('click', () => {
-				const carousel = slide.closest('.carousel');
-				const modalIndex = [...carousel.parentElement.querySelectorAll('.carousel')].indexOf(carousel);
-				const modal = modals[modalIndex];
-				const modalImg = modalImgs[modalIndex];
-				modal.style.display = 'block';
-				modalImg.src = slide.src;
-			});
-		});
-
-		closeBtns.forEach((btn, index) => {
-			btn.addEventListener('click', () => {
-				modals[index].style.display = 'none';
-			});
-		});
-
-		modals.forEach((modal, index) => {
-			modal.addEventListener('click', (event) => {
-				if (event.target === modal) {
-					modal.style.display = 'none';
-				}
-			});
-		});
 	});
-	document.addEventListener('click', function (event) {
-		if (event.target.closest('.toggle-header')) {
-			var content = event.target.closest('.toggle-header').querySelector('.toggle-content');
-			if (content) {
-				content.classList.toggle('hidden');
-			}
-		}
-	});
+
+
+	// document.addEventListener('DOMContentLoaded', function () {
+	// 	const slides = document.querySelectorAll('.slide img');
+	// 	const modals = document.querySelectorAll('.modal');
+	// 	const modalImgs = document.querySelectorAll('.modal_content');
+	// 	const closeBtns = document.querySelectorAll('.close');
+	// 	const toggleSections = document.querySelectorAll('.toggle-section');
+
+	// 	// 섹션 클릭 이벤트
+	// 	toggleSections.forEach(header => {
+	// 		header.addEventListener('click', function () {
+	// 			// 현재 클릭한 섹션
+	// 			const currentSection = this.nextElementSibling;
+
+	// 			// 현재 클릭한 섹션을 제외한 모든 섹션의 콘텐츠를 닫기
+	// 			document.querySelectorAll('.content').forEach(content => {
+	// 				if (content !== currentSection) {
+	// 					content.classList.remove('show');
+	// 				}
+	// 			});
+
+	// 			// 현재 클릭한 섹션의 콘텐츠를 토글
+	// 			currentSection.classList.toggle('show');
+	// 		});
+	// 	});
+
+	// 	// 슬라이더 클릭 시 모달 열기
+	// 	slides.forEach((slide) => {
+	// 		slide.addEventListener('click', () => {
+	// 			const carousel = slide.closest('.carousel');
+	// 			const modalIndex = Array.from(carousel.closest('.container').querySelectorAll('.carousel')).indexOf(carousel);
+	// 			const modal = modals[modalIndex];
+	// 			const modalImg = modalImgs[modalIndex];
+
+	// 			// 모달을 표시하고 이미지 소스 설정
+	// 			modal.style.display = 'block';
+	// 			modalImg.src = slide.src;
+
+	// 			// 모든 섹션을 닫음
+	// 			document.querySelectorAll('.content').forEach(content => {
+	// 				content.classList.remove('show');
+	// 			});
+	// 		});
+	// 	});
+
+	// 	// 모달 닫기 버튼 클릭 시 모달 닫기
+	// 	closeBtns.forEach((btn, index) => {
+	// 		btn.addEventListener('click', () => {
+	// 			modals[index].style.display = 'none';
+	// 		});
+	// 	});
+
+	// 	// 모달 배경 클릭 시 모달 닫기
+	// 	modals.forEach((modal) => {
+	// 		modal.addEventListener('click', (event) => {
+	// 			if (event.target === modal) {
+	// 				modal.style.display = 'none';
+	// 			}
+	// 		});
+	// 	});
+	// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	const resizableImages = document.querySelectorAll('#resizable-image');
 
 	resizableImages.forEach(image => {

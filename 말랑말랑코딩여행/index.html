@@ -960,11 +960,11 @@
 		</div>
 		<br>
 		<br>
-		<summary>3. USB 다운로더 설치와 연결</summary>
+		<summary id="A3">3. USB 다운로더 설치와 연결</summary>
 		<br>
 
 
-		<h4 id="A3" style="text-align: center;">1. USB 다운로더를 PC와 CPU에 연결합니다.</h4>
+		<h4>1. USB 다운로더를 PC와 CPU에 연결합니다.</h4>
 		<br>
 		<div class="container" id="expandable">
 			<div class="carousel">
@@ -2382,7 +2382,7 @@
 		<br>
 		<h4>3. 검은색 USB 드라이버 설치를 클릭합니다.<br>
 			(하얀색 USB 드라이버일 경우 구형이므로 보상판매를 통해 신형으로 교체해 주세요.)</h4>
-			<br>
+		<br>
 		<div class="container" id="expandable">
 			<div class="carousel">
 				<div class="slider">
@@ -2457,6 +2457,7 @@
 
 
 <script>
+
 	const totalSlidesPerSlider = {
 		expandable1: 5,
 		expandable2: 5,
@@ -2499,106 +2500,6 @@
 		currentIndices[sliderId] = (currentIndices[sliderId] - 1 + totalSlides) % totalSlides;
 		updateSlides(sliderId, currentIndices[sliderId]);
 	}
-	// let currentIndices = {  // 두 슬라이더의 인덱스를 객체로 관리
-	// 	expandable1: 0,
-	// 	expandable2: 0,
-	// 	expandable3: 0,
-	// 	expandable4: 0,
-	// 	expandable5: 0,
-	// 	expandable6: 0,
-	// 	expandable7: 0
-	// };
-
-	// // 슬라이더 업데이트 함수 (ID로 구분)
-	// function updateSlides(sliderId, index) {
-	// 	document.querySelectorAll(`#${sliderId} .slide`).forEach((slide, i) => {
-	// 		slide.style.display = i === index ? 'block' : 'none';
-	// 	});
-	// 	document.querySelectorAll(`#${sliderId} .slide-description`).forEach((desc, i) => {
-	// 		desc.classList.toggle('active', i === index);
-	// 	});
-	// 	document.querySelector(`#${sliderId} .current-slide-number`).textContent = index + 1;
-	// }
-
-	// // 슬라이드 넘기기 함수
-	// function showNextSlide(sliderId) {
-	// 	currentIndices[sliderId] = (currentIndices[sliderId] + 1) % totalSlides;
-	// 	updateSlides(sliderId, currentIndices[sliderId]);
-	// }
-
-	// // 슬라이드 이전으로 가는 함수
-	// function showPreviousSlide(sliderId) {
-	// 	currentIndices[sliderId] = (currentIndices[sliderId] - 1 + totalSlides) % totalSlides;
-	// 	updateSlides(sliderId, currentIndices[sliderId]);
-	// }
-	// let currentIndex = 0;
-	// const totalSlides = 4;
-
-	// // 이미지와 텍스트를 동기화하여 모두 업데이트하는 함수
-	// function updateSlides(index) {
-	// 	// 첫 번째 슬라이더 이미지 및 텍스트 업데이트
-	// 	document.querySelectorAll('#expandable1 .slide').forEach((slide, i) => {
-	// 		slide.style.display = i === index ? 'block' : 'none';
-	// 	});
-	// 	document.querySelectorAll('#expandable1 .slide-description').forEach((desc, i) => {
-	// 		desc.classList.toggle('active', i === index);
-	// 	});
-
-	// 	// 두 번째 슬라이더 이미지 및 텍스트 업데이트
-	// 	document.querySelectorAll('#expandable2 .slide').forEach((slide, i) => {
-	// 		slide.style.display = i === index ? 'block' : 'none';
-	// 	});
-	// 	document.querySelectorAll('#expandable2 .slide-description').forEach((desc, i) => {
-	// 		desc.classList.toggle('active', i === index);
-	// 	});
-
-	// 	// 슬라이드 번호 업데이트
-	// 	document.querySelectorAll('.current-slide-number').forEach(el => el.textContent = index + 1);
-	// }
-
-	// // 다음 슬라이드
-	// function showNextSlide() {
-	// 	currentIndex = (currentIndex + 1) % totalSlides;
-	// 	updateSlides(currentIndex);
-	// }
-
-	// // 이전 슬라이드
-	// function showPreviousSlide() {
-	// 	currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-	// 	updateSlides(currentIndex);
-	// }
-
-	// // 초기화
-	// updateSlides(currentIndex);
-	/*let currentTextIndex = 0;  // 현재 텍스트 인덱스
-	const descriptions = document.querySelectorAll('.slide-description');  // 모든 텍스트 요소
-	const totalDescriptions = descriptions.length;  // 총 텍스트 개수
-
-	// 텍스트 업데이트 함수
-	function showText(index) {
-		// 모든 텍스트 숨기기
-		descriptions.forEach(desc => desc.classList.remove('active'));
-		// 선택된 텍스트만 보이기
-		descriptions[index].classList.add('active');
-	}
-
-	// 다음 텍스트 보여주는 함수
-	function showNextText() {
-		currentTextIndex = (currentTextIndex + 1) % totalDescriptions;  // 다음 인덱스
-		showText(currentTextIndex);  // 해당 인덱스의 텍스트 표시
-	}
-
-	// 이전 텍스트 보여주는 함수
-	function showPreviousText() {
-		currentTextIndex = (currentTextIndex - 1 + totalDescriptions) % totalDescriptions;  // 이전 인덱스
-		showText(currentTextIndex);  // 해당 인덱스의 텍스트 표시
-	}
-
-	// 초기 텍스트 설정
-	showText(currentTextIndex);  // 처음엔 첫 번째 텍스트 보이기*/
-
-
-
 
 
 

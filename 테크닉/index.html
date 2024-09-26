@@ -772,7 +772,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>말랑말랑 코딩여행</title>
+	<title>테크닉</title>
 </head>
 
 <body>
@@ -790,8 +790,10 @@
 			<a href="#A1">ㆍ소개</a>
 			<a href="#A2">ㆍ프로그램 설치</a>
 			<a href="#A3">ㆍUSB 다운로더 연결과 실행</a>
-			<a href="#A4">ㆍ핀 / 핀툴 사용방법</a>
-			<a href="#A5">ㆍ주의사항</a>
+			<a href="#A4">ㆍ공구 및 C링 사용방법</a>
+			<a href="#A5">ㆍRF 페어링 / 업그레이드</a>
+			<a href="#A6">ㆍ메카넘 휠 조립 방법</a>
+			<a href="#A7">ㆍ주의사항</a>
 
 		</div><br>
 
@@ -804,12 +806,12 @@
 			<a href="#B4">ㆍ출력 블럭</a>
 			<a href="#B5">ㆍ핀</a>
 			<a href="#B6">ㆍ케이블</a>
-			<a href="#B7">ㆍ블루투스</a>
+			<a href="#B7">ㆍRF</a>
 			<a href="#B8">ㆍ기타</a>
 		</div><br>
 
 
-		<a href="#Banner3" class="toggle-submenu" data-target="Banner3SubMenu">■ 말랑말랑 코딩여행</a>
+		<a href="#Banner3" class="toggle-submenu" data-target="Banner3SubMenu">■ 테크닉</a>
 		<div id="Banner3SubMenu" class="sub-menu">
 			<a href="#C1">ㆍ레벨 1</a>
 			<a href="#C2">ㆍ레벨 2</a>
@@ -823,8 +825,8 @@
 
 		<a href="#Banner4" class="toggle-submenu" data-target="Banner4SubMenu">■ Q n A</a>
 		<div id="Banner4SubMenu" class="sub-menu">
-			<a href="#D1">ㆍ진도가 맞지 않아요!</a>
-			<a href="#D2">ㆍCPU 연결이 안돼요!</a>
+			<!-- <a href="#D1">ㆍ진도가 맞지 않아요!</a>
+			<a href="#D2">ㆍCPU 연결이 안돼요!</a> -->
 		</div><br>
 	</nav>
 
@@ -842,10 +844,7 @@
 		<h5>시작하기</h5>
 		<summary id="A1">1. 소개</summary>
 		<br>
-		<h4>1. MIT의 ‘스크래치’ 프로그램에 프로보 로봇을 제어할 수 있는 블록 기능을 추가하여, 학생들이화면 속 캐릭터뿐만 <br>아니라 자신이 작성한 프로그램으로 실제 로봇의 동작을
-			시각적으로
-			확인하며
-			쉽게 코딩을 배울 수 있습니다.</h4>
+		<h4>1. 소개 </h4>
 		<br>
 		<div class="container" id="expandable">
 			<div class="carousel">
@@ -861,8 +860,7 @@
 		</div>
 		<br>
 		<br>
-		<h4>2. 아이들이 좋아하는 만화책처럼 친근한 스토리텔링 방식의 교재는 보물을 찾는 이야기로 시작되어, 아이들이직접<br> 진행하며 피지컬 컴퓨팅 로봇 조립과 코딩 게임으로 흥미를 계속
-			유지합니다.</h4>
+		<h4>2. 소개</h4>
 		<br>
 		<div class="container" id="expandable">
 			<div class="carousel">
@@ -882,7 +880,7 @@
 		<h4>3. 관련 영상</h4>
 		<br>
 		<div class="container" id="expandable"><iframe
-				src="https://www.youtube.com/embed/Ll731sKKGAg?si=0iHOLBF3rI8P_aDe" title="YouTube video player"
+				src="https://www.youtube.com/embed/CfMCZJ--E1A?si=1NvLmYH0TUgodJ4g" title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -891,12 +889,12 @@
 		<br>
 		<summary id="A2">2. 프로그램 설치</summary>
 		<br>
-		<h4>1. 아래 글씨를 클릭하여 내일은 쌤 자료실에 접속합니다.</h4>
+		<h4>1. PROBOHEX 아래 글씨를 클릭하여 내일은 쌤 자료실에 접속합니다.</h4>
 		<br>
 		<a style="font-size: 2vmax;color: #4b1db7; font-weight: bold;"
 			href="https://imssam.imweb.me/37/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Mjt9&bmode=view&idx=20377410&t=board"
 			target="_blank" rel="noopener noreferrer">
-			프로보 스크래치 설치
+			PROBOHEX 설치
 		</a>
 		<br>
 		<br>
@@ -960,11 +958,79 @@
 		</div>
 		<br>
 		<br>
-		<summary id="A3">3. USB 다운로더 설치와 연결</summary>
+		<h4>1. GULC 아래 글씨를 클릭하여 내일은 쌤 자료실에 접속합니다.</h4>
+		<br>
+		<a style="font-size: 2vmax;color: #4b1db7; font-weight: bold;"
+			href="https://imssam.imweb.me/37/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Mzt9&bmode=view&idx=20288063&t=board"
+			target="_blank" rel="noopener noreferrer">
+			GULC 설치
+		</a>
+		<br>
+		<br>
+		<h4>2. 첨부파일을 클릭하여 설치 파일을 다운로드 받습니다.</h4>
+		<br>
+		<div class="container" id="expandable">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image10.png" class="img" alt="이미지가 없습니다.">
+					</div>
+				</div>
+				<button class="prev" style="display:none;">&#10094;</button>
+				<button class="next" style="display:none;">&#10095;</button>
+				<div class="slide-number" style="display:none;"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<h4>3. 사진의 순서대로 설치를 진행합니다.</h4>
+		<br>
+		<div class="container" id="expandable">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image11.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image12.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image13.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image14.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image15.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image16.png" class="img" alt="이미지가 없습니다.">
+					</div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<h4>4. 프로그램을 실행합니다.</h4>
+		<br>
+		<div class="container" id="expandable">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image8.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./01.시작하기/02.프로그램_설치/Image9.png" class="img" alt="이미지가 없습니다.">
+					</div>
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<br>
 		<br>
 
 
-		<h4>1. USB 다운로더를 PC와 CPU에 연결합니다.</h4>
+
+		<summary id="A3">3. USB 다운로더 설치와 연결</summary>
 		<br>
 		<div class="container" id="expandable">
 			<div class="carousel">
@@ -987,8 +1053,6 @@
 				<div class="slider">
 					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image2.png" class="img" alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image3.png" class="img" alt="이미지가 없습니다.">
-					</div>
 					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image4.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image5.png" class="img" alt="이미지가 없습니다.">
@@ -1004,8 +1068,7 @@
 		</div>
 		<br>
 		<br>
-		<h4>3. 프로보 스크래치의 다운로드에서 커넥트용 HEX파일을 다운로드 받습니다.<br>(다운로드 시 '띠리리리' 소리가 나며, HEX파일
-			다운로드는 최초 1회만 실행합니다.)</h4>
+		<h4>3. 해당 위치를 클릭해 COMPORT를 선택합니다.</h4>
 		<br>
 
 		<div class="container" id="expandable">
@@ -1013,57 +1076,17 @@
 				<div class="slider">
 					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image7.png" class="img" alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image8.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image9.png" class="img" alt="이미지가 없습니다.">
-					</div>
 				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+				<button class="prev" style="display:none">&#10094;</button>
+				<button class="next" style="display:none">&#10095;</button>
+				<div class="slide-number" style="display:none"><span class="current-slide-number">1</span> / <span
 						class="total-slide-number">3</span></div>
 			</div>
 		</div>
 		<br>
-		<br>
-		<h4>4. 설치 완료 후 잠시 후에 CPU 블럭에서 '삐~이익~'소리가 나며 통신이 자동 연결돼요.</h4>
 		<br>
 
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image10.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>5. 모드에서 코딩 여행 레벨을 선택해요. 코딩 여행 모드 선택 시 코딩 여행 전용 스토리와 블럭이 나타나요.</h4>
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image11.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image12.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/03.USB다운로더연결과실행/Image13.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<summary id="A4">4. 핀 / 핀툴 사용 방법</summary>
+		<summary id="A4">4. 공구 및 C링 사용 방법</summary>
 		<br>
 		<br>
 
@@ -1078,23 +1101,27 @@
 					</div>
 					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image3.png" class="img" alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image4.png" class="img" alt="이미지가 없습니다.">
+				</div>
+				<button class="prev">&#10094;</button>
+				<button class="next">&#10095;</button>
+				<div class="slide-number"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<br>
+		<br>
+
+		<summary id="A5">5. RF 리모컨 페어링 / 업그레이드</summary>
+		<br>
+		<br>
+		<!-- <h4>1. 핀 / 핀툴 사용방법</h4> -->
+		<!-- <h4>1. 주의 사항을 꼭 읽고 시작해요!</h4> -->
+		<div class="container" id="expandable">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/05.RF페어링/Image2.png" class="img" alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image5.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image6.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image7.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image8.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image9.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image10.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image11.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./01.시작하기/04.핀 사용법/Image12.png" class="img" alt="이미지가 없습니다.">
+					<div class="slide"><img src="./01.시작하기/05.RF페어링/Image1.png" class="img" alt="이미지가 없습니다.">
 					</div>
 				</div>
 				<button class="prev">&#10094;</button>
@@ -1105,18 +1132,37 @@
 		</div>
 		<br>
 		<br>
-		<summary id="A5">5. 주의 사항</summary>
+		<summary id="A6">6. 메카넘 휠 조립 방법</summary>
+		<br>
+		<br>
+		<!-- <h4>1. 핀 / 핀툴 사용방법</h4> -->
+		<!-- <h4>1. 주의 사항을 꼭 읽고 시작해요!</h4> -->
+		<div class="container" id="expandable">
+			<div class="carousel">
+				<div class="slider">
+					<div class="slide"><img src="./01.시작하기/06.메카넘/Image1.png" class="img" alt="이미지가 없습니다.">
+					</div>
+				</div>
+				<button class="prev" style="display:none">&#10094;</button>
+				<button class="next" style="display:none">&#10095;</button>
+				<div class="slide-number" style="display:none"><span class="current-slide-number">1</span> / <span
+						class="total-slide-number">3</span></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<summary id="A7">7. 주의 사항</summary>
 		<br>
 		<br>
 		<!-- <h4>1. 주의 사항을 꼭 읽고 시작해요!</h4> -->
 		<div class="container" id="expandable">
 			<div class="carousel">
 				<div class="slider">
-					<div class="slide"><img src="./01.시작하기/05.주의사항/Image1.png" class="img" alt="이미지가 없습니다.">
+					<div class="slide"><img src="./01.시작하기/07.주의사항/Image1.png" class="img" alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./01.시작하기/05.주의사항/Image2.png" class="img" alt="이미지가 없습니다.">
+					<div class="slide"><img src="./01.시작하기/07.주의사항/Image2.png" class="img" alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./01.시작하기/05.주의사항/Image3.png" class="img" alt="이미지가 없습니다.">
+					<div class="slide"><img src="./01.시작하기/07.주의사항/Image3.png" class="img" alt="이미지가 없습니다.">
 					</div>
 				</div>
 				<button class="prev">&#10094;</button>
@@ -1249,7 +1295,7 @@
 		</div>
 		<br>
 		<br>
-		<summary id="B7">7. 블루투스</summary>
+		<summary id="B7">7. RF</summary>
 		<br>
 		<br>
 		<div class="container" id="expandable">
@@ -1276,9 +1322,11 @@
 				<div class="slider">
 					<div class="slide"><img src="./02.하드웨어/08.기타/Image1.png" class="img" alt="이미지가 없습니다.">
 					</div>
-					<button class="prev" style="display: none">&#10094;</button>
-					<button class="next" style="display: none">&#10095;</button>
-					<div class="slide-number" style="display: none"><span class="current-slide-number">1</span>
+					<div class="slide"><img src="./02.하드웨어/08.기타/Image2.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+					<div class="slide-number"><span class="current-slide-number">1</span>
 						/
 						<span class="total-slide-number">3</span>
 					</div>
@@ -1290,7 +1338,7 @@
 		<img src="./98.공통/Image2.png" class="img" style="border-radius: 0px; width: 97%;" alt="이미지가 없습니다.">
 
 
-		<h5>말랑말랑 코딩여행</h5>
+		<h5>테크닉</h5>
 		<summary id="C1">레벨1</summary>
 		<br>
 
@@ -1303,16 +1351,13 @@
 			<div class="carousel" style="display: flex; flex-direction: row; align-items: center;">
 				<div class="slider" style="flex: 1; position: relative;">
 					<div class="slide">
-						<img src="./05.개별하드웨어/CPU블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/CPU.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/스위치블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/적외선.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/적외선센서블럭.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/회전센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/스위치.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
 						<img src="./05.개별하드웨어/USB다운로더.png" class="img" alt="이미지가 없습니다.">
@@ -1325,26 +1370,22 @@
 				<!-- 첫 번째 텍스트 슬라이더 -->
 				<div class="slide-text" style="flex: 1;">
 					<p class="slide-description active" id="outlined-text">
-						로봇의 머리에 해당하는 부분으로써,<br> 코딩내용을 기억하고 다른 부품들을<br> 제어하는 역할을 해요.<br>'코딩 여행과 코딩 메이커'의<br> 진행을 위해서는
-						CPU블럭이<br> 꼭
-						필요하답니다.<br>
-						(꽂혀있는 점퍼는 빼지 않아요.)
+						Central Processing Unit의 약자로 ‘프로보 테크닉’의 중앙처리장치입니다.
+						로봇의 머리에 해당하며, 코딩 내용을 기억하고 다른 부품들을 제어하는 역할을 해요.
+						‘프로보 테크닉’의 진행을 위해서는 CPU 보드가 꼭 필요하답니다.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						컴퓨터의 입력장치로 마우스와 키보드가 <br>있듯이 CPU 블럭에 입력 신호를 주는<br> 버튼이에요.<br> 스위치를 누르면 숫자 1,<br> 누르지 않으면 0으로
-						입력돼요.
+						적외선의 정보를 감지할 수 있는 소자로, 적외선을 송신할 수 있는 송신부와 수신할 수 있는
+						수신부로 나누어져 있어요. 송신부가 눈에 보이지 않는 빛(적외선)을 발사하고,
+						물체에 반사되어 돌아오는 빛의 양을 수신부가 감지하여 물체가 얼마나 가까이 있는지 측정할 수 있어요.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						적외선 센서 블럭에는 발광부와 <br>수광부가 있어요. 발광부가 눈에 보이지<br> 않는 빛(적외선)을 발사하고,<br> 물체에 반사되어 돌아오는 빛의 양을<br> 수광부가
-						감지하여 물체가 얼마나<br>
-						가까이 있는지 측정하는 센서에요.
+						버튼을 누르면 전류가 흐르고, 손을 떼면 전류가 차단되는 ‘누름 스위치’ 종류의 하나예요.
+						버튼을 눌렀을 때 경쾌한 딸깍 소리가 들려 버튼을 눌렀는지 정확히 인식할 수 있어요.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						회전하는 위치를 숫자 값으로 알려주는 센서로,<br> 우리 주변에서는 오디오 소리를 크고 작게 하는<br> 볼륨 조절장치로 사용되기도 해요.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						컴퓨터를 코딩 된 내용을 CPU블럭과 주고<br> 받을 수 있도록 연결하는 케이블이에요.<br> USB다운로더로 연결되어있는 동안<br> CPU블럭은 컴퓨터에서 전원을
-						공급받아<br> 동작해요.
+						컴퓨터를 코딩 된 내용을 CPU 보드와 주고받을 수 있도록 연결하는 케이블이에요.
+						USB 다운로더로 연결되어 있는 동안 CPU 보드는 컴퓨터에서 전원을 공급받아 동작해요.
 					</p>
 				</div>
 			</div>
@@ -1399,6 +1440,20 @@
 					</div>
 					<div class="slide"><img src="./03.말랑말랑코딩여행/01.레벨1/01.하드웨어/Image4.png" class="img" alt="이미지가 없습니다.">
 					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/01.레벨1/01.하드웨어/Image5.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/01.레벨1/01.하드웨어/Image6.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/01.레벨1/01.하드웨어/Image7.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/01.레벨1/01.하드웨어/Image8.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/01.레벨1/01.하드웨어/Image9.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/01.레벨1/01.하드웨어/Image10.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/01.레벨1/01.하드웨어/Image11.png" class="img" alt="이미지가 없습니다.">
+					</div>
 					<button class="prev" onclick="showPreviousText()">&#10094;</button>
 					<button class="next" onclick="showNextText()">&#10095;</button>
 					<div class="slide-number"><span class="current-slide-number">1</span> /
@@ -1442,19 +1497,13 @@
 			<div class="carousel" style="display: flex; flex-direction: row; align-items: center;">
 				<div class="slider" style="flex: 1; position: relative;">
 					<div class="slide">
-						<img src="./05.개별하드웨어/배터리블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/RF리모컨.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/기울기센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/RF수신모듈.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/소리센서블럭.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/자석센서블럭.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/진동모터블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/서보780.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<button class="prev" onclick="showPreviousSlide('expandable2')">&#10094;</button>
 					<button class="next" onclick="showNextSlide('expandable2')">&#10095;</button>
@@ -1464,27 +1513,15 @@
 				<!-- 두 번째 텍스트 슬라이더 -->
 				<div class="slide-text" style="flex: 1;">
 					<p class="slide-description active" id="outlined-text">
-						배터리 블럭은 건전지를 안전하게 보호해주고 <br>모터처럼 전류를 많이 사용하는 부품을 <br>동작시킬 때 직접 전원을 공급해주는 <br> 전원 공급
-						장치입니다.<br><br>
-						배터리가 부족할 때 CPU에서 <br> "삐비빅! 삐비빅!" 경고음이 발생합니다. <br>이 때 CPU의 R(리셋)버튼을 눌러보고, <br>그래도 계속 경고음이 발생하면
-						<br>새 배터리로 교체해주세요.
+						RF(Radio Frequency)는 무선 주파수의 약자로 적외선 리모컨 방식이 아닌 TV나 라디오처럼
+						주파수 통신으로 리모컨 신호를 전달해요. 그래서 보다 먼 거리에서도 신속하고 정확히 조종이 가능하며,
+						서로 다른 주파수를 자동으로 설정하기 때문에 여러 명이 동시에 조종할 수 있어요.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						기울기 센서 블럭 안에는 아주 작은 쇠구슬이 <br> 들어있어 기울기에 따라 쇠구슬이 움직이면서 <br> 전기신호가 연결되거나 끊어져서 CPU 블럭에 <br> 입력신호를
-						주는 센서에요.
+						RF 수신모듈은 RF 리모컨과 연결된 선이 없이 무선으로 서로의 정보를 주고받으며 통신할 수 있도록 해줍니다.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						소리 센서 블럭은 사람에게 비유하면 <br> 귀에 해당하는 부분으로, 소리의 진동을 <br>감지하는 마이크가 들어있어서 소리의 <br> 크기를 아날로그 값으로 나타낼 수
-						있어요. <br> 주로 스마트폰이나
-						헤드셋 등에 사용되지요.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						자석 센서 블럭은 센서 가까이에 <br>자성을 띤 물체를 감지해서 CPU 블럭에<br> 입력신호를 주는 센서예요. <br> 주로 노트북이나 침입 경보기 등에<br>
-						사용된답니다.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						CPU 블럭에 출력신호를 받으면<br> 아주 작은 모터가 회전하면서<br> 진동을 일으키는 블럭이에요. <br> 주로 휴대전화나 카페 진동벨등 진등으로<br> 알림을 주는데
-						많이 사용돼요.
+						서보모터는 프로보 테크닉 로봇의 속도와 위치 등의 움직임을 제어하기 위해서 사용되는 모터입니다.
 					</p>
 				</div>
 			</div>
@@ -1545,6 +1582,12 @@
 					</div>
 					<div class="slide"><img src="./03.말랑말랑코딩여행/02.레벨2/01.하드웨어/Image8.png" class="img" alt="이미지가 없습니다.">
 					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/02.레벨2/01.하드웨어/Image9.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/02.레벨2/01.하드웨어/Image10.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/02.레벨2/01.하드웨어/Image11.png" class="img" alt="이미지가 없습니다.">
+					</div>
 					<button class="prev">&#10094;</button>
 					<button class="next">&#10095;</button>
 					<div class="slide-number"><span class="current-slide-number">1</span> /
@@ -1590,16 +1633,10 @@
 			<div class="carousel" style="display: flex; flex-direction: row; align-items: center;">
 				<div class="slider" style="flex: 1; position: relative;">
 					<div class="slide">
-						<img src="./05.개별하드웨어/모터블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/사운드보드.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/터치센서블럭.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/입력센서블럭.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/조도센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/DC모터120.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<button class="prev" onclick="showPreviousSlide('expandable3')">&#10094;</button>
 					<button class="next" onclick="showNextSlide('expandable3')">&#10095;</button>
@@ -1609,23 +1646,11 @@
 				<!-- 첫 번째 텍스트 슬라이더 -->
 				<div class="slide-text" style="flex: 1;">
 					<p class="slide-description active" id="outlined-text">
-						모터 블럭은 전기에너지를 <br> 회전운동에너지로 바꿔주는 부품이에요.<br> 전기에너지의 크기에 따라 모터가 <br> 회전하는 속도가 달라지며, <br> 전기에너지가
-						흐르는 방향에<br> 따라 모터가 회전하는
-						<br> 방향이 달라져요.
+						사운드보드는 CPU 보드와 연결하여 간편하게 여러 가지의 소리를 낼 수 있으며, 음량 조절이 가능합니다.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						스마트폰이나 PC의 터치스크린과 <br> 같이 화면에 손을 대면 정전기를 감지하여<br> CPU 블럭에 ON / OFF 입력신호를<br> 전해주는 센서예요. 스위치 센서와
-						같이 <br> 눌렸을 때 와
-						눌리지 않았을 때를 감지하지만,<br> 터치 센서는 스위치 센서보다 반응속도가 <br> 빠르기 때문에 더 유용하게 사용되고 있어요.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						압력 센서 블럭은 물체가 누르는 힘을<br> 측정하는 센서로, 물체가 누르는 힘이 커질수록 <br> 전류량이 증가하는 원리를 이용하여 <br> 측정한 힘의 크기를 아날로그
-						값으로 나타내요.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						조도 센서 블럭은 주변 빛의 양을<br> 측정하여 밝고, 어두운 정도를 감지하는 센서예요.<br> 어두워지면 자동으로 불이 켜지는<br> 가로등이나 주변 밝기에 따라
-						자동으로<br> 변하는 핸드폰 밝기
-						조절 장치 등에 사용돼요.
+						DC 모터는 회전의 속도 제어가 쉬워서 자동차나 이동하는 로봇에 주로 사용하며,
+						정방향 역방향의 회전 변경이 간편하여 다양한 로봇 구조에서 사용합니다.
 					</p>
 				</div>
 			</div>
@@ -1732,16 +1757,16 @@
 			<div class="carousel" style="display: flex; flex-direction: row; align-items: center;">
 				<div class="slider" style="flex: 1; position: relative;">
 					<div class="slide">
-						<img src="./05.개별하드웨어/심박센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/파워CPU.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/고무스위치센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/DC모터300.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/초음파센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/메카넘.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/가속도센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/확장모듈.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<button class="prev" onclick="showPreviousSlide('expandable4')">&#10094;</button>
 					<button class="next" onclick="showNextSlide('expandable4')">&#10095;</button>
@@ -1751,25 +1776,18 @@
 				<!-- 첫 번째 텍스트 슬라이더 -->
 				<div class="slide-text" style="flex: 1;">
 					<p class="slide-description active" id="outlined-text">
-						심박 센서 블럭은 적외선 빛을<br> 피부에 쏘았을 때 심장의<br> 펌프 작용으로 혈관에 혈액량이<br> 많으면 반사되는 적외선 빛의 양이 <br> 적어지고, 반대로
-						혈액량이 적으면 반사되는 <br> 적외신
-						빛의 양이 많아지는 <br> 원리를 이용해 사람의 심장박동수를 <br> 측정하는 센서예요.
+						파워 CPU 보드는 전원 포트가 2개여서 배터리 케이스를 2개 사용할 수 있고,
+						DC 모터 4개를 각각 제어할 수 있어요.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						고무 스위치 센서 블럭은 버튼을<br> 누르면 전류가 흐르고, 손을 떼면 전류가 <br> 차단되는 '누름 스위치' 종류의 하나예요.<br> 고무의 탄성을 이용하기 때문에
-						<br> '딸깍 딸깍'소리 없이
-						작동이 조용하고<br> 부드러운 것이 특징이며, TV 리모컨 등<br> 많은 곳에서 사용되고 있어요.
+						DC 모터이며, RPM(분당 회전 속도)이 300인 고속 모터입니다.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						영어로 울트라소닉 웨이브라고 부르는 초음파는 <br> 사람의 귀로 감지할 수 있는 범위를 <br> 넘어서 사람이 들을 수 없는 소리를 말해요. <br> 초음파 센서는 이러한
-						초음파를 발사하여 <br> 물체에
-						반사되어 돌아오는 초음파를 <br> 감지하고, 그 시간을 계산하여 <br> 물체까지의 거리를 측정하는 센서예요. <br> 마치 박쥐와 돌고래가 장애물을 <br> 감지하는
-						방식과 비슷하지요.
+						메카넘 휠은 여러 개의 롤러 형태의 타이어로 구성되어 있으며,
+						타이어가 45° 각도로 부착되어 ‘전 방향’ 회전이 가능한 기능성 바퀴예요.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						가속도 센서 블럭은 기울어진 정도를 <br> 알려주는 센서예요. 기울기 센서 블럭과 <br> 다른 점은 기울기 센서 블럭은 <br> 기울어 졌는지 아닌지를 디지털 신호로
-						<br> 전달되지만, 가속도 센서
-						블럭은 <br> 기울어진 각도에 따라 얼만큼 기울어졌는지를 <br> 아날로그 신호로 전달시켜주기 <br> 때문에 드론 및 스마트폰 등 <br> 많은 곳에 사용되고 있어요.
+						L1, L2, R1, R2 버튼이 추가되어 총 12가지 버튼으로 더욱더 다양한 조종을 할 수 있어요.
 					</p>
 				</div>
 			</div>
@@ -1822,6 +1840,16 @@
 					</div>
 					<div class="slide"><img src="./03.말랑말랑코딩여행/04.레벨4/01.하드웨어/Image5.png" class="img" alt="이미지가 없습니다.">
 					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/04.레벨4/01.하드웨어/Image6.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/04.레벨4/01.하드웨어/Image7.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/04.레벨4/01.하드웨어/Image8.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/04.레벨4/01.하드웨어/Image9.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/04.레벨4/01.하드웨어/Image10.png" class="img" alt="이미지가 없습니다.">
+					</div>
 					<button class="prev">&#10094;</button>
 					<button class="next">&#10095;</button>
 					<div class="slide-number"><span class="current-slide-number">1</span> /
@@ -1860,10 +1888,10 @@
 			<div class="carousel" style="display: flex; flex-direction: row; align-items: center;">
 				<div class="slider" style="flex: 1; position: relative;">
 					<div class="slide">
-						<img src="./05.개별하드웨어/컬러센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/오프로드.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/무한회전센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/캐터필러.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<button class="prev" onclick="showPreviousSlide('expandable5')">&#10094;</button>
 					<button class="next" onclick="showNextSlide('expandable5')">&#10095;</button>
@@ -1873,14 +1901,14 @@
 				<!-- 첫 번째 텍스트 슬라이더 -->
 				<div class="slide-text" style="flex: 1;">
 					<p class="slide-description active" id="outlined-text">
-						컬러 센서 블럭은 빛의 색깔을 <br> 감지하는 센서예요. <br> 컬러 센서 안에는 LED와 색깔을 <br> 감지할 수 있는 센서가 들어 있어요. <br> LED가 빛을
-						쏘면 사물에 반사되어 <br> 돌아오는 빛의
-						색깔을 센서가 <br> 삼원색(RGB)으로 분류하여 색깔을 구별해요. <br> 컬러센서는 제품 생산 시 <br> 색깔을 분류하는 분류기에 사용되기도 해요.
+						오프로드 바퀴는 고무 타이어 표면에 미끄럼을 방지하는 돌기가 있고,
+						타이어 안쪽에는 공기와 스펀지를 이용하여 장애물로부터 충격을 완화하도록 푹신푹신하게 만들어져서
+						지면이 고르지 못한 험난한 지형에서도 원활한 이동이 가능합니다.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						무한 회전 센서 블럭은 회전 센서와 같이 <br>회전하는 위치를 숫자 값으로 <br> 알려주는 센서예요. <br>회전 센서는 360도 회전이 아닌 최대 <br> 회전할 수
-						있는 범위가 정해져 있는 반면, <br>
-						무한 회전 센서는 360도를 <br>무한적으로 회전할 수 있다는 <br> 장점이 있어 사용할 수 있는 범위가 넓어요.
+						캐터필러는 여러 개를 연결하여 지게차의 리프트 체인이나 탱크의 바퀴(무한궤도)로 사용합니다.
+						캐터필러에 부착된 캐터 타이어는 미끄럼을 방지하여 평지뿐만이 아니라 기울어진 사면에서도
+						이동할 수 있게 해줍니다.
 					</p>
 				</div>
 			</div>
@@ -1935,6 +1963,14 @@
 					</div>
 					<div class="slide"><img src="./03.말랑말랑코딩여행/05.레벨5/01.하드웨어/Image6.png" class="img" alt="이미지가 없습니다.">
 					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/05.레벨5/01.하드웨어/Image7.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/05.레벨5/01.하드웨어/Image8.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/05.레벨5/01.하드웨어/Image9.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/05.레벨5/01.하드웨어/Image10.png" class="img" alt="이미지가 없습니다.">
+					</div>
 					<button class="prev">&#10094;</button>
 					<button class="next">&#10095;</button>
 					<div class="slide-number"><span class="current-slide-number">1</span> /
@@ -1967,13 +2003,10 @@
 			<div class="carousel" style="display: flex; flex-direction: row; align-items: center;">
 				<div class="slider" style="flex: 1; position: relative;">
 					<div class="slide">
-						<img src="./05.개별하드웨어/나침반센서블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/터보드라이버.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/멀티터치센서보드.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/블루투스.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/서보1000.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<button class="prev" onclick="showPreviousSlide('expandable6')">&#10094;</button>
 					<button class="next" onclick="showNextSlide('expandable6')">&#10095;</button>
@@ -1983,19 +2016,13 @@
 				<!-- 첫 번째 텍스트 슬라이더 -->
 				<div class="slide-text" style="flex: 1;">
 					<p class="slide-description active" id="outlined-text">
-						나침반 센서 블럭은 우리 친구들이 <br>학교에서 사용하는 나침반과 같은 원리예요. <br> 나침반은 지구의 자기를 이용하여 <br>자침(자성을 띠는 바늘)으로 동, 서,
-						남, 북의 <br> 방향을 알 수
-						있어요. 나침반 센서도 <br>동, 서, 남, 북의 방향을 알 수 있으며, <br>기준 위치에서 오느 방향으로 <br>움직였는지 '움직인 방향'도 알 수 있어요.
+						터보 드라이버의 레귤레이터는 전류용량이 파워 CPU 보드 보다 훨씬 커서
+						동시에 여러 개의 서보모터를 동작해도 안정적으로 파워를 공급해 줘서
+						각각의 서보모터가 원활한 동작을 할 수 있도록 해줍니다.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						멀티 터치 센서 보드 에는 <br>다른 센서 블럭들과 다르게 8개의 키가 있어요. <br> 그리고 8개의 키마다 전기 신호를 감지했는지 <br> 여부를 판단하는 센서 역할을
-						해요. <br>즉, 멀티 터치
-						센서 보드에는 <br>전기 신호를 감지하는 8개의 센서가 연결되어 있지요.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						말랑말랑 코딩메이커 레벨6에서는 <br> 블루투스를 이용하여 로봇과 컴퓨터의 <br> 통신을 연결해요. 블루투스는 무선 통신 기술로, <br> 로봇과 컴퓨터 간의 데이터
-						전송을 <br> 가능하게 해줍니다.
-						<br>이를 통해 로봇의 동작을 원격으로 <br> 제어하거나, 센서 데이터를 실시간으로 <br>컴퓨터에 전송할 수 있어요.
+						메탈 서보모터(MS-1000)는 10Kg 정도의 힘을 가지고 있어서
+						기존의 서보모터보다 더욱 강력한 힘으로 크고, 무거운 로봇을 동작시킬 수 있어요.
 					</p>
 				</div>
 			</div>
@@ -2050,6 +2077,10 @@
 					</div>
 					<div class="slide"><img src="./03.말랑말랑코딩여행/06.레벨6/01.하드웨어/Image6.png" class="img" alt="이미지가 없습니다.">
 					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/06.레벨6/01.하드웨어/Image7.png" class="img" alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/06.레벨6/01.하드웨어/Image8.png" class="img" alt="이미지가 없습니다.">
+					</div>
 					<button class="prev">&#10094;</button>
 					<button class="next">&#10095;</button>
 					<div class="slide-number"><span class="current-slide-number">1</span> /
@@ -2073,7 +2104,7 @@
 		</div class="textbox">
 		<br>
 		<br>
-		<summary id="C7">리뉴얼 레벨1</summary>
+		<summary id="C7">레벨7</summary>
 		<br>
 		<h4>1. 주요 부품</h4>
 		<br>
@@ -2083,19 +2114,10 @@
 			<div class="carousel" style="display: flex; flex-direction: row; align-items: center;">
 				<div class="slider" style="flex: 1; position: relative;">
 					<div class="slide">
-						<img src="./05.개별하드웨어/CPU블럭.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/몬스터.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<div class="slide">
-						<img src="./05.개별하드웨어/스위치블럭.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/적외선센서블럭.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/회전센서블럭.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide">
-						<img src="./05.개별하드웨어/USB다운로더.png" class="img" alt="이미지가 없습니다.">
+						<img src="./05.개별하드웨어/LED.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<button class="prev" onclick="showPreviousSlide('expandable7')">&#10094;</button>
 					<button class="next" onclick="showNextSlide('expandable7')">&#10095;</button>
@@ -2105,26 +2127,13 @@
 				<!-- 첫 번째 텍스트 슬라이더 -->
 				<div class="slide-text" style="flex: 1;">
 					<p class="slide-description active" id="outlined-text">
-						로봇의 머리에 해당하는 부분으로써,<br> 코딩내용을 기억하고 다른 부품들을<br> 제어하는 역할을 해요.<br>'코딩 여행과 코딩 메이커'의<br> 진행을 위해서는
-						CPU블럭이<br> 꼭
-						필요하답니다.<br>
-						(꽂혀있는 점퍼는 빼지 않아요.)
+						몬스터 바퀴는 지름이 12cm, 폭이 5.5cm로 매우 큰 크기를 자랑합니다.
+						바퀴 내부에는 공기와 스펀지가 채워져 있어 충격을 흡수하며,
+						타이어 표면에는 큰 홈이 있어 미끄럼을 방지하는 기능을 갖추고 있습니다.
 					</p>
 					<p class="slide-description" id="outlined-text">
-						컴퓨터의 입력장치로 마우스와 키보드가 <br>있듯이 CPU 블럭에 입력 신호를 주는<br> 버튼이에요.<br> 스위치를 누르면 숫자 1,<br> 누르지 않으면 0으로
-						입력돼요.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						적외선 센서 블럭에는 발광부와 <br>수광부가 있어요. 발광부가 눈에 보이지<br> 않는 빛(적외선)을 발사하고,<br> 물체에 반사되어 돌아오는 빛의 양을<br> 수광부가
-						감지하여 물체가 얼마나<br>
-						가까이 있는지 측정하는 센서에요.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						회전하는 위치를 숫자 값으로 알려주는 센서로,<br> 우리 주변에서는 오디오 소리를 크고 작게 하는<br> 볼륨 조절장치로 사용되기도 해요.
-					</p>
-					<p class="slide-description" id="outlined-text">
-						컴퓨터를 코딩 된 내용을 CPU블럭과 주고<br> 받을 수 있도록 연결하는 케이블이에요.<br> USB다운로더로 연결되어있는 동안<br> CPU블럭은 컴퓨터에서 전원을
-						공급받아<br> 동작해요.
+						RGB LED는 한 개의 LED에 빨간색, 녹색, 파란색의 LED가 모두 들어있어서
+						빛의 3원색 조합으로 다양한 색을 만들 수 있는 멀티컬러 LED예요.
 					</p>
 				</div>
 			</div>
@@ -2136,7 +2145,7 @@
 		<div class="container" id="expandable">
 			<div class="carousel">
 				<div class="slider">
-					<div class="slide"><img src="./03.말랑말랑코딩여행/07.리뉴얼레벨1/Image1.png" class="img" alt="이미지가 없습니다.">
+					<div class="slide"><img src="./03.말랑말랑코딩여행/07.레벨7/Image1.png" class="img" alt="이미지가 없습니다.">
 					</div>
 					<button class="prev" style="display: none;">&#10094;</button>
 					<button class="next" style="display: none;">&#10095;</button>
@@ -2168,19 +2177,22 @@
 		<div class="container" id="expandable">
 			<div class="carousel">
 				<div class="slider">
-					<div class="slide"><img src="./03.말랑말랑코딩여행/07.리뉴얼레벨1/01.하드웨어/Image1.png" class="img"
+					<div class="slide"><img src="./03.말랑말랑코딩여행/07.레벨7/01.하드웨어/Image1.png" class="img"
 							alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./03.말랑말랑코딩여행/07.리뉴얼레벨1/01.하드웨어/Image2.png" class="img"
+					<div class="slide"><img src="./03.말랑말랑코딩여행/07.레벨7/01.하드웨어/Image2.png" class="img"
 							alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./03.말랑말랑코딩여행/07.리뉴얼레벨1/01.하드웨어/Image3.png" class="img"
+					<div class="slide"><img src="./03.말랑말랑코딩여행/07.레벨7/01.하드웨어/Image3.png" class="img"
 							alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./03.말랑말랑코딩여행/07.리뉴얼레벨1/01.하드웨어/Image4.png" class="img"
+					<div class="slide"><img src="./03.말랑말랑코딩여행/07.레벨7/01.하드웨어/Image4.png" class="img"
 							alt="이미지가 없습니다.">
 					</div>
-					<div class="slide"><img src="./03.말랑말랑코딩여행/07.리뉴얼레벨1/01.하드웨어/Image5.png" class="img"
+					<div class="slide"><img src="./03.말랑말랑코딩여행/07.레벨7/01.하드웨어/Image5.png" class="img"
+							alt="이미지가 없습니다.">
+					</div>
+					<div class="slide"><img src="./03.말랑말랑코딩여행/07.레벨7/01.하드웨어/Image6.png" class="img"
 							alt="이미지가 없습니다.">
 					</div>
 					<button class="prev">&#10094;</button>
@@ -2211,246 +2223,6 @@
 
 
 		<h5>Q n A</h5>
-		<summary id="D1">1. 진도가 맞지 않아요!
-			<br>
-		</summary>
-		<br>
-		<h4>1. 지구본 아이콘을 8번 이상 빠르게 클릭합니다.</h4>
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/01.진도가 안맞을때/Image1.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>2. <span style="color: white;background-color: #FF3C78;">프로보 동작</span>을 클릭 후 스크롤을 아래로 내립니다.</h4>
-
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/01.진도가 안맞을때/Image2.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>3. 수정을 원하는 레벨의 블럭을 옮깁니다.</h4>
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/01.진도가 안맞을때/Image3.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>4. 수정을 원하는 챕터와 미션을 설정 합니다.</h4>
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/01.진도가 안맞을때/Image4.png" class="img" alt="이미지가 없습니다.">
-					</div>
-					<div class="slide"><img src="./04.QnA/01.진도가 안맞을때/Image5.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>5. 비밀번호를 입력합니다. <span style="color: white;background-color: #FF3C78;">비밀번호 : 0811</span></h4>
-
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/01.진도가 안맞을때/Image6.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>6. 블럭을 클릭합니다. <span style="color:#FF3C78;background-color: #f2ff00;">노란색 테두리가 나오는지 확인하세요!</span>
-		</h4>
-		<br>
-
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/01.진도가 안맞을때/Image7.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>7. 코딩여행으로 모드 변경시 설정한 챕터와 미션부터 시작됩니다.</h4>
-
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/01.진도가 안맞을때/Image8.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-
-		<br>
-		<br>
-		<summary id="D2">2. CPU 연결이 안돼요!
-		</summary>
-		<br>
-		<h4>1. USB 드라이버를 클릭합니다.</h4>
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/02.CPU 연결이 안돼요/Image1.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>2. USB 드라이버 설치프로그램 실행을 클릭합니다.</h4>
-		<br>
-
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/02.CPU 연결이 안돼요/Image2.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-
-		<br>
-		<br>
-		<h4>3. 검은색 USB 드라이버 설치를 클릭합니다.<br>
-			(하얀색 USB 드라이버일 경우 구형이므로 보상판매를 통해 신형으로 교체해 주세요.)</h4>
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/02.CPU 연결이 안돼요/Image3.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-
-		<br>
-		<br>
-		<h4>4. INSTALL 버튼을 클릭합니다.</h4>
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/02.CPU 연결이 안돼요/Image4.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev">&#10094;</button>
-				<button class="next">&#10095;</button>
-				<div class="slide-number"><span class="current-slide-number">1</span> / <span
-						class="total-slide-number">3</span></div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>5. 잠시 후 설치가 완료됩니다.</h4>
-
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/02.CPU 연결이 안돼요/Image5.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<h4>6. 드라이버를 설치해도 정상적으로 연결되지 않는다면 <br>UNINSTALL후 다시 INSTALL합니다.</h4>
-
-		<br>
-		<div class="container" id="expandable">
-			<div class="carousel">
-				<div class="slider">
-					<div class="slide"><img src="./04.QnA/02.CPU 연결이 안돼요/Image6.png" class="img" alt="이미지가 없습니다.">
-					</div>
-				</div>
-				<button class="prev" style="display: none;">&#10094;</button>
-				<button class="next" style="display: none;">&#10095;</button>
-				<div class="slide-number" style="display: none;"><span class="current-slide-number">1</span> /
-					<span class="total-slide-number">3</span>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 </body>
@@ -2459,13 +2231,13 @@
 <script>
 
 	const totalSlidesPerSlider = {
-		expandable1: 5,
-		expandable2: 5,
-		expandable3: 4,
+		expandable1: 4,
+		expandable2: 3,
+		expandable3: 2,
 		expandable4: 4,
 		expandable5: 2,
-		expandable6: 3,
-		expandable7: 5
+		expandable6: 2,
+		expandable7: 2
 	};
 
 	const currentIndices = {
